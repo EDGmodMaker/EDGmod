@@ -1,0 +1,9 @@
+name = "úW…W¯e…Qb"
+war_goal = {
+  type = superiority_punitive
+  casus_belli = cb_super_badboy
+}
+1443.12.1 = {
+  add_attacker = CHR
+  add_defender = KIE
+}

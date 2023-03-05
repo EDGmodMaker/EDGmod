@@ -1,0 +1,64 @@
+
+EDG_flavorARL_1_modifier = {
+	global_manpower = 20
+	land_forcelimit = 20
+	global_regiment_cost = -0.33
+	land_morale = 0.10
+	prestige = 0.5
+	unjustified_demands = -0.75
+}
+EDG_ARL_special_Mission_1_7_modifier = {
+	global_missionary_strength = 0.01
+	missionaries = 1
+	missionary_maintenance_cost = -0.15
+}
+EDG_ARL_special_Mission_1_8_modifier = {
+	global_missionary_strength = 0.02
+}
+EDG_ARL_special_Mission_1_9_modifier = {
+	global_heretic_missionary_strength = 0.03
+	tolerance_heretic = 2
+}
+EDG_ARL_special_Mission_2_7_modifier = {
+	land_morale = 0.05
+	shock_damage = 0.05
+	mercenary_discipline = 0.1
+	prestige = 0.5
+}
+EDG_ARL_special_Mission_2_8_modifier = {
+	army_tradition_from_battle = 0.5
+	discipline = 0.025
+}
+EDG_ARL_special_Mission_2_9_modifier = {
+	land_morale = 0.05
+}
+EDG_ARL_special_Mission_3_7_modifier = {
+	land_morale = 0.05
+	global_manpower = 5
+	land_forcelimit = 5
+	prestige = 0.5
+	global_missionary_strength = 0.02
+}
+EDG_ARL_special_Mission_5_7_modifier = {
+	global_missionary_strength = 0.02
+}
+EDG_ARL_special_Mission_5_8_modifier = {
+	land_morale = 0.05
+	shock_damage = 0.05
+}
+
+
+EDG_PER_disaster_throne_war_end_modifier = {
+	governing_capacity = 100
+	national_focus_years = -3
+	global_autonomy = -0.025
+	autonomy_change_time = -0.25
+	all_estate_loyalty_equilibrium = 0.05
+}
+EDG_PER_disaster_throne_war_2_modifier = {
+	governing_capacity = 100
+	legitimacy = 1
+	heir_chance = 0.5
+	global_unrest = -1
+	stability_cost_modifier = -0.1
+}

@@ -1,0 +1,47 @@
+government = monarchy
+add_government_reform = ottoman_government
+government_rank = 1
+primary_culture = turkish
+add_accepted_culture = greek
+religion = sunni
+technology_group = ottoman
+capital = 149
+national_focus = MIL
+add_army_professionalism = 0.15
+religious_school = hanafi_school
+change_estate_land_share = {
+  estate = estate_church
+  share = -10
+}
+change_estate_land_share = {
+  estate = estate_nobles
+  share = 10
+}
+1444.10.1 = {
+  set_estate_privilege = estate_dhimmi_guaranteed_autonomy
+}
+1439.1.1 = {
+  leader = {
+    name = "»T∑V∆Y åÇ»TçN"  # Hadim Sehabeddin
+    type = general
+    fire = 4
+    shock = 5
+    manuever = 3
+    siege = 4
+    personality = inspirational_leader_general_personality
+  }
+}
+1444.1.1 = {
+  monarch = {
+    name = "FzUÿû∑V II 0ÅVgw0"  # Mehmed II Fatih
+    dynasty = "eYØe¸feYbS"  # Osmanoglu
+    birth_date = 1432.3.30
+    adm = 6
+    dip = 4
+    mil = 6
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = conqueror_personality
+  add_piety = -0.2
+  set_ruler_flag = EDG_Mehmed_II_flag
+}

@@ -1,0 +1,351 @@
+EDG_China_Liao_mission_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential_on_load = {
+  }
+  potential = {
+    OR = {
+      tag = LIA
+      AND = {
+        was_tag = LIA
+        tag = LIA
+      }
+    }
+    NOT = {
+      map_setup = map_setup_random
+    }
+  }
+  has_country_shield = yes
+  EDG_LIA_mission_1_1 = {
+    icon = mission_restore_faith_in_the_throne
+    position = 1
+    required_missions = {}
+    provinces_to_highlight = {}
+    trigger = {
+      726 = {
+		development = 18
+	  }
+    }
+    effect = {
+		726 = {
+			add_permanent_province_modifier = { 
+				name = EDG_LIA_mission_1_1_modifier
+				duration = -1 
+			}
+		}
+	}
+	ai_weight = {
+		factor = 400
+	}
+  }
+  EDG_LIA_mission_1_2 = {
+    icon = mission_scandinavian_port_authority
+    position = 2
+    required_missions = {
+	EDG_LIA_mission_1_1
+	}
+	provinces_to_highlight = {}
+	trigger = {
+		2113 = {
+		development = 15
+		}
+	}
+    effect = {
+	    2113 = {
+		add_center_of_trade_level = 1
+		}
+		add_country_modifier = {
+				name = EDG_LIA_mission_1_2_modifier
+				duration = 18250
+			}
+		add_mercantilism = 2
+    }
+	
+		ai_weight = {
+			factor = 400
+		}
+  }
+  EDG_LIA_mission_1_4 = {
+    icon = mission_scandinavian_port_authority
+    position = 4
+    required_missions = {
+	EDG_LIA_mission_1_2
+	}
+	provinces_to_highlight = {
+	   trade_goods = grain
+	   owned_by = root
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+				value = 5 
+				AND = {
+						trade_goods = grain
+						development = 15
+				}
+	        }
+	}
+    effect = {
+	    add_country_modifier = {
+				name = EDG_LIA_mission_1_4_modifier
+				duration = 7300
+			}
+    }
+	
+		ai_weight = {
+			factor = 400
+		}
+  }
+  EDG_LIA_mission_1_6 = {
+    icon = mission_scandinavian_port_authority
+    position = 6
+    required_missions = {
+	EDG_LIA_mission_1_4
+	}
+	provinces_to_highlight = {
+	   trade_goods = iron
+	   owned_by = root
+	}
+	trigger = {
+		num_of_owned_provinces_with = {
+				value = 3
+				AND = {
+						trade_goods = iron
+						development = 15
+				}
+	        }
+	}
+    effect = {
+	    add_country_modifier = {
+				name = EDG_LIA_mission_1_6_modifier
+				duration = 7300
+			}
+    }
+	
+		ai_weight = {
+			factor = 400
+		}
+  }
+  EDG_LIA_mission_1_8 = {
+    icon = mission_scandinavian_port_authority
+    position = 8
+    required_missions = {
+	EDG_LIA_mission_1_6
+	}
+	provinces_to_highlight = {
+	}
+	trigger = {
+      total_development = 400
+    }
+    effect = {
+	    add_country_modifier = {
+				name = EDG_LIA_mission_1_8_modifier
+				duration = -1
+    }
+	
+		ai_weight = {
+			factor = 400
+		}
+  }
+}
+}
+EDG_China_Liao_mission_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential_on_load = {
+  }
+  potential = {
+    OR = {
+      tag = LIA
+      AND = {
+        was_tag = LIA
+        tag = LIA
+      }
+    }
+    NOT = {
+      map_setup = map_setup_random
+    }
+  }
+  has_country_shield = yes
+  EDG_LIA_mission_2_2 = {
+    icon = mission_high_income
+    position = 2
+    required_missions = {
+	EDG_LIA_mission_1_1
+	}
+    provinces_to_highlight = {}
+    trigger = {
+      total_development = 100
+    }
+    effect = {
+		726 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		add_country_modifier = {
+			name = EDG_LIA_mission_2_2_modifier
+			duration = 7300
+		}
+	}
+	ai_weight = {
+			factor = 400
+		}
+  }
+  EDG_LIA_mission_2_3 = {
+    icon = mission_high_income
+    position = 3
+    required_missions = {
+	EDG_LIA_mission_2_2
+	}
+    provinces_to_highlight = {}
+    trigger = {
+	OR = {
+      workshop = 5
+	  counting_house = 5
+	  }
+    }
+    effect = {
+		add_country_modifier = {
+				name = EDG_LIA_mission_2_3_modifier
+				duration = 7300
+			}
+	}
+	ai_weight = {
+			factor = 400
+		}
+  }
+  }
+
+EDG_China_Liao_mission_3 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential_on_load = {
+  }
+  potential = {
+    OR = {
+      tag = LIA
+      AND = {
+        was_tag = LIA
+        tag = LIA
+      }
+    }
+    NOT = {
+      map_setup = map_setup_random
+    }
+  }
+  has_country_shield = yes
+  EDG_LIA_mission_3_1 = {
+    icon = mission_scholar_officials
+    position = 1
+    required_missions = {
+	}
+    provinces_to_highlight = {}
+    trigger = {
+      has_country_modifier = EDG_flavorLIA_1_a_modifier
+    }
+    effect = {
+		add_country_modifier = {
+			name = EDG_LIA_mission_3_1_modifier
+			duration = 3650
+		}
+	}
+	ai_weight = {
+			factor = 400
+		}
+  }
+  EDG_LIA_mission_3_2 = {
+    icon = mission_kowtow
+    position = 2
+    required_missions = {
+	EDG_LIA_mission_3_1
+	}
+    provinces_to_highlight = {
+		OR = {
+			area = liaoning_area
+		}
+		OR = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { culture	= ROOT }
+		}
+	}
+    trigger = {
+      liaoning_area = {
+		type = all
+		culture = chihan
+	  }
+    }
+    effect = {
+		remove_country_modifier = EDG_flavorLIA_1_a_modifier
+		add_prestige = 20
+		add_mil_power = 100
+		jilin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+	}
+	ai_weight = {
+			factor = 400
+		}
+  }
+    EDG_LIA_mission_3_3 = {
+    icon = mnd_dai_control_the_army
+    position = 3
+    required_missions = {
+	EDG_LIA_mission_3_2
+	}
+    provinces_to_highlight = {}
+    trigger = {
+      army_size_percentage = 0.9
+    }
+    effect = {
+        add_country_modifier = {
+			name = EDG_LIA_mission_3_3_modifier
+			duration = 7300
+	    }
+    }
+	ai_weight = {
+			factor = 400
+		}
+  }
+      EDG_LIA_mission_3_4 = {
+    icon = mnd_maj_subjugate_makassar
+    position = 4
+    required_missions = {
+	EDG_LIA_mission_3_3
+	}
+    provinces_to_highlight = {
+		OR = {
+		area = jilin_area
+		}
+		OR = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+	}
+    trigger = {
+	owns_core_province = 730
+    num_of_owned_provinces_with = {
+				area = jilin_area
+				is_core = ROOT
+				value = 3
+		}
+    }
+    effect = {
+        manchuria_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+    }
+	ai_weight = {
+			factor = 400
+		}
+  }
+  }

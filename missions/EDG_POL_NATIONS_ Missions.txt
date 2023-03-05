@@ -1,0 +1,57 @@
+EDG_POL_nations_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = LER
+			tag = GPL
+			tag = MAZ
+			tag = KRA
+		}
+	}
+	has_country_shield = yes
+	
+	EDG_modifier_POL_ready = {
+		position = 1
+		icon = balance_of_power
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				region = poland_region
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			is_subject = no
+			OR = {
+				army_size_percentage = 1
+				AND = {
+					poland_region = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_manpower = 10
+			add_country_modifier = {
+				name = "EDG_modifier_POL_ready_modifier"
+				duration = 7300
+			}
+			poland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = {  is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
+		}
+	}
+}

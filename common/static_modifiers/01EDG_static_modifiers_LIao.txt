@@ -1,0 +1,47 @@
+
+
+EDG_LIA_mission_1_1_modifier = {
+	province_trade_power_value = 10
+	local_development_cost = -0.1
+    }
+EDG_LIA_mission_1_2_modifier = {
+    trade_efficiency = 0.1
+    }
+EDG_LIA_mission_1_4_modifier = {
+    global_tax_income = 36
+    }
+EDG_LIA_mission_1_6_modifier = {
+    development_cost = -0.1
+	fire_damage_received = -0.1
+	infantry_power = 0.05
+    }
+EDG_LIA_mission_1_8_modifier = {
+    colonists = 1
+	global_colonial_growth = 20
+}
+EDG_LIA_mission_2_2_modifier = {
+    build_cost = -0.1
+	build_time = -0.1
+	}
+EDG_LIA_mission_2_3_modifier = {
+    production_efficiency = 0.10
+	}
+EDG_LIA_mission_3_1_modifier = {
+    culture_conversion_cost = -0.2
+    }
+EDG_LIA_mission_3_3_modifier = {
+    infantry_power = 0.1
+	land_morale = 0.1
+}
+
+
+
+EDG_flavorLIA_1_a_modifier = {
+    stability_cost_modifier = 1
+    culture_conversion_cost = -0.5
+    }
+
+EDG_flavorLIA_1_b_modifier = {
+    global_unrest = 5
+    heir_chance = 1
+    }

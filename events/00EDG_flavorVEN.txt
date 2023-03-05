@@ -1,0 +1,101 @@
+namespace = EDG_flavorVEN
+normal_or_historical_nations = yes
+country_event = {
+  id = EDG_flavorVEN.1
+  title = "EDG_flavorVEN.1.t"
+  desc = "EDG_flavorVEN.1.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  major = yes
+  trigger = {
+	government = monarchy
+    tag = VEN
+	NOT = { adm = 2 }
+	NOT = { dip = 2 }
+	NOT = { mil = 2 }
+    NOT = {
+      has_global_flag = EDG_VEN_government_flavor_flag
+    }
+    is_year = 1455
+  }
+  immediate = {
+    set_global_flag = EDG_VEN_government_flavor_flag
+  }
+  mean_time_to_happen = {
+    months = 12
+  }
+  
+  option = {
+    name = "EDG_flavorVEN.1.a"
+    ai_chance = {
+      factor = 20
+    }
+	
+		if = {
+			limit = {
+				government = monarchy
+				is_revolutionary = no
+			}
+			change_government_to_republic = yes
+			add_government_reform = venice_merchants_reform
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+  }
+  option = {
+    name = "EDG_flavorVEN.1.b"
+    ai_chance = {
+      factor = 20
+    }
+    add_prestige = -10
+	add_stability = -1
+  }
+}
+
+
+country_event = {
+  id = EDG_flavorVEN.2
+  title = "EDG_flavorVEN.2.t"
+  desc = "EDG_flavorVEN.2.d"
+  picture = BIG_BOOK_eventPicture
+  fire_only_once = yes
+  trigger = {
+	owns_core_province = 112
+    is_at_war = no
+    is_year = 1515
+  }
+  mean_time_to_happen = {
+    months = 12
+  }
+  
+  option = {
+    name = "EDG_flavorVEN.2.a"
+    ai_chance = {
+      factor = 5
+    }
+	add_adm_power = 25
+	add_dip_power = 25
+	add_mil_power = 25
+    add_prestige = 15
+	add_stability_or_adm_power = yes
+	
+  }
+  option = {
+    name = "EDG_flavorVEN.2.b"
+    ai_chance = {
+      factor = 10
+    }
+	
+    define_advisor = {
+      type = artist
+      culture = ROOT
+      name = "Ðc™™·æ—R)ReY"
+      discount = yes
+      skill = 3
+	  cost_multiplier = 0.25
+    }
+    add_prestige = 50
+	add_stability_or_adm_power = yes
+  }
+}

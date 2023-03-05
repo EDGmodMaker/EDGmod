@@ -1,0 +1,218 @@
+EDG_PER_generic_mission_tag_trigger = {
+	NOT = {
+		AND = {
+			tag = PER
+			was_tag = AKK
+		}
+	}
+	OR = {
+		tag = PER
+		tag = ARM
+		tag = QAR
+		tag = BSR
+		tag = LRI
+		tag = ARD
+		tag = BHT
+		tag = ILK
+		tag = MGR
+		tag = TBR
+		tag = ARL
+		tag = SRV
+		tag = GEO
+		tag = IME
+		tag = QOM
+		tag = SME
+		tag = PER
+		tag = TIM
+		tag = FRS
+	  tag = TRS
+	  tag = AFG
+	  tag = QOM
+	  tag = KHO
+	  tag = KRM
+	  tag = ISF
+	  tag = PER
+	}
+}
+EDG_SPA_generic_mission_tag_trigger = {
+    OR = {
+      tag = CAS
+      tag = ASU
+      tag = GAL
+      tag = NAV
+      tag = ADC
+      tag = ETM
+		AND = {
+			OR = {
+				tag = SPA
+				tag = IBR
+				tag = USP
+				tag = GSP
+			}
+			OR = {
+				primary_culture = castillian
+				primary_culture = leonese
+				primary_culture = galician
+				primary_culture = basque
+				primary_culture = andalucian
+			}
+		}
+
+    }
+}
+EDG_SPA_generic_mission_tag_trigger_2 = {
+	OR = {
+		tag = SPA
+		tag = IBR
+		tag = USP
+		tag = GSP
+	}
+	OR = {
+		primary_culture = castillian
+		primary_culture = leonese
+		primary_culture = galician
+		primary_culture = basque
+		primary_culture = andalucian
+	}
+}
+EDG_EGY_reform_NOM_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = EDG_EGY_reform_NOM_trigger_tooltip
+		OR = {
+			has_country_flag = EDG_EGY_reform_NOM_influence_3_flag
+			has_country_flag = EDG_EGY_reform_NOM_influence_4_flag
+			has_country_flag = EDG_EGY_reform_NOM_influence_5_flag
+		}
+	}
+}
+EDG_EGY_reform_COP_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = EDG_EGY_reform_COP_trigger_tooltip
+		OR = {
+			has_country_flag = EDG_EGY_reform_COP_influence_3_flag
+			has_country_flag = EDG_EGY_reform_COP_influence_4_flag
+			has_country_flag = EDG_EGY_reform_COP_influence_5_flag
+		}
+	}
+}
+
+EDG_great_power_rank_1 = {
+	NOT = { great_power_rank = 2 }
+	is_great_power = yes
+}
+
+
+EDG_IBR_conflict_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = EDG_IBR_conflict_trigger_tooltip
+		OR = {
+			tag = CAS
+			tag = POR
+			tag = GAL
+			tag = ASU
+			tag = NAV
+			tag = ARA
+			tag = CAT
+			tag = VAL
+			tag = MJO
+			tag = BDH
+			tag = GRA
+			tag = SVL
+			tag = CIE
+			tag = AMR
+			tag = ETM
+			tag = LON
+			tag = ADU
+			tag = SPA
+			tag = IBR
+		}
+	}
+}
+EDG_IBR_conflict_vote_finish_trigger = {
+	OR = {
+		NOT = { exists = ADU }
+		ADU = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = SPA }
+		SPA = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = IBR }
+		IBR = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = CAS }
+		CAS = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = POR }
+		POR = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = GAL }
+		GAL = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = ASU }
+		ASU = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = NAV }
+		NAV = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = ARA }
+		ARA = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = CAT }
+		CAT = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = VAL }
+		VAL = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = MJO }
+		MJO = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = BDH }
+		BDH = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = GRA }
+		GRA = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = AMR }
+		AMR = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = CIE }
+		CIE = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+	OR = {
+		NOT = { exists = SVL }
+		SVL = { has_country_flag = EDG_IBR_country_vote_finish }
+	}
+}
+
+EDG_IBR_conflict_vote_trigger = {
+	OR = {
+		has_global_flag = EDG_IBR_conflict_vote_agree_25
+		has_global_flag = EDG_IBR_conflict_vote_agree_24
+		has_global_flag = EDG_IBR_conflict_vote_agree_23
+		has_global_flag = EDG_IBR_conflict_vote_agree_22
+		has_global_flag = EDG_IBR_conflict_vote_agree_21
+		has_global_flag = EDG_IBR_conflict_vote_agree_20
+		has_global_flag = EDG_IBR_conflict_vote_agree_19
+		has_global_flag = EDG_IBR_conflict_vote_agree_18
+		has_global_flag = EDG_IBR_conflict_vote_agree_17
+		has_global_flag = EDG_IBR_conflict_vote_agree_16
+		has_global_flag = EDG_IBR_conflict_vote_agree_15
+		has_global_flag = EDG_IBR_conflict_vote_agree_14
+		has_global_flag = EDG_IBR_conflict_vote_agree_13
+	}
+}

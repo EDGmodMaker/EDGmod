@@ -1,0 +1,332 @@
+EDG_BDH_special_Missions_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+   
+  potential = {
+	OR = {
+		  tag = BDH
+		  AND = {
+			tag = ADU
+			was_tag = BDH
+		  }
+	}
+    NOT = {
+      map_setup = map_setup_random
+    }
+  }
+  has_country_shield = yes
+  
+  EDG_BDH_special_Missions_2_2 = {
+    icon = mission_conquer_maharashtra
+    required_missions = {EDG_BDH_special_Missions_3_1}
+    position = 2
+    trigger = {
+	  NOT = { has_country_flag = EDG_BDH_tolerance_mission_flag }
+      is_at_war = no
+	  NOT = { has_estate_privilege = estate_dhimmi_tolerance }
+    }
+    effect = {
+		custom_tooltip = EDG_BDH_Radical_mission_tooltip
+		set_country_flag = EDG_BDH_Radical_mission_flag
+		add_country_modifier = {
+			name = "EDG_BDH_special_Missions_2_2_modifier"
+			duration = 9125
+		}
+    }
+  }
+  
+  EDG_BDH_special_Missions_2_3 = {
+    icon = mission_defeat_mewar
+    required_missions = {EDG_BDH_special_Missions_2_2}
+    position = 3
+    trigger = {
+	  NOT = { has_country_flag = EDG_BDH_tolerance_mission_flag }
+	  religious_unity = 0.90
+	  NOT = { has_estate_privilege = estate_dhimmi_tolerance }
+    }
+    effect = {
+		add_mil_power = 50
+		define_advisor = {
+			type = admiral
+			culture = ROOT
+			discount = yes
+			skill = 3
+			cost_multiplier = 0.25
+		}
+		add_country_modifier = {
+			name = "EDG_BDH_special_Missions_2_3_modifier"
+			duration = -1
+		}
+    }
+  }
+  
+  EDG_BDH_special_Missions_2_4 = {
+    icon = mission_fortify_mandu
+    required_missions = {EDG_BDH_special_Missions_2_3}
+    position = 4
+    trigger = {
+	  NOT = { has_country_flag = EDG_BDH_tolerance_mission_flag }
+	  religious_unity = 0.90
+	  full_idea_group = religious_ideas
+	  NOT = { has_estate_privilege = estate_dhimmi_tolerance }
+	  total_development = 1000
+    }
+    effect = {
+		add_prestige = 10
+		add_country_modifier = {
+			name = "EDG_BDH_special_Missions_2_4_modifier"
+			duration = -1
+		}
+    }
+  }
+  
+  EDG_BDH_special_Missions_2_5 = {
+    icon = mission_interfaith_relations
+    required_missions = {EDG_BDH_special_Missions_2_4 EDG_BDH_special_Missions_3_4}
+    position = 5
+    trigger = {
+	  NOT = { has_country_flag = EDG_BDH_tolerance_mission_flag }
+	  army_tradition = 65
+	  army_tradition = 100
+	  full_idea_group = offensive_ideas
+    }
+    effect = {
+		add_prestige = 10
+		add_country_modifier = {
+			name = "EDG_BDH_special_Missions_2_5_modifier"
+			duration = -1
+		}
+    }
+  }
+  
+}
+
+EDG_BDH_special_Missions_3 = {
+  slot = 3
+  generic = no
+  ai = yes
+   
+  potential = {
+	OR = {
+		  tag = BDH
+		  AND = {
+			tag = ADU
+			was_tag = BDH
+		  }
+	}
+    NOT = {
+      map_setup = map_setup_random
+    }
+  }
+  has_country_shield = yes
+  
+  EDG_BDH_special_Missions_3_1 = {
+    icon = mission_integrate_the_gonds
+    required_missions = { }
+    position = 1
+    trigger = {
+      army_size_percentage = 0.75
+	  is_year = 1445
+    }
+    effect = {
+		CAS = {
+		  country_event = {
+			id = EDG_flavorBDH.1
+		  }
+		}
+    }
+  }
+  
+  EDG_BDH_special_Missions_3_2 = {
+    icon = mission_invade_gujarat
+    required_missions = { EDG_BDH_special_Missions_3_1 }
+    position = 2
+    provinces_to_highlight = {
+		OR = {
+		  province_id = 4788
+	    }
+    }
+    trigger = {
+      OR = {
+		owns = 4788
+		controls = 4788
+	  }
+    }
+    effect = {
+		add_prestige = 10
+		add_army_tradition = 10
+		create_general = { tradition = 60 }
+    }
+  }
+  
+  EDG_BDH_special_Missions_3_3 = {
+    icon = mission_malwi_architecture
+    required_missions = { EDG_BDH_special_Missions_3_2 }
+    position = 3
+    provinces_to_highlight = {
+		OR = {
+		  province_id = 225
+	    }
+    }
+    trigger = {
+		owns = 225
+    }
+    effect = {
+		add_core = 225
+		225 = {
+			add_devastation = -100
+			add_base_manpower = 2
+		}
+    }
+  }
+  
+  EDG_BDH_special_Missions_3_4 = {
+    icon = mission_reliable_allies
+    required_missions = { EDG_BDH_special_Missions_3_3 }
+    position = 4
+    provinces_to_highlight = {
+		OR = {
+		  province_id = 224
+	    }
+    }
+    trigger = {
+      has_country_modifier = EDG_IBR_MSL_Shadhili_invite_modifier
+      has_country_modifier = EDG_IBR_MSL_Qadiri_invite_modifier
+      has_country_modifier = EDG_IBR_MSL_Aissawa_invite_modifier
+	  owns = 224
+    }
+    effect = {
+		custom_tooltip = EDG_IBR_MSL_invite_discount_tooltip
+		set_country_flag = EDG_IBR_MSL_invite_discount_flag
+		
+		define_advisor = {
+			type = theologian
+			culture = ROOT
+			discount = yes
+			skill = 3
+			cost_multiplier = 0.25
+		}
+    }
+  }
+  
+  EDG_BDH_special_Missions_3_5 = {
+    icon = mission_accomodate_the_rajputs
+    required_missions = { EDG_BDH_special_Missions_3_4 }
+    position = 5
+    provinces_to_highlight = {
+		OR = {
+		  province_id = 222
+		  province_id = 223
+	    }
+    }
+    trigger = {
+	  owns = 222
+	  owns = 223
+    }
+    effect = {
+		add_dip_power = 100
+		add_mercantilism = 2
+    }
+  }
+  
+}
+
+EDG_BDH_special_Missions_4 = {
+  slot = 4
+  generic = no
+  ai = yes
+   
+  potential = {
+	OR = {
+		  tag = BDH
+		  AND = {
+			tag = ADU
+			was_tag = BDH
+		  }
+	}
+    NOT = {
+      map_setup = map_setup_random
+    }
+  }
+  has_country_shield = yes
+  
+  EDG_BDH_special_Missions_4_2 = {
+    icon = mission_defeat_jaunpur
+    required_missions = { EDG_BDH_special_Missions_3_1 }
+    position = 2
+    trigger = {
+	  NOT = { has_country_flag = EDG_BDH_Radical_mission_flag }
+      is_at_war = no
+	  NOT = { has_estate_privilege = estate_dhimmi_tolerance }
+    }
+    effect = {
+		set_country_flag = EDG_BDH_tolerance_mission_flag
+		custom_tooltip = EDG_BDH_tolerance_mission_tooltip
+		add_country_modifier = {
+			name = "EDG_BDH_special_Missions_4_2_modifier"
+			duration = -1
+		}
+    }
+  }
+  
+  EDG_BDH_special_Missions_4_3 = {
+    icon = mission_assert_control_over_delhi
+    required_missions = { EDG_BDH_special_Missions_4_2 }
+    position = 3
+    trigger = {
+	  NOT = { has_country_flag = EDG_BDH_Radical_mission_flag }
+		custom_trigger_tooltip = {
+			tooltip =EDG_Mozarabic_tolerance_4_tooltip
+			EDG_Mozarabic = 4
+		}
+    }
+    effect = {
+		country_event = { id = EDG_flavorBDH.6 }
+    }
+  }
+  
+  EDG_BDH_special_Missions_4_4 = {
+    icon = mission_the_sultanate_restored
+    required_missions = { EDG_BDH_special_Missions_4_3 }
+    position = 4
+    trigger = {
+	  NOT = { has_country_flag = EDG_BDH_Radical_mission_flag }
+		custom_trigger_tooltip = {
+			tooltip = EDG_Mozarabic_tolerance_5_tooltip
+			EDG_Mozarabic = 5
+		}
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 10
+			religion = EDG_Mozarabic
+			NOT = { nationalism = 0 }
+			NOT = { unrest = 0 }
+		}
+    }
+    effect = {
+		country_event = { id = EDG_flavorBDH.7 }
+    }
+  }
+  
+  EDG_BDH_special_Missions_4_5 = {
+    icon = mission_invade_the_deccan_dlh
+    required_missions = { EDG_BDH_special_Missions_4_4 EDG_BDH_special_Missions_3_4}
+    position = 5
+    trigger = {
+	  NOT = { has_country_flag = EDG_BDH_Radical_mission_flag }
+		custom_trigger_tooltip = {
+			tooltip =EDG_Mozarabic_tolerance_6_tooltip
+			EDG_Mozarabic = 6
+		}
+		full_idea_group = humanist_ideas
+		total_development = 1000
+    }
+    effect = {
+		add_country_modifier = {
+			name = "EDG_BDH_special_Missions_4_5_modifier"
+			duration = -1
+		}
+    }
+  }
+  
+}

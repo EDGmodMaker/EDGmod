@@ -1,0 +1,39 @@
+﻿l_english:
+#经济结构任务树
+change_10_temple_to_cathedral_tooltip:0 "S10µ^§YYeX§!9e.:N§Y'YYeX§!"
+
+#辽
+EDG_LIA_mission_1_1_title:0 "ÑSUS‹s¬N"
+EDG_LIA_mission_1_1_desc:0 "ENÏubqN„vËN‹k4xN*XÿbìNÅV‰˜b`Y‹s¬N„vAucƒÿåNdk&^¨Rte*NËN„vtQÛv"
+EDG_LIA_mission_1_2_title:0 "wmNFU8"
+EDG_LIA_mission_1_2_desc:0 "ËNJS›SNùR¸S„vqSNJS›S”–wmøvg0ÇÑSUSwmÐÿbìNN-NŸS„vTwû|àe‘uS'Y'Y R:V0"
+EDG_LIA_mission_1_4_title:0 "ËN®|ÓN"
+EDG_LIA_mission_1_4_desc:0 "Ïu†S†NbìN„v›äRV¦Wÿ^²ˆw¥wƒl„vËNs^ŸS:NbìNµNúQ†N0NÌR„v0u®|0"
+EDG_LIA_mission_1_6_title:0 "¶Q¼pÁ”ÿw"
+EDG_LIA_mission_1_6_desc:0 "^²ˆ„vË3–s^ŸS	gNw0NÌR„vÿwirÿˆVéeåNMR1S	gHQl(WdkVÿw¶Q¼p0ÇùRÁ”ÿw„vVÑS)R(uÿbìNýwÐcGSbìNåTwQ„vO(uHe‡sÿÃOÛuµNIm¨RÿØýw:NbìN„vëXuQuµNôf¾|o‚„vÔv2uNRQR0"
+EDG_LIA_mission_1_8_title:0 "VRƒgS"
+EDG_LIA_mission_1_8_desc:0 "bìN(WWSVSbN›äRú^¾‹-NòT6qïy/twÄ–šS„vžR›Rÿ°s(Wÿ/föePçuíuTNw±î†Rƒ„vSƒXVÓb†N0"
+EDG_LIA_mission_2_2_title:0 "¸„¸„åeN"
+EDG_LIA_mission_2_2_desc:0 "Ñ›Nt^egÿbìN„vºNlâVÓu(WýV‹s„v†˜üRNÿO`—ÖNìN„väR³RNzfgaÿ:NbìNËNR.†Nôf R‰LqpÂp„vMRofN*geg0"
+EDG_LIA_mission_2_3_title:0 "SjOJWuµN"
+EDG_LIA_mission_2_3_desc:0 "–NwNµ^µ^SåT:W„vú^ËzÿbìN„vuµN›R—V0R†Ng'YÐcGS0"
+EDG_LIA_mission_3_1_title:0 "Il¶RËN"
+EDG_LIA_mission_3_1_desc:0 "‹sŒšG:RSb4x†NËN„v?e»ls^aˆÿþfÏu«ˆ‰lÍ‘Sb‹S„vIlºN¿R›RPNwË‹s„vvbiXN¿RwwÿSŽNÝu0W-NÑSwN:WÛv'Y„vÍSûQ0"
+EDG_LIA_mission_3_2_title:0 "n—rsYwºN"
+EDG_LIA_mission_3_2_desc:0 "sYwºN,g1S/fSYî†7YÿþfÏuXN)Yg™„qNw2kíP×v‹sW0‚YÊNôf/fNánË‹sùRbìN„vPÍ‘w¯rN'YNSKN>Nÿ/föePŒbÖNìN—r—rçe&†N0"
+EDG_LIA_mission_3_3_title:0 "ãylš‰SuQ"
+EDG_LIA_mission_3_3_desc:0 "bìNÈuŽN(W…QèÝQZw†NºNÃVÿ/föeP:NbìNb—VôfY„vuXRW0W†Nÿ"
+EDG_LIA_mission_3_4_title:0 "Î˜ê–SŒ˜"
+EDG_LIA_mission_3_4_desc:0 "2kS‰‘šÿ'Yê–ánVR0ÎNwÎ˜ê–SgÿqS³lNÌ‘ÿ‹vqSÑž4lÿåegNbóÿ†v:N‹sW0"
+
+
+
+EDG_LIA_mission_1_1_modifier:0 "ËNFU8-NÃV"
+EDG_LIA_mission_1_2_modifier:0 "Aucƒ„vwmFU"
+EDG_LIA_mission_1_4_modifier:0 "0NÓN^ïy"
+EDG_LIA_mission_1_6_modifier:0 "ôf¾|o‚„vÁ”åTwQ"
+EDG_LIA_mission_1_8_modifier:0 "VRƒgS"
+EDG_LIA_mission_2_2_modifier:0 "'YuµN"
+EDG_LIA_mission_2_3_modifier:0 "SjOJWuµN"
+EDG_LIA_mission_3_1_modifier:0 "Il¶RËN"
+EDG_LIA_mission_3_3_modifier:0 "TSVÓb"

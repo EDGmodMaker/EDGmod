@@ -1,0 +1,18 @@
+
+estate_EDG_Caledonia = {
+	modifier_definition = {
+		type = loyalty
+		key = EDG_Caledonia_loyalty_modifier
+		trigger = {
+			has_estate = estate_EDG_Caledonia
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = EDG_Caledonia_influence_modifier
+		trigger = {
+			has_estate = estate_EDG_Caledonia
+		}
+	}
+}

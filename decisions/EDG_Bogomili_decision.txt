@@ -1,0 +1,159 @@
+country_decisions = {
+	#151 君堡
+	#150 保加利亚的尼科博尔
+	#280 基辅
+	#276 明斯克
+	#279 沃里尼亚
+	#1756 罗马尼亚的巴萨拉比亚
+	EDG_Bogomili_decision_151 = {
+		provinces_to_highlight = {
+			province_id = 151
+		}
+		potential = {
+			religion = EDG_Bogomili
+			NOT = { has_global_flag = had_EDG_Bogomili_decision_151_flag  }
+		}
+		allow = {
+			religion = EDG_Bogomili
+			151 = {
+				owned_by = Root
+				religion = EDG_Bogomili
+			}
+		}
+		effect = {
+			country_event = {
+				id = EDG_flavor_Bogomili.1
+			}
+		}
+		ai_will_do = {
+		  factor = 1
+		}
+	}
+	EDG_Bogomili_decision_150 = {
+		provinces_to_highlight = {
+			province_id = 150
+		}
+		potential = {
+			religion = EDG_Bogomili
+			NOT = { has_global_flag = had_EDG_Bogomili_decision_150_flag  }
+		}
+		allow = {
+			religion = EDG_Bogomili
+			150 = {
+				owned_by = Root
+				religion = EDG_Bogomili
+			}
+		}
+		effect = {
+			country_event = {
+				id = EDG_flavor_Bogomili.2
+			}
+			set_global_flag = had_EDG_Bogomili_decision_150_flag
+		}
+		ai_will_do = {
+		  factor = 1
+		}
+	}
+	EDG_Bogomili_decision_280 = {
+		provinces_to_highlight = {
+			province_id = 280
+		}
+		potential = {
+			religion = EDG_Bogomili
+			NOT = { has_global_flag = had_EDG_Bogomili_decision_280_flag  }
+		}
+		allow = {
+			religion = EDG_Bogomili
+			280 = {
+				owned_by = Root
+				religion = EDG_Bogomili
+			}
+		}
+		effect = {
+			country_event = {
+				id = EDG_flavor_Bogomili.3
+			}
+			set_global_flag = had_EDG_Bogomili_decision_280_flag
+		}
+		ai_will_do = {
+		  factor = 1
+		}
+	}
+	EDG_Bogomili_decision_276 = {
+		provinces_to_highlight = {
+			province_id = 276
+		}
+		potential = {
+			religion = EDG_Bogomili
+			NOT = { has_global_flag = had_EDG_Bogomili_decision_276_flag  }
+		}
+		allow = {
+			religion = EDG_Bogomili
+			276 = {
+				owned_by = Root
+				religion = EDG_Bogomili
+			}
+		}
+		effect = {
+			country_event = {
+				id = EDG_flavor_Bogomili.4
+			}
+			set_global_flag = had_EDG_Bogomili_decision_276_flag
+		}
+		ai_will_do = {
+		  factor = 1
+		}
+	}
+	EDG_Bogomili_decision_279 = {
+		provinces_to_highlight = {
+			province_id = 279
+		}
+		potential = {
+			religion = EDG_Bogomili
+			NOT = { has_global_flag = had_EDG_Bogomili_decision_279_flag  }
+		}
+		allow = {
+			religion = EDG_Bogomili
+			279 = {
+				owned_by = Root
+				religion = EDG_Bogomili
+			}
+		}
+		effect = {
+			country_event = {
+				id = EDG_flavor_Bogomili.5
+			}
+			set_global_flag = had_EDG_Bogomili_decision_279_flag
+		}
+		ai_will_do = {
+		  factor = 1
+		}
+	}
+	EDG_Bogomili_decision_1756 = {
+		provinces_to_highlight = {
+			province_id = 1756
+		}
+		potential = {
+			religion = EDG_Bogomili
+			NOT = { has_global_flag = had_EDG_Bogomili_decision_1756_flag  }
+		}
+		allow = {
+			religion = EDG_Bogomili
+			1756 = {
+				owned_by = Root
+				religion = EDG_Bogomili
+			}
+		}
+		effect = {
+			country_event = {
+				id = EDG_flavor_Bogomili.6
+			}
+			set_global_flag = had_EDG_Bogomili_decision_1756_flag
+		}
+		ai_will_do = {
+		  factor = 1
+		}
+	}
+	
+	
+}

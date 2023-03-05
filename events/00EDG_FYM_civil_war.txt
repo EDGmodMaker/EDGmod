@@ -1,0 +1,516 @@
+namespace = EDG_FYM_civil_war
+country_event = {
+  id = EDG_FYM_civil_war.1
+  title = "EDG_FYM_civil_war.1.t"
+  desc = "EDG_FYM_civil_war.1.d"
+  picture = LIBERUM_VETO_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  major = yes
+  immediate = {
+    hidden_effect = {
+		log = "[Root.GetName] has EDG_FYM_civil_war Disaster."
+		set_country_flag = EDG_FYM_civil_war_flag
+	}
+    hidden_effect = {
+		add_stability = -6
+    }
+  }
+  option = {
+    name = "EDG_FYM_civil_war.1.a"
+	add_prestige = -10
+	
+    if = {
+      limit = {
+        any_owned_province = {
+          development = 5
+          highest_supply_limit_in_area = yes
+          is_in_capital_area = yes
+          fort_level = 1
+          is_capital = no
+        }
+      }
+      random_owned_province = {
+		spawn_rebels = {
+			size = 3
+			win = yes
+			unrest = 20
+		  }
+      }
+      random_owned_province = {
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 2
+			win = yes
+			unrest = 20
+		  }
+      }
+      random_owned_province = {
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 2
+			win = yes
+			unrest = 20
+		  }
+      }
+    }
+    else = {
+      random_owned_province = {
+        limit = {
+          highest_supply_limit_in_area = yes
+          is_capital = no
+        }
+		
+		spawn_rebels = {
+			size = 2
+			win = yes
+			unrest = 20
+		  }
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_dlc = "Emperor"
+        }
+      }
+      random_owned_province = {
+        limit = {
+          is_capital = yes
+        }
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 3
+			win = yes
+			unrest = 20
+		  }
+      }
+    }
+    tooltip = { add_stability = -6 }
+  }
+  
+}
+
+country_event = {
+  id = EDG_FYM_civil_war.2
+  title = "EDG_FYM_civil_war.2.t"
+  desc = "EDG_FYM_civil_war.2.d"
+  picture = REIREUTION_eventPicture
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = "EDG_FYM_civil_war.2.a"
+    add_stability = 2
+	add_army_tradition = 15
+	add_mil_power = 50
+  }
+}
+
+
+
+country_event = {
+  id = EDG_FYM_civil_war.3
+  title = "EDG_FYM_civil_war.3.t"
+  desc = "EDG_FYM_civil_war.3.d"
+  picture = ANGRY_MOB_eventPicture
+  fire_only_once = yes
+  is_triggered_only = yes
+  option = {
+    name = "EDG_FYM_civil_war.3.a"
+    add_stability = -1
+    387 = {
+		spawn_rebels = {
+			size = 6
+			win = yes
+			unrest = 20
+		}
+    }
+  }
+}
+
+
+
+country_event = {
+  id = EDG_FYM_civil_war.4
+  title = "EDG_FYM_civil_war.4.t"
+  desc = "EDG_FYM_civil_war.4.d"
+  picture = DEATH_OF_HEIR_eventPicture
+  fire_only_once = yes
+  is_triggered_only = yes
+  major = yes
+  trigger = {
+    NOT = { has_global_flag = EDG_FYM_disaster_EGY_claim_flag }
+	development_in_provinces = {
+		value = 1
+		region = egypt_region
+	}
+  }
+  
+  immediate = {
+	set_global_flag = EDG_FYM_disaster_EGY_claim_flag
+  }
+  option = {
+    name = "EDG_FYM_civil_war.4.a"
+    ai_chance = {
+      factor = 100
+    }
+    kill_ruler = yes
+	free_vassal = DMA
+	free_vassal = LEB
+	free_vassal = FAD
+    release = CIO
+    release = ALX
+	add_truce_with = CIO
+	add_truce_with = ALX
+	hidden_effect = { effect_EDG_FYM_ALX_vs_CIO = yes }
+	effect_EDG_FYM_lose_core = yes
+	CIO = {
+		declare_war_with_cb = {
+		  who = ALX
+		  casus_belli = cb_annex
+		}
+	}
+  }
+  option = {
+    name = "EDG_FYM_civil_war.4.b"
+    ai_chance = {
+      factor = 0
+    }
+    kill_ruler = yes
+	free_vassal = DMA
+	free_vassal = LEB
+	free_vassal = FAD
+    release = CIO
+    release = ALX
+	hidden_effect = { effect_EDG_FYM_ALX_vs_CIO = yes }
+	CIO = {
+		declare_war_with_cb = {
+		  who = ALX
+		  casus_belli = cb_annex
+		}
+	}
+	Root = {
+		declare_war_with_cb = {
+		  who = CIO
+		  casus_belli = cb_annex
+		}
+		declare_war_with_cb = {
+		  who = ALX
+		  casus_belli = cb_annex
+		}
+	}
+  }
+  option = {
+    name = "EDG_FYM_civil_war.4.c"
+    ai_chance = {
+      factor = 0
+    }
+    kill_ruler = yes
+	free_vassal = DMA
+	free_vassal = LEB
+	free_vassal = FAD
+    release = CIO
+    release = ALX
+	add_truce_with = CIO
+	add_truce_with = ALX
+	hidden_effect = { effect_EDG_FYM_ALX_vs_CIO = yes }
+	effect_EDG_FYM_lose_core = yes
+	CIO = {
+		declare_war_with_cb = {
+		  who = ALX
+		  casus_belli = cb_annex
+		}
+	}
+	switch_tag = ALX
+  }
+  option = {
+    name = "EDG_FYM_civil_war.4.d"
+    ai_chance = {
+      factor = 0
+    }
+    kill_ruler = yes
+	free_vassal = DMA
+	free_vassal = LEB
+	free_vassal = FAD
+    release = CIO
+    release = ALX
+	add_truce_with = CIO
+	add_truce_with = ALX
+	hidden_effect = { effect_EDG_FYM_ALX_vs_CIO = yes }
+	effect_EDG_FYM_lose_core = yes
+	CIO = {
+		declare_war_with_cb = {
+		  who = ALX
+		  casus_belli = cb_annex
+		}
+	}
+	switch_tag = CIO
+  }
+}
+
+
+
+country_event = {
+  id = EDG_FYM_civil_war.5
+  title = "EDG_FYM_civil_war.5.t"
+  desc = "EDG_FYM_civil_war.5.d"
+  picture = PRAYING_eventPicture
+  fire_only_once = yes
+  is_triggered_only = yes
+  major = yes
+  option = {
+    name = "EDG_FYM_civil_war.5.a"
+    ai_chance = {
+      factor = 100
+    }
+    add_stability = -1
+    if = {
+		limit = { owns = 1229 }
+		1229 = {
+			spawn_rebels = {
+				size = 3
+				win = yes
+				unrest = 20
+			}
+		}
+	}
+    if = {
+		limit = { owns = 1226 }
+		1226 = {
+			spawn_rebels = {
+				size = 3
+				win = yes
+				unrest = 20
+			}
+		}
+	}
+	
+  }
+}
+
+
+country_event = {
+  id = EDG_FYM_civil_war.6
+  title = "EDG_FYM_civil_war.6.t"
+  desc = "EDG_FYM_civil_war.6.d"
+  picture = HORDE_ON_HORSEBACK_eventPicture
+  fire_only_once = yes
+  is_triggered_only = yes
+  major = yes
+  trigger = {
+	development_in_provinces = {
+		value = 1
+		culture = bedouin_arabic
+	}
+  }
+  option = {
+    name = "EDG_FYM_civil_war.6.a"
+    ai_chance = {
+      factor = 100
+    }
+    add_stability = -1
+	random_owned_province = {
+		limit = {
+			culture = bedouin_arabic
+		}
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 3
+			win = yes
+			unrest = 20
+		}
+	}
+	random_owned_province = {
+		limit = {
+			culture = bedouin_arabic
+		}
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 3
+			win = yes
+			unrest = 20
+		}
+	}
+	random_owned_province = {
+		limit = {
+			culture = bedouin_arabic
+		}
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 3
+			win = yes
+			unrest = 20
+		}
+	}
+	
+  }
+}
+
+
+country_event = {
+  id = EDG_FYM_civil_war.7
+  title = "EDG_FYM_civil_war.7.t"
+  desc = "EDG_FYM_civil_war.7.d"
+  picture = REIREUTION_eventPicture
+  fire_only_once = yes
+  is_triggered_only = yes
+  major = yes
+  trigger = {
+    NOT = { has_global_flag = EDG_FYM_disaster_EGY_claim_flag }
+	development_in_provinces = {
+		value = 1
+		region = egypt_region
+	}
+  }
+  
+  immediate = {
+	set_global_flag = EDG_FYM_disaster_EGY_claim_flag
+  }
+  option = {
+    name = "EDG_FYM_civil_war.7.a"
+    ai_chance = {
+      factor = 100
+    }
+    add_stability = -1
+	hidden_effect = {
+		egypt_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+		maghreb_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+		mashriq_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+		horn_of_africa_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+	}
+	release = RSD
+    effect_EDG_FYM_RSD_raise = yes
+	if = {
+		limit = { overlord_of = LEB }
+		RSD = { vassalize = LEB }
+	}
+	if = {
+		limit = { overlord_of = DMA }
+		RSD = { vassalize = DMA }
+	}
+	if = {
+		limit = { overlord_of = FAD }
+		RSD = { vassalize = FAD }
+	}
+	add_truce_with = RSD
+	effect_EDG_FYM_lose_core = yes
+  }
+  option = {
+    name = "EDG_FYM_civil_war.7.c"
+    ai_chance = {
+      factor = 100
+    }
+    add_stability = -1
+	hidden_effect = {
+		egypt_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+		maghreb_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+		mashriq_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+		horn_of_africa_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+	}
+	release = RSD
+    effect_EDG_FYM_RSD_raise = yes
+	if = {
+		limit = { overlord_of = LEB }
+		RSD = { vassalize = LEB }
+	}
+	if = {
+		limit = { overlord_of = DMA }
+		RSD = { vassalize = DMA }
+	}
+	if = {
+		limit = { overlord_of = FAD }
+		RSD = { vassalize = FAD }
+	}
+	declare_war_with_cb = {
+	  who = RSD
+	  casus_belli = cb_annex
+	}
+  }
+  option = {
+    name = "EDG_FYM_civil_war.7.c"
+    ai_chance = {
+      factor = 100
+    }
+    add_stability = -1
+	hidden_effect = {
+		egypt_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+		maghreb_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+		mashriq_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+		horn_of_africa_region = {
+			limit = { owned_by = Root }
+			add_core = RSD
+		}
+	}
+	release = RSD
+    effect_EDG_FYM_RSD_raise = yes
+	if = {
+		limit = { overlord_of = LEB }
+		RSD = { vassalize = LEB }
+	}
+	if = {
+		limit = { overlord_of = DMA }
+		RSD = { vassalize = DMA }
+	}
+	if = {
+		limit = { overlord_of = FAD }
+		RSD = { vassalize = FAD }
+	}
+	add_truce_with = RSD
+	egypt_region = {
+		remove_core = Root
+	}
+	maghreb_region = {
+		remove_core = Root
+	}
+	mashriq_region = {
+		remove_core = Root
+	}
+	horn_of_africa_region = {
+		remove_core = Root
+	}
+	switch_tag = RSD
+	effect_EDG_FYM_lose_core = yes
+  }
+}
+
+
+
+
+
+
+
+
+

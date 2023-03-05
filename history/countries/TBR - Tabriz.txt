@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+primary_culture = azerbaijani
+religion = shiite
+technology_group = muslim
+religious_school = jafari_school
+capital = 416
+1411.1.1 = {
+  monarch = {
+    name = "?ñ…bFzyr löSÊTÌs ‘k0t˛Vyr" 
+    dynasty = "^jgØeXo"  
+    birth_date = 1380.2.22
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1435.1.1 = {
+  heir = {
+    name = "?ñ…bFzyr löSÊTÌs õsSæè^S"  
+    dynasty = "¶N:RÌè	TØe" 
+    birth_date = 1400.2.22
+    death_date = 1505.10.27
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}

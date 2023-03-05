@@ -1,0 +1,106 @@
+EDG_WG_superiority_PER_unification = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 0.25
+		prestige_factor = 1.5
+		peace_cost_factor = 0.5
+		
+		allowed_provinces = {
+			OR = {
+				region = khorasan_region
+				region = persia_region
+				culture_group = iranian
+				is_core = ROOT
+                is_claim = ROOT
+			}
+			
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		country_desc = EDG_WG_PER_unification_country_desc
+		prov_desc = EDG_WG_PER_unification_prov_desc
+	}
+	
+	defender = {
+		badboy_factor = 0.25
+		prestige_factor = 1.5
+		peace_cost_factor = 0.5
+		
+		allowed_provinces = {
+			OR = {
+				region = khorasan_region
+				region = persia_region
+				culture_group = iranian
+				is_core = ROOT
+                is_claim = ROOT
+			}
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		country_desc = EDG_WG_PER_unification_country_desc
+		prov_desc = EDG_WG_PER_unification_prov_desc
+	}
+	
+	war_name = PRIMITIVE_WAR_NAME
+}
+
+
+EDG_WG_superiority_IBR_unification = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1.5
+		peace_cost_factor = 0.5
+		
+		allowed_provinces = {
+			OR = {
+				region = khorasan_region
+				region = persia_region
+				culture_group = iranian
+				is_core = ROOT
+                is_claim = ROOT
+			}
+			
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		country_desc = EDG_WG_superiority_IBR_unification_desc
+		prov_desc = EDG_WG_superiority_IBR_unification_prov_desc
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1.5
+		peace_cost_factor = 0.5
+		
+		allowed_provinces = {
+			OR = {
+				region = khorasan_region
+				region = persia_region
+				culture_group = iranian
+				is_core = ROOT
+                is_claim = ROOT
+			}
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		country_desc = EDG_WG_superiority_IBR_unification_desc
+		prov_desc = EDG_WG_superiority_IBR_unification_prov_desc
+	}
+	
+	war_name = PRIMITIVE_WAR_NAME
+}

@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 1
+mercantilism = 25
+technology_group = western
+primary_culture = english
+religion = catholic
+capital = 236
+
+1441.11.6 = {
+  monarch = {
+    name = "^R‰v"
+    dynasty = "±ƒ¯eyr"  # Lancaster
+    birth_date = 1421.12.6
+    adm = 6
+    dip = 5
+    mil = 2
+  }
+}

@@ -1,0 +1,48 @@
+########################################
+# Pirate Republic Factions
+########################################
+#部落联盟
+
+EDG_Turkmen_valve = {
+	monarch_power = MIL
+	always = yes
+
+	modifier = {
+		army_tradition = 0.5
+		cavalry_power = 0.1
+		cavalry_flanking = 0.25
+	}
+}
+
+EDG_safavid_valve = {
+	monarch_power = MIL
+	always = yes
+
+	modifier = {
+		manpower_in_true_faith_provinces = 0.10
+		discipline = 0.025
+		tolerance_own = 1.5
+	}
+}
+
+EDG_Persian_bureaucrat = {
+	monarch_power = ADM
+	always = yes
+
+	modifier = {
+		stability_cost_modifier = -0.1
+		global_autonomy = -0.025
+		global_tax_modifier = 0.05
+	}
+}
+
+EDG_Turkic_Brotherhood = {
+	monarch_power = DIP
+	always = yes
+
+	modifier = {
+		global_trade_power = 0.1
+		trade_efficiency = 0.1
+		prestige = -0.5
+	}
+}

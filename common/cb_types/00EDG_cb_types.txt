@@ -1,0 +1,43 @@
+cb_EDG_WG_superiority_PER_unification = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_country_flag = allow_country_cb_EDG_WG_superiority_PER_unification_flag
+		FROM = {
+			any_owned_province = {
+				OR = {
+					region = khorasan_region
+					region = persia_region
+					culture_group = iranian
+				}
+			}
+		}
+		is_revolutionary = no
+	}
+
+	war_goal = EDG_WG_superiority_PER_unification
+}
+
+cb_EDG_WG_superiority_IBR_unification = {
+	valid_for_subject = no
+
+	prerequisites = {
+		EDG_IBR_conflict_trigger = yes
+		OR = {
+			has_global_flag = EDG_flavor_IBR_religion_conflict_situation_4
+			has_global_flag = EDG_flavor_IBR_religion_conflict_situation_5
+		}
+		
+		FROM = {
+			any_owned_province = {
+				OR = {
+					region = iberia_region
+					culture_group = iberian
+				}
+			}
+		}
+		is_revolutionary = no
+	}
+
+	war_goal = EDG_WG_superiority_IBR_unification
+}

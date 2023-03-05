@@ -1,0 +1,74 @@
+
+AEL_ideas = {
+  start = {
+    tolerance_own = 2
+	improve_relation_modifier = 0.33
+  }
+  bonus = {
+    global_trade_goods_size_modifier = 0.1
+  }
+  trigger = {
+    tag = AEL
+  }
+  free = yes
+  EDG_AEL_1 = {
+    land_forcelimit_modifier = 0.25
+  }
+  EDG_AEL_2 = {
+    ae_impact = -0.1
+  }
+  EDG_AEL_3 = {
+	infantry_fire = 0.15
+  }
+  EDG_AEL_4 = {
+	core_creation = -0.15
+	governing_capacity_modifier = 0.05
+  }
+  EDG_AEL_5 = {
+    monthly_church_power = 0.02
+	church_power_modifier = 0.5
+  }
+  EDG_AEL_6 = {
+    monthly_reform_progress = 0.15
+  }
+  EDG_AEL_7 = {
+    diplomatic_reputation = 1
+  }
+}
+FRK_ideas = {
+  start = {
+    global_manpower_modifier = 0.25
+	discipline = 0.05
+  }
+  bonus = {
+    free_policy = 1
+  }
+  trigger = {
+    tag = FRK
+  }
+  free = yes
+  EDG_FRK_1 = {
+	core_creation = -0.25
+  }
+  EDG_FRK_2 = {
+	land_morale = 0.2
+  }
+  EDG_FRK_3 = {
+	improve_relation_modifier = 0.33
+	diplomatic_reputation = 1
+  }
+  EDG_FRK_4 = {
+	global_unrest = -2
+  }
+  EDG_FRK_5 = {
+    colonists = 1
+	global_colonial_growth = 25
+  }
+  EDG_FRK_6 = {
+    ae_impact = -0.1
+	diplomatic_annexation_cost = -0.15
+  }
+  EDG_FRK_7 = {
+    administrative_efficiency = 0.05
+  }
+}

@@ -1,0 +1,106 @@
+country_decisions = {
+
+  EDG_BUL_make_constantinople_capital = {
+		major = yes
+    potential = {
+      OR = {
+        tag = BUL
+      }
+      owns = 151
+      NOT = {
+        capital = 151
+      }
+      NOT = {
+        has_country_flag = EDG_BUL_relocated_capital_constantinople
+      }
+      normal_or_historical_nations = yes
+      OR = {
+        ai = no
+        is_playing_custom_nation = no
+      }
+    }
+    allow = {
+      is_at_war = no
+      tag = BUL
+      151 = {
+        is_state = yes
+      }
+    }
+    effect = {
+	  add_core = 151
+      set_country_flag = EDG_BUL_relocated_capital_constantinople
+	  country_event = { id = EDG_flavorBUL.1 }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+  }
+  EDG_BUL_mil_tech_15_decision = {
+		major = yes
+		potential = {
+		  OR = {
+			primary_culture = bulgarian
+			accepted_culture = bulgarian
+		  }
+		  NOT = {
+			has_country_flag = had_EDG_BUL_mil_tech_15_decision_flag
+		  }
+		  normal_or_historical_nations = yes
+		}
+		allow = {
+		  OR = {
+			primary_culture = bulgarian
+			accepted_culture = bulgarian
+		  }
+		  mil_tech = 15
+		  mil_power = 100
+		}
+		effect = {
+		  add_mil_power = -100
+				add_country_modifier = {
+					name = "EDG_BUL_mil_tech_15_decision_modifier"
+					duration = -1
+				}
+		  set_country_flag = had_EDG_BUL_mil_tech_15_decision_flag
+		}
+		ai_will_do = {
+		  factor = 1
+		}
+	}
+  EDG_BUL_adm_tech_6_decision = {
+		major = yes
+		potential = {
+		  religion = orthodox
+		  has_country_flag = GET_EDG_NSF_empire_Mission
+		  NOT = {
+			has_country_flag = had_EDG_BUL_adm_tech_6_decision_flag
+		  }
+		}
+		allow = {
+		  has_country_flag = GET_EDG_NSF_empire_Mission
+		  adm_tech = 6
+		  adm_power = 100
+			thrace_area = {
+				type = all
+				owned_by = ROOT
+			}
+			macedonia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			morea_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+		  add_adm_power = -100
+		  set_country_flag = had_EDG_BUL_adm_tech_6_decision_flag
+			country_event = { id = EDG_flavorBUL.7 }
+		}
+		ai_will_do = {
+		  factor = 1
+		}
+	}
+	
+}

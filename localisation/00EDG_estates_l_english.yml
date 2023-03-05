@@ -1,0 +1,41 @@
+﻿l_english:
+    #卡勒多巴拉骑士团
+    estate_EDG_Caledonia:0 "aSÒRYôTÉb‘šëXâV"
+    estate_EDG_Caledonia_andalucian:0 "ÈTÉbyr‘šëXâV"
+    estate_EDG_Caledonia_desc:0 "aSÒRYôTÉb‘šëXâV•g×S0RaS¯e‚„)RšN‹sýV„vµc6RÿÖNìNôv¥cùRaS¯e‚„)RšNýV‹s#0ôT&O‰šN‹sýVNaS¯e‚„)RšN‹sýVñm:NN²NÿôT&O‰šN„v‘šëXNaSÒRYôTÉb‘šëXâVmN	gñmIR„v†Nã‰ÿôT&O‰šNºN†Nã‰ÖNìN„v­‹Ãu/jVÿHeÕlÖNìN„vjOb¹eV0widS¯eÑyºNmNÕ‹þVú^ËzN*N¾|•‘šëXâVÿÈTÉbyr·PŸÌ‘/f:N?–jSÉbjgðlÕlKNPR?–Ì‘Dd?e„vNTÃWs|SÿdkºNNôvUS°súQ…MR„v—RYeËR¹R`¦^ÿN¦^«ˆ²‹:N/fN*N–Øy„vúWcw’VÿdkºNg:N„UbÿNôvß–?–jSÉbjgðlÕlWSVSbÿ›QŸR/t/tÿidS¯eÑyºN¿OåNÖN„vTWRSb.úQN/e°e„v‘šëXâV0"
+    
+
+    
+    EDG_privilege_CAS_Caledonia_privilege:0 "ib'Y‘šëXâV"
+    EDG_privilege_CAS_Caledonia_privilege_desc:0 "‘šëXâVbXTåb	gôfØš„vb—e.t‰Qÿ‚Yœgýwib'Y‘šëXâV„vÄ‰/jÿ/fïSåNžX:VbìNýV¶R„v›Q‹N.t(„v0"
+    EDG_estate_Caledonia_land_rights:0 "ˆcˆN‘šëXâV†˜0WCg"
+    EDG_estate_Caledonia_land_rights_desc:0 "‘šëXâV/fbìNýV…Q„vÍ‘‰?e»l›RÏ‘ÿÖNìN”^SV·ƒ—V†˜0W„vê»lCg›R0"
+    EDG_STRONG_Caledonia_privilege:0 " R:V‘šëXâVyrCg"
+    EDG_STRONG_Caledonia_privilege_desc:0 "‘šëXâV/fbìN›Q‹N›RÏ‘„v8hÃVÿ R:VÖNìN„vCg›RŒT›Q‹N›RÏ‘SýwY.^©RbìNú^¾‹g:V'Y„v›Q–0"
+    EDG_Caledonia_indebted_to_Caledonia:0 "T‘šëXâVP:P"
+    EDG_Caledonia_indebted_to_Caledonia_desc:0 "‘šëXâV	gpe˜èT'Y„vDµNÿbìNïSåNÎNÖNìN„vKb-N·ƒÖS)Ro`ôfNO„v7>k0"
+    EDG_Caledonia_coin_privilege:0 "‘šëXâVÑ‘‡yrCg"
+    EDG_Caledonia_coin_privilege_desc:0 "‘šëXâV/fbìN„vÍ‘‰fkÅˆ›RÏ‘ÿˆcˆNÖNìNÑ‘‡¹eb—„vyrCgSýwY©‹ÖNìN(W:NbìNg¡R¹eb—ôfwQ	gIN¨R'`0"
+    estate_EDG_Caledonia_indebted_to_Caledonia_effect_tooltip:0 "åN§Y1.0%§!„v)Ro`,·ƒ—V§Y5§!r”Nt^g„v7>k0SVØn7>köeÿå‹‘šëXâVyrCgS«ˆê¨Rûyd–0"
+    estate_EDG_Caledonia_nobility_primacy:0 "‘šëXâV–™‰0WMO"
+    estate_EDG_Caledonia_nobility_primacy_desc:0 "S›Q‹NN„v¿OœRLˆ‹NCg›RˆcˆN‘šëXâVOObýVýV›R>fW„žX:VÿsSO(W¥bTrÖNìN„v/.söe±‚9Nòƒ0"
+    estate_EDG_Caledonia_fort:0 "ˆcˆN‘šëXâV‰^X"
+    estate_EDG_Caledonia_fort_desc:0 "bìNïSåNSýV…Q„vN›N‰^X²NˆN‘šëXâVÛLˆ¡rtÿåNdkM–NObìN„v‰^Xôu²bb,g0"
+    estate_EDG_Caledonia_advisors:0 "‘šëXâV…Q–'Yã"
+    estate_EDG_Caledonia_advisors_desc:0 "bìNAQ¸‹‘šëXâV(W…Q–-Nåb	gN*N8^‰š-^MOÿ1udk¿OœR‘šëXâV„v›Q‹NN¶RÑShˆêñT„vaÁ‰0"
+    estate_EDG_Caledonia_autonomy:0 "ÝOœ–‘šëXâVê»lCg"
+    estate_EDG_Caledonia_autonomy_desc:0 "‘šëXâVÄuÇu„vê»lCgt”^—V0RÝOœ–ÿÙ7hMbýwÝOÁ‹‘šëXâV„vqVÍT›RŒTàVÚ‹0"
+    estate_EDG_Caledonia_officer_corp:0 "ÐcÔb‘šëXâV›Q˜R"
+    estate_EDG_Caledonia_officer_corp_desc:0 "‘šëXâV„vc%c˜RwQ	gôfOÀy„v‘šuQc%cýw›Rÿ‘šëXâVbXTmNåb	gôf:NSSŠ„v‘šuQjObýw›RÿSôfY„v‘šëXâVbXTÐcÔb:NbìN„vc%c˜RÿïSåNEQR)R(u‘šëXâV„vÏuŒšŒTDn0"
+    
+    EDG_Caledonia_loyalty_modifier:0 "aSÒRYôTÉb‘šëXâVàVÚ‹GWaˆ¹p"
+    EDG_Caledonia_influence_modifier:0 "aSÒRYôTÉb‘šëXâVqVÍT›R"
+    
+    #哥萨克
+    EDG_privilege_cossacks_Shakirada_privilege:0 "Äuú^0ŒQYÉb¾"
+    EDG_privilege_cossacks_Shakirada_privilege_desc:0 "0ŒQYÉb¾/f1uåT(„KQºNÄuú^„v›Q‹N®‹Oÿ(WNbâlWípÿ0ŒQYÉb¾/fýV¶RCg›R„v-NÃV0bìNê6qNýw©‹åT(„KQºNb:NýV¶R„vßu»lwÿFObìNïSåNÄuú^N*NCg›R	gP–tS³åN.^©RbìNÄuÇuŒT­‹ÃuåT(„KQºN„v0ŒQYÉb¾ÿ©‹Ù*N0ŒQYÉb¾ÐcGSåT(„KQºN„vb—e›R0"
+    EDG_privilege_cossacks_hetman_privilege:0 "ûN‹TÖvyrüf"
+    EDG_privilege_cossacks_hetman_privilege_desc:0 "Övyrüf/fåT(„KQºN›Q‹N†˜–ˆ„v4YTˆÿbìNïSåNÄuú^0ŒQYÉb¾ÿv^˜R¹eûN‹TÖvyrüf†˜üRÙ*N0ŒQYÉb¾ÿ1udkÉbâbåT(„KQNBS›Q˜R0"
+    
+    
+    

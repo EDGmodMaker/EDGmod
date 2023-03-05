@@ -1,0 +1,40 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 184
+fixed_capital = 184
+1392.1.1 = {
+  monarch = {
+    name = "ågt I"  # Louis I
+    dynasty = "·V ÃRn‚,r"  # de Valois
+    adm = 1
+    dip = 3
+    mil = 0
+  }
+}
+1394.11.24 = {
+  heir = {
+    name = "ågt"  # Charles
+    monarch_name = "ågt I"  # Charles I
+    dynasty = "·V ÃRn‚,r"  # de Valois
+    birth_date = 1394.11.24
+    death_date = 1465.1.5
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 0
+  }
+}
+1407.1.1 = {
+  monarch = {
+    name = "ågt II"  # Charles I
+    dynasty = "·V ÃRn‚,r"  # de Valois
+    birth_date = 1394.11.24
+    adm = 1
+    dip = 3
+    mil = 0
+  }
+}

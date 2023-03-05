@@ -1,0 +1,17 @@
+owner = SAX
+controller = SAX
+add_core = SAX
+culture = saxon
+religion = catholic
+hre = yes
+base_tax = 3
+base_production = 3
+trade_goods = chinaware
+base_manpower = 3
+capital = "»èÓh"
+is_city = yes
+add_core = THU
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

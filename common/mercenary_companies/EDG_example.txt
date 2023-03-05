@@ -1,0 +1,129 @@
+#
+# Example mercenary companies
+#
+
+merc__EDG_safavid_valve_big = {
+	mercenary_desc_key = merc__EDG_safavid_valve_big_desc
+    regiments_per_development = 0.025
+    cavalry_weight = 0.2
+    artillery_weight = 0.1
+    cavalry_cap = 10
+    cost_modifier = 0.25
+    trigger = {
+		has_country_flag = EDG_merc_EDG_safavid_valve_UNLOCK_flag
+		total_development = 305
+    }
+    modifier = {
+        reinforce_speed = -0.25
+        recover_army_morale_speed = 0.20
+		land_morale = 0.20
+    }
+    # No home province means local mercenary company
+}
+
+merc__EDG_safavid_valve_small = {
+	mercenary_desc_key = merc__EDG_safavid_valve_small_desc
+    regiments_per_development = 0.1
+    cavalry_weight = 0.2
+    artillery_weight = 0.1
+    cavalry_cap = 10
+    cost_modifier = 0.25
+    trigger = {
+		has_country_flag = EDG_merc_EDG_safavid_valve_UNLOCK_flag
+		NOT = { total_development = 305 }
+    }
+    modifier = {
+        reinforce_speed = -0.25
+        recover_army_morale_speed = 0.20
+		land_morale = 0.20
+		shock_damage = 0.20
+    }
+    # No home province means local mercenary company
+}
+
+merc__EDG_Delhi_knight = {
+	mercenary_desc_key = merc__EDG_Delhi_knight_desc
+    regiments_per_development = 0.025
+    cavalry_weight = 0.5
+    artillery_weight = 0.2
+    cavalry_cap = 10
+    cost_modifier = 0.25
+    trigger = {
+		has_country_flag = EDG_Delhi_knight_Unlock_flag
+    }
+    modifier = {
+        cavalry_flanking = 0.15
+		shock_damage = 0.15
+    }
+    # No home province means local mercenary company
+}
+
+merc__EDG_janisary_the_first = {
+    regiments_per_development = 0.025
+    cavalry_weight = 0.2
+    artillery_weight = 0.3
+    cavalry_cap = 10
+    cost_modifier = 0.25
+    trigger = {
+		has_country_flag = EDG_army_reforms_of_mehemed_II_flag
+    }
+    modifier = {
+        fire_damage = 0.1
+		fire_damage_received = -0.1
+		shock_damage = 0.1
+		shock_damage_received = -0.1
+		discipline = 0.1
+		land_morale = 0.1
+    }
+    # No home province means local mercenary company
+}
+
+merc__EDG_Gold_Mamluk = {
+    regiments_per_development = 0.025
+    cavalry_weight = 0.5
+    artillery_weight = 0.0
+    cavalry_cap = 100
+    cost_modifier = 0.25
+    trigger = {
+		has_country_flag = EDG_Gold_Mamluk_Unlock_flag
+    }
+    modifier = {
+        cavalry_flanking = 0.25
+		shock_damage = 0.25
+		discipline = 0.1
+    }
+    # No home province means local mercenary company
+}
+
+
+merc__EDG_Second_Son_Brotherhood = {
+    regiments_per_development = 0.025
+    cavalry_weight = 0.2
+    artillery_weight = 0.2
+    cavalry_cap = 10
+    cost_modifier = 0.25
+    trigger = {
+		has_country_flag = EDG_Second_Son_Brotherhood_flag
+    }
+    modifier = {
+        infantry_power = 0.2
+		discipline = 0.05
+    }
+    # No home province means local mercenary company
+}
+
+merc__EDG_kafir_legion = {
+    regiments_per_development = 0.025
+    cavalry_weight = 0.2
+    artillery_weight = 0.2
+    cavalry_cap = 10
+    cost_modifier = 0.25
+    trigger = {
+		has_country_flag = EDG_kafir_legion_flag
+    }
+    modifier = {
+        infantry_fire = 0.25
+		land_attrition = -0.1
+    }
+    # No home province means local mercenary company
+}

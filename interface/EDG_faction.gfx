@@ -1,0 +1,43 @@
+spriteTypes = {
+	spriteType = {
+        name = "GFX_faction_bg_EDG_Persian_bureaucrat"	
+        texturefile = "gfx//interface//faction_blue_frame.tga"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_faction_EDG_Persian_bureaucrat"	
+        texturefile = "gfx//interface//guilds_icon.dds"
+    }
+	
+	spriteType = {
+		name = "GFX_faction_bg_EDG_Turkic_Brotherhood"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_EDG_Turkic_Brotherhood"	
+		texturefile = "gfx//interface//traders_icon.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_faction_bg_EDG_Turkmen_valve"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_EDG_Turkmen_valve"	
+		texturefile = "gfx//interface//aristocrats_icon.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_faction_bg_EDG_safavid_valve"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_EDG_safavid_valve"	
+		texturefile = "gfx//interface//jacobins_icon.tga"
+	}
+	
+	
+}

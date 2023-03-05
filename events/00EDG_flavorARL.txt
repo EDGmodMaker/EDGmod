@@ -1,0 +1,541 @@
+namespace = EDG_flavorARL
+normal_or_historical_nations = yes
+country_event = {#“¡Àπ¬Í“«
+  id = EDG_flavorARL.1
+  title = "EDG_flavorARL.1.t"
+  desc = "EDG_flavorARL.1.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  major = yes
+  trigger = {
+	OR = {
+		tag = ARL
+		was_tag = ARL
+	}
+	OR = {
+		AND = {
+			is_year = 1502
+			NOT = { is_year = 1520 }
+			NOT = {
+			  has_global_flag = EDG_EDG_flavorARL_1_flag
+			}
+		}
+		has_global_flag = EDG_EDG_flavorARL_1__mission_flag
+	}
+  }
+  immediate = {
+    set_global_flag = EDG_EDG_flavorARL_1_flag
+  }
+  
+  mean_time_to_happen = {
+    days = 12
+  }
+  
+  option = {
+    name = "EDG_flavorARL.1.a"
+    ai_chance = {
+      factor = 100
+    }
+	define_ruler = {
+	  name = "OØeõsÍN"
+	  dynasty = "(Ñ’lÙu"
+		claim = 95
+		adm = 6
+		dip = 5
+		mil = 6
+		age = 20
+	}
+	set_ruler_flag = EDG_ARL_Isma_ruler_flag
+
+	define_ruler_to_general = {
+		type = general
+		fire = 3
+		shock = 6
+		manuever = 4
+		siege = 2
+		death_date = 1590.11.24
+	}
+	
+	add_adm_power = 50
+	add_dip_power = 50
+	add_mil_power = 50
+	add_ruler_modifier = {
+		name = EDG_flavorARL_1_modifier
+		duration = 7300
+	}
+	
+  }
+  
+  option = {
+    name = "EDG_flavorARL.1.b"
+    ai_chance = {
+      factor = 10
+    }
+	add_prestige = -5
+  }
+}
+
+
+country_event = {#ΩÃÕ≈¥¯¿¥ ◊∂ºµƒ∑¢’π
+  id = EDG_flavorARL.2
+  title = "EDG_flavorARL.2.t"
+  desc = "EDG_flavorARL.2.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  trigger = {
+	OR = {
+		tag = ARL
+		was_tag = ARL
+	}
+	is_year = 1457
+    NOT = {
+      has_global_flag = EDG_EDG_flavorARL_2_flag
+    }
+  }
+  immediate = {
+    set_global_flag = EDG_EDG_flavorARL_2_flag
+  }
+  
+  option = {
+    name = "EDG_flavorARL.2.a"
+    ai_chance = {
+      factor = 100
+    }
+	add_adm_power = 100
+	capital_scope = {
+		add_base_tax = 2
+		add_base_production = 1
+		add_base_manpower = 1
+	}
+	
+  }
+  
+  option = {
+    name = "EDG_flavorARL.2.b"
+    ai_chance = {
+      factor = 10
+    }
+	add_prestige = 5
+  }
+}
+
+
+country_event = {#»¯∑®Œ¨ΩÃÕ≈∏¥±Ÿ
+  id = EDG_flavorARL.3
+  title = "EDG_flavorARL.3.t"
+  desc = "EDG_flavorARL.3.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  major = yes
+  trigger = {
+	owns = 424
+	NOT = { exists = ARL }
+	NOT = { exists = PER }
+	NOT = { was_tag = ARL }
+	NOT = { was_tag = PER }
+	is_year = 1502
+	NOT = { is_year = 1520 }
+    NOT = {
+      has_global_flag = EDG_EDG_flavorARL_1_flag
+    }
+    NOT = {
+      has_global_flag = EDG_EDG_flavorARL_die_flag
+    }
+  }
+  immediate = {
+    set_global_flag = EDG_EDG_flavorARL_1_flag
+	hidden_effect = {
+		
+		every_province = {
+			limit = {
+				OR = {
+					culture = azerbaijani
+				}
+			}
+			add_core = ARL
+		}
+		release = ARL
+		
+		ARL = {
+			change_religion = shiite
+			add_government_reform = EDG_Safavid_professoriate_reform
+			every_province = {
+				limit = {
+					OR = {
+						culture = persian
+					}
+				}
+				add_core = ARL
+			}
+			define_ruler = {
+			  name = "OØeõsÍN"
+			  dynasty = "(Ñ’lÙu"
+				claim = 95
+				adm = 6
+				dip = 5
+				mil = 6
+				age = 20
+				claim = 95
+			}
+			set_ruler_flag = EDG_ARL_Isma_ruler_flag
+
+			define_ruler_to_general = {
+				type = general
+				fire = 3
+				shock = 6
+				manuever = 4
+				siege = 2
+				death_date = 1590.11.24
+			}
+			add_ruler_modifier = {
+				name = EDG_flavorARL_1_modifier
+				duration = 7300
+			}
+			
+			add_adm_power = 250
+			add_dip_power = 250
+			add_mil_power = 250
+			add_treasury = 1000
+			capital_scope = {
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  infantry = ARL
+			  cavalry = ARL
+			  cavalry = ARL
+			  cavalry = ARL
+			  cavalry = ARL
+			  cavalry = ARL
+			  cavalry = ARL
+			  cavalry = ARL
+			  cavalry = ARL
+			  cavalry = ARL
+			}
+		}
+	}
+  }
+  
+  mean_time_to_happen = {
+    days = 12
+  }
+  
+  option = {
+    name = "EDG_flavorARL.3.a"
+    ai_chance = {
+      factor = 100
+    }
+	declare_war_with_cb = {
+	  who = ARL
+	  casus_belli = cb_annex
+	}
+	
+  }
+  
+  option = {
+    name = "EDG_flavorARL.3.b"
+    ai_chance = {
+      factor = 10
+    }
+	add_prestige = -10
+  }
+}
+
+country_event = {#÷¥’∆¥Û≤ª¿Ô ø
+  id = EDG_flavorARL.4
+  title = "EDG_flavorARL.4.t"
+  desc = "EDG_flavorARL.4.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  is_triggered_only = yes
+  major = yes
+  trigger = {
+	OR = {
+		tag = ARL
+		was_tag = ARL
+	}
+    NOT = {
+      has_global_flag = EDG_EDG_flavorARL_4_flag
+    }
+  }
+  immediate = {
+    set_global_flag = EDG_EDG_flavorARL_4_flag
+  }
+  
+  option = {
+    name = "EDG_flavorARL.4.a"
+    ai_chance = {
+      factor = 100
+    }
+	add_adm_power = 100
+    416 = {
+        move_capital_effect = yes
+        change_culture = ROOT
+        change_religion = ROOT
+		create_or_add_center_of_trade_level = 1
+		add_devastation = -100
+		set_local_autonomy = 0
+    }
+	416 = {
+		limit = { owned_by = ROOT NOT = { has_global_flag = EDG_416_restore_flag }}
+		set_global_flag = EDG_416_restore_flag
+		add_base_tax = 2
+		add_base_production = 3
+		add_base_manpower = 2
+		add_province_modifier = {
+			name = EDG_City_develop_attractions
+			duration = 36500
+		}
+		add_province_modifier = {
+			name = EDG_AKK_province_modifier_416
+			duration = -1
+		}
+	}
+	
+  }
+  
+  option = {
+    name = "EDG_flavorARL.4.b"
+    ai_chance = {
+      factor = 10
+    }
+	416 = {
+		limit = { owned_by = ROOT NOT = { has_global_flag = EDG_416_restore_flag }}
+		set_global_flag = EDG_416_restore_flag
+		add_base_tax = 2
+		add_base_production = 3
+		add_base_manpower = 2
+		add_province_modifier = {
+			name = EDG_City_develop_attractions
+			duration = 36500
+		}
+		add_province_modifier = {
+			name = EDG_AKK_province_modifier_416
+			duration = -1
+		}
+	}
+  }
+}
+
+country_event = {#∞Õ∏Ò¥Ô…Ò •Õ≥÷Œ
+  id = EDG_flavorARL.5
+  title = "EDG_flavorARL.5.t"
+  desc = "EDG_flavorARL.5.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  is_triggered_only = yes
+  trigger = {
+	OR = {
+		tag = ARL
+		was_tag = ARL
+	}
+    NOT = {
+      has_global_flag = EDG_EDG_flavorARL_5_flag
+    }
+  }
+  immediate = {
+    set_global_flag = EDG_EDG_flavorARL_5_flag
+  }
+  
+  option = {
+    name = "EDG_flavorARL.5.a"
+    ai_chance = {
+      factor = 0
+    }
+	add_adm_power = 100
+    410 = {
+        move_capital_effect = yes
+        change_culture = ROOT
+        change_religion = ROOT
+		create_or_add_center_of_trade_level = 1
+		add_devastation = -100
+		set_local_autonomy = 0
+    }
+	410 = {
+		limit = {
+			owned_by = ROOT
+			NOT = { has_global_flag = EDG_410_restore_flag }
+		}
+		set_global_flag = EDG_410_restore_flag
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
+		add_province_modifier = {
+			name = EDG_City_goods_bloom
+			duration = 36500
+		}
+		add_province_modifier = {
+			name = EDG_City_professoriate_support
+			duration = -1
+		}
+	}
+	
+  }
+  
+  option = {
+    name = "EDG_flavorARL.5.b"
+    ai_chance = {
+      factor = 10
+    }
+	410 = {
+		limit = {
+			owned_by = ROOT
+			NOT = { has_global_flag = EDG_410_restore_flag }
+		}
+		set_global_flag = EDG_410_restore_flag
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
+		add_province_modifier = {
+			name = EDG_City_goods_bloom
+			duration = 36500
+		}
+		add_province_modifier = {
+			name = EDG_City_professoriate_support
+			duration = -1
+		}
+	}
+  }
+}
+
+country_event = {#»¯∑®Œ¨”∞œÏ¡¶¿©¥Û
+  id = EDG_flavorARL.6
+  title = "EDG_flavorARL.6.t"
+  desc = "EDG_flavorARL.6.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  is_triggered_only = yes
+  major = yes
+  trigger = {
+	OR = {
+		tag = ARL
+		was_tag = ARL
+	}
+    NOT = {
+      has_global_flag = EDG_EDG_flavorARL_6_flag
+    }
+  }
+  immediate = {
+    set_global_flag = EDG_EDG_flavorARL_6_flag
+  }
+  
+  option = {
+    name = "EDG_flavorARL.6.a"
+    ai_chance = {
+      factor = 0
+    }
+	capital_scope = {
+		custom_tooltip = EDG_add_reform_center_shiite_tooltip
+		add_reform_center = shiite
+		add_base_tax = 1
+		add_base_production = 1
+		add_base_manpower = 2
+		add_province_modifier = {
+			name = EDG_City_professoriate_support
+			duration = 9125
+		}
+	}
+	
+  }
+}
+
+
+country_event = {#“¡¬Íƒøµƒ∫≈’Ÿ
+  id = EDG_flavorARL.7
+  title = "EDG_flavorARL.7.t"
+  desc = "EDG_flavorARL.7.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  is_triggered_only = yes
+  trigger = {
+    NOT = {
+      has_global_flag = EDG_EDG_flavorARL_7_flag
+    }
+  }
+  immediate = {
+    set_global_flag = EDG_EDG_flavorARL_7_flag
+  }
+  
+  option = {
+    name = "EDG_flavorARL.7.a"
+    ai_chance = {
+      factor = 0
+    }
+	add_mil_power = 100
+	custom_tooltip = allow_country_cb_EDG_WG_superiority_PER_unification_flag_tt
+	set_country_flag = allow_country_cb_EDG_WG_superiority_PER_unification_flag
+	custom_tooltip = EDG_ARL_special_Mission_4_7_tt
+	hidden_effect = {
+	  every_province = {
+		limit = {
+			OR = {
+				culture = persian
+				culture = azerbaijani
+			}
+			religion = shiite
+		}
+		ROOT = {
+			add_treasury = 25
+			add_manpower = 1
+		}
+	  }
+	}
+  }
+}
+
+
+country_event = {#“¡Àπ¬Í“«’Ω∞‹
+  id = EDG_flavorARL.8
+  title = "EDG_flavorARL.8.t"
+  desc = "EDG_flavorARL.8.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  is_triggered_only = yes
+  major = yes
+  trigger = {
+    NOT = {
+      has_global_flag = EDG_EDG_flavorARL_8_flag
+    }
+  }
+  immediate = {
+    set_global_flag = EDG_EDG_flavorARL_8_flag
+  }
+  
+  option = {
+    name = "EDG_flavorARL.8.a"
+    ai_chance = {
+      factor = 0
+    }
+	add_prestige = -25
+	add_stability = -2
+	if = {
+		limit = {
+		  has_dlc = "Rights of Man"
+		  NOT = {
+			num_of_ruler_traits = {
+			  amount = 3
+			}
+		  }
+		}
+		add_ruler_personality = drunkard_personality
+	}
+	if = {
+		limit = {
+		  has_ruler_modifier = EDG_flavorARL_1_modifier
+		}
+		remove_country_modifier = EDG_flavorARL_1_modifier
+		remove_ruler_modifier = EDG_flavorARL_1_modifier
+	}
+	
+  }
+}
+

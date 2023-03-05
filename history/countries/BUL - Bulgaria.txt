@@ -1,0 +1,49 @@
+government = monarchy
+add_government_reform = EDG_Bulgaria_tsardom_government
+technology_group = eastern
+primary_culture = bulgarian
+religion = orthodox
+capital = 150	# Sofia
+
+
+1402.1.1 = {
+  monarch = {
+    name = "XbYS III"
+    dynasty = "^ÀNüf"
+	birth_date = 1380.8.10
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+ }
+1409.1.1 = {
+  monarch = {
+    name = "·^¯efWN IV"
+    dynasty = "^ÀNüf"
+	birth_date = 1381.8.10
+    adm = 6
+    dip = 6
+    mil = 6
+  }
+}
+1427.1.1 = {
+  monarch = {
+    name = "·^¯efWN V"
+    dynasty = "^ÀNüf"
+	birth_date = 1410.8.10
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+1442.12.18 = {
+  heir = {
+    name = "·^¯efWN"  
+    dynasty = "^ÀNüf"
+    birth_date = 1442.12.18
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}

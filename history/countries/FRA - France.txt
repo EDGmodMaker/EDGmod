@@ -1,0 +1,102 @@
+government = monarchy
+add_government_reform = EDG_French_feudal_system
+primary_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 183
+national_focus = DIP
+historical_rival = HAB
+change_estate_land_share = {
+  estate = estate_nobles
+  share = 10
+}
+change_estate_land_share = {
+  estate = estate_church
+  share = -5
+}
+change_estate_land_share = {
+  estate = estate_burghers
+  share = -5
+}
+
+1422.10.22 = {
+  monarch = {
+    name = "ŽN<h VI"  # 
+    dynasty = "aSiO"  # de Valois
+    birth_date = 1393.2.22
+    adm = 4
+    dip = 4
+    mil = 5
+	add_ruler_personality = infertile_personality
+  }
+  queen = {
+    country_of_origin = PRO
+    name = "›sKN"  # Marie
+    dynasty = "·V eYSo‚"  # d'Anjou
+    birth_date = 1404.10.14
+    death_date = 1453.11.29
+    female = yes
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1427.1.1 = {
+  leader = {
+    name = "©‹ ·V êªRæt"  # Jean de Dunois
+    type = general
+    fire = 4
+    shock = 3
+    manuever = 3
+    siege = 1
+    death_date = 1468.11.24
+  }
+}
+1429.1.1 = {
+  leader = {
+    name = "	TÒR ·V ÷–"  # Gilles de Rais
+    type = general
+    fire = 5
+    shock = 2
+    manuever = 3
+    siege = 4
+  }
+}
+1429.4.29 = {
+  leader = {
+    name = "·V"  # Jeanne d'Arc
+    type = general
+    fire = 3
+    shock = 6
+    manuever = 4
+    siege = 0
+    female = yes
+  }
+}
+1439.1.1 = {
+  leader = {
+    name = "©‹ ^W"  # Jean Bureau
+    type = general
+    fire = 4
+    shock = 4
+    manuever = 1
+    siege = 3
+    death_date = 1463.7.5
+    personality = siege_specialist_personality
+  }
+}
+1443.7.3 = {
+  heir = {
+    name = "ïf"  # Louis
+    dynasty = "aSiO"  # de Valois
+    birth_date = 1443.7.3
+    death_date = 1505.10.27
+    claim = 25
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1444.10.1 = {
+  #set_estate_privilege = estate_nobles_french_strong_duchies
+}

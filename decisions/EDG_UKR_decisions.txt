@@ -1,0 +1,361 @@
+country_decisions = {
+
+	EDG_make_kie_capital = {
+		major = yes
+		potential = {
+			OR = {
+				tag = UKR
+				tag = VOL
+				tag = KIE
+				tag = CHR
+				tag = ZAZ
+				tag = MSK
+				tag = TOV
+				tag = PLT
+				AND = {
+					is_playing_custom_nation = yes 
+					capital_scope = {
+						region = ruthenian_region
+					}
+					NOT = { technology_group = nomad_group }
+				}
+			}
+			owns = 280
+			NOT = { capital = 280 }
+			NOT = { has_country_flag = EDG_relocated_capital_kie }
+		}
+		allow = {
+			is_at_war = no
+			primary_culture = ruthenian
+			controls = 280
+			owns = 280
+			280 = {
+				is_state = yes
+			}
+		}
+		effect = {
+			set_country_flag = EDG_relocated_capital_kie
+			add_stability = 1
+			add_core = 280
+			280 = {
+				move_capital_effect = yes
+				change_culture = ruthenian
+				change_religion = ROOT
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = EDG_kie_restored }
+				}
+				280 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+				set_global_flag = EDG_kie_restored
+			}
+			set_government_rank = 2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	EDG_ruthenian_provincial_system = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = east_slavic
+				tag = UKR
+				tag = VOL
+				tag = KIE
+				tag = CHR
+				tag = ZAZ
+				tag = MSK
+				tag = TOV
+				tag = PLT
+				AND = {
+					is_playing_custom_nation = yes 
+					capital_scope = {
+						region = ruthenian_region
+					}
+					NOT = { technology_group = nomad_group }
+				}
+			}
+			NOT = { has_country_flag = has_EDG_ruthenian_provincial_system }
+		}
+		allow = {
+			adm_tech = 5
+			ADM = 3
+			adm_power = 50
+		}
+		effect = {
+			add_country_modifier = {
+				name = "EDG_ruthenian_provincial_system_modifier"
+				duration = -1
+			}
+			add_adm_power = -50
+			set_country_flag = has_EDG_ruthenian_provincial_system
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { mil_power = 100 }
+			}
+		}
+	}
+
+	EDG_yard_landlord_system = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = east_slavic
+				tag = UKR
+				tag = VOL
+				tag = KIE
+				tag = CHR
+				tag = ZAZ
+				tag = MSK
+				tag = TOV
+				tag = PLT
+				AND = {
+					is_playing_custom_nation = yes 
+					capital_scope = {
+						region = ruthenian_region
+					}
+					NOT = { technology_group = nomad_group }
+				}
+			}
+			NOT = { has_country_modifier = EDG_yard_landlord_system_modifier }
+			NOT = { has_country_flag = has_EDG_yard_landlord_system }
+		}
+		allow = {
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			add_country_modifier = {
+				name = "EDG_yard_landlord_system_modifier"
+				duration = -1
+			}
+			set_country_flag = has_EDG_yard_landlord_system
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { mil_power = 200 }
+			}
+		}
+	}
+
+	EDG_ruthenian_mil_tech_9_reform = {
+		major = yes
+		potential = {
+			has_country_flag = has_EDG_yard_landlord_system
+			mil_tech = 9
+			OR = {
+				culture_group = east_slavic
+				tag = UKR
+				tag = VOL
+				tag = KIE
+				tag = CHR
+				tag = ZAZ
+				tag = MSK
+				tag = TOV
+				tag = PLT
+				AND = {
+					is_playing_custom_nation = yes 
+					capital_scope = {
+						region = ruthenian_region
+					}
+					NOT = { technology_group = nomad_group }
+				}
+			}
+			NOT = { has_country_modifier = EDG_ruthenian_mil_tech_9_reform_modifier }
+			NOT = { has_country_flag = has_EDG_ruthenian_mil_tech_9_reform }
+		}
+		allow = {
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			add_army_tradition = 15
+			add_country_modifier = {
+				name = "EDG_ruthenian_mil_tech_9_reform_modifier"
+				duration = -1
+			}
+			set_country_flag = EDG_ruthenian_mil_tech_9_reform
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { mil_power = 200 }
+			}
+		}
+	}
+
+	EDG_ruthenian_expand_states_government_system = {
+		major = yes
+		potential = {
+			development = 200
+			adm_tech = 5
+			OR = {
+				culture_group = east_slavic
+				tag = UKR
+				tag = VOL
+				tag = KIE
+				tag = CHR
+				tag = ZAZ
+				tag = MSK
+				tag = TOV
+				tag = PLT
+				AND = {
+					is_playing_custom_nation = yes 
+					capital_scope = {
+						region = ruthenian_region
+					}
+					NOT = { technology_group = nomad_group }
+				}
+			}
+			NOT = { has_country_modifier = EDG_ruthenian_expand_states_government_system_modifier }
+			NOT = { has_country_flag = has_EDG_ruthenian_expand_states_government_system }
+		}
+		allow = {
+			adm_power = 100
+		}
+		effect = {
+			add_adm_power = -100
+			add_country_modifier = {
+				name = "EDG_ruthenian_expand_states_government_system_modifier"
+				duration = -1
+			}
+			set_country_flag = has_EDG_ruthenian_expand_states_government_system
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 200 }
+			}
+		}
+	}
+
+	
+
+	EDG_ruthenian_adm_tech_6_Economic_reform = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = east_slavic
+				tag = UKR
+				tag = VOL
+				tag = KIE
+				tag = CHR
+				tag = ZAZ
+				tag = MSK
+				tag = TOV
+				tag = PLT
+				AND = {
+					is_playing_custom_nation = yes 
+					capital_scope = {
+						region = ruthenian_region
+					}
+					NOT = { technology_group = nomad_group }
+				}
+			}
+			NOT = { has_country_modifier = EDG_ruthenian_adm_tech_6_Economic_reform_modifier }
+			NOT = { has_country_flag = has_EDG_ruthenian_adm_tech_6_Economic_reform }
+		}
+		allow = {
+			adm_power = 100
+			adm_tech = 6
+		}
+		effect = {
+			add_adm_power = -100
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 3
+				add_base_manpower = 2
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "EDG_City_goods_bloom"
+						duration = 7300
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "EDG_ruthenian_adm_tech_6_Economic_reform_modifier"
+				duration = -1
+			}
+			set_country_flag = has_EDG_ruthenian_adm_tech_6_Economic_reform
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 200 }
+			}
+		}
+	}
+	
+	
+	EDG_ruthenian_adm_tech_13_Economic_reform = {
+		major = yes
+		potential = {
+			has_country_flag = has_EDG_ruthenian_adm_tech_6_Economic_reform
+			OR = {
+				culture_group = east_slavic
+				tag = UKR
+				tag = VOL
+				tag = KIE
+				tag = CHR
+				tag = ZAZ
+				tag = MSK
+				tag = TOV
+				tag = PLT
+				AND = {
+					is_playing_custom_nation = yes 
+					capital_scope = {
+						region = ruthenian_region
+					}
+					NOT = { technology_group = nomad_group }
+				}
+			}
+			NOT = { has_country_modifier = EDG_ruthenian_adm_tech_13_Economic_reform_modifier }
+			NOT = { has_country_flag = has_EDG_ruthenian_adm_tech_13_Economic_reform }
+		}
+		allow = {
+			adm_power = 100
+			adm_tech = 13
+		}
+		effect = {
+			add_adm_power = -100
+			capital_scope = {
+				add_base_production = 4
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "EDG_City_trade_goods_size_bloom"
+						duration = 7300
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "EDG_ruthenian_adm_tech_13_Economic_reform_modifier"
+				duration = -1
+			}
+			set_country_flag = has_EDG_ruthenian_adm_tech_13_Economic_reform
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 200 }
+			}
+		}
+	}
+
+}

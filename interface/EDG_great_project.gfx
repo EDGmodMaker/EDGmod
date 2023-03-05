@@ -1,0 +1,340 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_great_project_St_Andrew_Cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_cologne_cathedral.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Daphne_Palace"	
+		texturefile = "gfx//interface//great_projects//great_project_alhambra.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Chrysotriclinium"	
+		texturefile = "gfx//interface//great_projects//great_project_baiturrahman_grand_mosque.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Galata_Tower"	
+		texturefile = "gfx//interface//great_projects//great_project_buda_castle.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_four_Garden_school"	
+		texturefile = "gfx//interface//great_projects//great_project_royal_palace_caserta.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Ali_Qapu_Palace"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Ali_Qapu_Palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Blue_Mosque"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Blue_Mosque.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Arg_e_Alishah"	
+		texturefile = "gfx//interface//great_projects//great_project_zacatecas_mine_city.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Tabriz_Bazaar"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Tabriz_Bazaar.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Hanging_Garden"	
+		texturefile = "gfx//interface//great_projects//great_project_mehrangarh_fort.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Golden_Leaves_and_Silver_Branches_Palace"	
+		texturefile = "gfx//interface//great_projects//great_project_rila_monasteries.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Ulugh_Beg_Observatory"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Ulugh_Beg_Observatory.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Lekistan_Seminary"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Lekistan_Seminary.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Golestan_Palace"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Golestan_Palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Tehran_University"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Tehran_University.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Palace_Nyawaran"	
+		texturefile = "gfx//interface//great_projects//great_project_buda_castle.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Urmia_Fire_Temple"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Urmia_Fire_Temple.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Urmia_mosque"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Urmia_mosque.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Selimiye_mosque"	
+		texturefile = "gfx//interface//great_projects//great_project_sultan_ahmed_mosque.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Sivas_Palace"	
+		texturefile = "gfx//interface//great_projects//great_project_holy_city_kairouan.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Kara_Sellar"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Tabriz_Bazaar.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Sivas_Palace"	
+		texturefile = "gfx//interface//great_projects//great_project_holy_city_kairouan.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_St_Mary_Syrian_Orthodox_Church"	
+		texturefile = "gfx//interface//great_projects//great_project_rila_monasteries.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Dajuli_Temple"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Dajuli_Temple.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Diyarbakir_Wall"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Diyarbakir_Wall.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Hisn_Kayfa_Fortress"	
+		texturefile = "gfx//interface//great_projects//great_project_bam_citadel.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_OrientalPalace"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_OrientalPalace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_MayorSquare"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_MayorSquare.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Bisagra"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Bisagra.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_tuoleiduo_temple"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_tuoleiduo_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Tornellias_Mosque"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Blue_Mosque.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Badahos_Cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_santa_maria_del_fiore.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Porto_Cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_cologne_cathedral.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Porto_Port"	
+		texturefile = "gfx//interface//great_projects//great_project_doges_palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Abdul_Mosque"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Urmia_mosque.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_OviedoPalace"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_MadridPalace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_GaliciaPalace"	
+		texturefile = "gfx//interface//great_projects//great_project_el_escorial.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Hercules_Tower"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_EDG_Hercules_Tower.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Maria_Pita_Square"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_EDG_Maria_Pita_Square.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Saint_Anton_Castle"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Saint_Anton_Castle.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Queluz_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Queluz_palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Granada_University"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Granada_University.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Granada_temple"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Granada_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Cordoba_cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Cordoba_cathedral.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Cordoba_Kalaola"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Cordoba_Kalaola.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Cordoba_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Cordoba_palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Almeria_Alcazaba"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Almeria_Alcazaba.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Lisbon_Cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Lisbon_Cathedral.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Lisbon_Palace"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Lisbon_Palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Lisbon_Monastery"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Lisbon_Monastery.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Zaragoza_temple"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Zaragoza_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Zaragoza_university"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Zaragoza_university.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Valencia_Catedral"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Valencia_Catedral.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Valencia_Torre"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_tuoleiduo_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Barcelona_Palau_Nacional"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Barcelona_Palau_Nacional.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Barcelona_Cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Barcelona_Cathedral.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Barcelona_Amphitheatre"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Barcelona_Amphitheatre.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Hativa_Castle"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Hativa_Castle.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Teruel_Textile_mill"	
+		texturefile = "gfx//interface//great_projects//great_project_krakow_cloth_hall.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Sevilla_Cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Sevilla_Cathedral.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Sevilla_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Sevilla_palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Sevilla_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Sevilla_castle.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Koka_Castle"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Koka_Castle.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Theodosian_Wall"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Theodosian_Wall.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Bilbao_port"	
+		texturefile = "gfx//interface//great_projects//great_project_krakow_cloth_hall.dds"
+	}
+	#法国
+	spriteType = {
+		name = "GFX_great_project_EDG_Peyrou"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Peyrou.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Aix_palace"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Aix_palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Cathedrale_Saint-Andre"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Cathédrale_Saint-André.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_La_Cathedrale_Saint_Croix"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_La_Cathédrale_Saint_Croix_Orléans.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Merrana_Library"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Merrana_Library.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Nabona_Wine_Farm"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Nabona_Wine_Farm.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Palais_des_Papes"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Palais_des_Papes.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Palais_Jacque"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Palais_Jacque_Cœur.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Primatiale_St-Jean"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Primatiale_St-Jean.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_St_John_Cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_St_John_Cathedral.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_St_Michels_Cathedral"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_St_Michels_Cathedral.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Toulun_Commercial_Port"	
+		texturefile = "gfx//interface//great_projects//great_project_prague.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Francois_Textile_Factory"	
+		texturefile = "gfx//interface//great_projects//great_project_krakow_cloth_hall.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Dayan_pagoda"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Dayan_pagoda.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Daming_Palace"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Daming_Palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Jintongxianren_Statue"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Jintongxianren_Statue.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Jingu_Garden"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Jingu_Garden.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_White_Horse_Temple"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_White_Horse_Temple.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_EDG_Longmen_Grottoes"	
+		texturefile = "gfx//interface//great_projects//great_project_EDG_Longmen_Grottoes.dds"
+	}
+}

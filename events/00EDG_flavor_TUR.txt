@@ -1,0 +1,82 @@
+namespace = EDG_flavor_TUR
+normal_or_historical_nations = yes
+country_event = {
+  id = EDG_flavor_TUR.0
+  title = "EDG_flavor_TUR.0.t"
+  desc = "EDG_flavor_TUR.0.d"
+  picture = HORDE_ON_HORSEBACK_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = "EDG_flavor_TUR.0.a"
+	add_country_modifier = {
+		name = "EDG_modifier_TUR_NATION_RETORE"
+		duration = 36500
+	}
+    hidden_effect = {
+      every_country = {
+        limit = {
+          NOT = {
+            tag = ROOT
+          }
+          OR = {
+            is_neighbor_of = ROOT
+            religion = catholic
+            technology_group = western
+			technology_group = eastern
+			technology_group = ottoman
+			technology_group = muslim
+			technology_group = nomad_group
+          }
+        }
+        country_event = { id = EDG_flavor_TUR.1 }
+      }
+    }
+  }
+}
+
+country_event = {
+  id = EDG_flavor_TUR.1
+  title = "EDG_flavor_TUR.1.t"
+  desc = "EDG_flavor_TUR.1.d"
+  picture = HORDE_ON_HORSEBACK_eventPicture
+  is_triggered_only = yes
+  option = {
+    name = "EDG_flavor_TUR.1.a"
+    custom_tooltip = EDG_flavor_TUR.1.a.tt
+  }
+}
+
+
+country_event = {
+  id = EDG_flavor_TUR.2
+  title = "EDG_flavor_TUR.2.t"
+  desc = "EDG_flavor_TUR.2.d"
+  picture = HRE_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = "EDG_flavor_TUR.2.a"
+    change_tag = ROM
+	swap_non_generic_missions = yes
+	if = {
+		limit = { has_custom_ideas = no }
+		country_event = { id = ideagroups.1 } #Swap Ideas
+	}
+			add_country_modifier = {
+				name = "EDG_TUR_mission_3_19_modifier"
+				duration = -1
+			}
+  }
+  option = {
+    name = "EDG_flavor_TUR.2.b"
+			add_country_modifier = {
+				name = "EDG_TUR_mission_3_19_modifier"
+				duration = -1
+			}
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+  }
+}
+

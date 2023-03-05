@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = EDG_Union_Parliament
+government_rank = 2
+technology_group = western
+primary_culture = welsh
+religion = catholic
+capital = 242	# Gwynedd
+
+1402.11.11 = {
+  monarch = {
+    name = "'k‡e"
+	dynasty = "<hpQSS"
+    birth_date = 1359.1.1
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1444.1.1 = {
+  heir = {
+    name = "?–…hS"
+    dynasty = "<hpQSS"
+    birth_date = 1420.1.1
+    claim = 90
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}

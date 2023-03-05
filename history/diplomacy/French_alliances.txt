@@ -1,0 +1,147 @@
+## Restored French vassals 1.30 ##
+#°¢¶ûÀÕ¸½Ó¹
+vassal = {
+	first = AEL
+	second = AVI	
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	first = AEL
+	second = SAV	
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	first = AEL
+	second = AUV	
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+# °¢»ùÌ¹¸½Ó¹
+vassal = {
+	first = GUY
+	second = AMG
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	first = GUY
+	second = FOI
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+#·¨¸½Ó¹
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = BSC
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = CRL
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = FCC
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = AXR
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = AJO
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = PTU
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = NEV
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = FLA
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = BER	
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = ORL
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = BOU	
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+vassal = {
+	subject_type = "EDG_French_vassal"
+	first = FRA
+	second = CHP
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+#Ó¢¸½Ó¹
+vassal = {
+	first = ENG
+	second = ALE	
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+#ÂåËþÁÖ¼ªÑÇ
+vassal = {
+	first = LOT
+	second = HAI	
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	first = LOT
+	second = BRB	
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+vassal = {
+	first = LOT
+	second = KLE
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}

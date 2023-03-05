@@ -1,0 +1,207 @@
+namespace = EDG_flavor_UKR
+normal_or_historical_nations = yes
+country_event = {
+  id = EDG_flavor_UKR_mission.0
+  title = "EDG_flavor_UKR_mission.0.t"
+  desc = "EDG_flavor_UKR_mission.0.d"
+  Picture = CARIBBEAN_PIRATE_FORT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+    name = " EDG_flavor_UKR_mission.0.a"
+	280 = {
+		add_base_tax = 3
+		add_base_production = 4
+		add_base_manpower = 3
+		add_province_modifier = {
+			name = "EDG_City_the_great"
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+		}
+		280 = {
+			set_great_project_tier_2 = {
+				type = St_Andrew_Cathedral
+			}
+		}
+	}
+  }
+}
+country_event = {
+  id = EDG_flavor_UKR_mission.1
+  title = "EDG_flavor_UKR_mission.1.t"
+  desc = "EDG_flavor_UKR_mission.1.d"
+  Picture = CARIBBEAN_PIRATE_FORT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+	add_power_projection = {
+		type = mission_rewards_power_projection
+		amount = 25
+	}
+    name = "EDG_flavor_UKR_mission.1.a"
+	add_country_modifier = {
+		name = "EDG_modifier_ruthenia_5"
+		duration = 3650
+	}
+	
+  }
+}
+country_event = {
+  id = EDG_flavor_UKR_mission.2
+  title = "EDG_flavor_UKR_mission.2.t"
+  desc = "EDG_flavor_UKR_mission.2.d"
+  Picture = CARIBBEAN_PIRATE_FORT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  option = {
+	add_power_projection = {
+		type = mission_rewards_power_projection
+		amount = 25
+	}
+    name = "EDG_flavor_UKR_mission.2.a"
+		add_prestige = 20
+		add_country_modifier = {
+			name = "EDG_modifier_ruthenia_14"
+			duration = -1
+		}
+	
+  }
+}
+
+country_event = {
+  id = EDG_flavor_UKR.0
+  title = "EDG_flavor_UKR.0.t"
+  desc = "EDG_flavor_UKR.0.d"
+  Picture = CARIBBEAN_PIRATE_FORT_eventPicture
+  fire_only_once = yes
+  trigger = {
+    tag = KIE
+  }
+  option = {
+    name = "EDG_flavor_UKR.0.a"
+    hidden_effect = {
+      every_country = {
+        limit = {
+			OR = {
+				tag = VOL
+				tag = ZAZ
+				tag = CHR
+			}
+        }
+        country_event = {
+          id = EDG_flavor_UKR.1
+        }
+      }
+      every_country = {
+        limit = {
+          NOT = {
+            tag = ROOT
+            tag = VOL
+            tag = ZAZ
+            tag = CHR
+          }
+          OR = {
+            is_neighbor_of = ROOT
+			technology_group = eastern
+          }
+        }
+        country_event = {
+          id = EDG_flavor_UKR.2
+        }
+      }
+    }
+  }
+}
+
+country_event = {
+  id = EDG_flavor_UKR.1
+  title = "EDG_flavor_UKR.1.t"
+  desc = "EDG_flavor_UKR.1.d"
+  Picture = CARIBBEAN_PIRATE_FORT_eventPicture
+  is_triggered_only = yes
+  option = {
+    name = "EDG_flavor_UKR.1.a"
+  }
+}
+
+country_event = {
+  id = EDG_flavor_UKR.2
+  title = "EDG_flavor_UKR.2.t"
+  desc = "EDG_flavor_UKR.2.d"
+  Picture = CARIBBEAN_PIRATE_FORT_eventPicture
+  is_triggered_only = yes
+  option = {
+    name = "EDG_flavor_UKR.2.a"
+  }
+}
+country_event = {
+  id = EDG_flavor_UKR.3
+  title = "EDG_flavor_UKR.3.t"
+  desc = "EDG_flavor_UKR.3.d"
+  Picture = ST_PETERS_CHURCH_eventPicture
+  is_triggered_only = yes
+  trigger = {
+    NOT = { has_country_flag = EDG_flavorUKR_restore_1_flag }
+  }
+  immediate = {
+	set_country_flag = EDG_flavorUKR_restore_1_flag
+  }
+  major = yes
+  option = {
+    name = "EDG_flavor_UKR.3.a"
+	add_splendor = 100
+	add_country_modifier = {
+		name = "EDG_flavor_UKR_3_modifier"
+		duration = 9125
+	}
+  }
+}
+country_event = {
+  id = EDG_flavor_UKR.4
+  title = "EDG_flavor_UKR.4.t"
+  desc = "EDG_flavor_UKR.4.d"
+  Picture = ACCUSATION_eventPicture
+  is_triggered_only = yes
+  option = {
+    name = "EDG_flavor_UKR.4.a"
+    ai_chance = {
+		factor = 10
+    }
+	add_adm_power = 25
+  }
+  option = {
+    name = "EDG_flavor_UKR.4.b"
+    ai_chance = {
+      factor = 10
+		modifier = {
+			factor = 0
+			has_reform = cossacks_reform
+		}
+		modifier = {
+			factor = 0
+			has_reform = EDG_Citizen_Army_Government
+		}
+    }
+	trigger = {
+		religion = orthodox
+		culture_group = east_slavic
+		government = republic
+	}
+	add_government_reform = great_veche_republic
+  }
+  option = {
+    name = "EDG_flavor_UKR.4.c"
+    ai_chance = {
+      factor = 10
+    }
+	trigger = {
+		religion = orthodox
+		culture_group = east_slavic
+		government = monarchy
+	}
+	add_government_reform = tsardom
+  }
+}

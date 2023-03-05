@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = EDG_zoroastrian_Shah_government
+government_rank = 1
+primary_culture = persian
+religion = zoroastrian
+technology_group = muslim
+capital = 432 # Kerman
+historical_friend = ISF
+
+1433.1.1 = {
+  monarch = {
+    name = "?–ªR™l III"  # Ilbars I
+    dynasty = "±‚LRPR!j"  # Arabshahid
+    birth_date = 1402.3.30
+    dip = 3
+    adm = 4
+    mil = 3
+  }
+}

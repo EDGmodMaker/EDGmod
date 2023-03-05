@@ -1,0 +1,9 @@
+name = "ÑySYætASWR›Q"
+war_goal = {
+  type = superiority_loan
+  casus_belli = cb_crusade
+}
+1442.12.1 = {
+  add_attacker = CAS
+  add_defender = CIE
+}

@@ -1,0 +1,6 @@
+government = monarchy
+add_government_reform = EDG_Lothian_Crown
+primary_culture = scottish
+religion = catholic
+technology_group = western
+capital = 248

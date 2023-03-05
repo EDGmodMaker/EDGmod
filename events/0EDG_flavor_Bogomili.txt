@@ -1,0 +1,129 @@
+namespace = EDG_flavor_Bogomili
+country_event = {#解放君士坦丁堡
+	id = EDG_flavor_Bogomili.1
+	title = "EDG_flavor_Bogomili.1.t"
+	desc = "EDG_flavor_Bogomili.1.d"
+	Picture = RELIGIOUS_WARS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = "EDG_flavor_Bogomili.1.a"
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		add_country_modifier = {
+			name = "EDG_flavor_Bogomili_free_modifier"
+			duration = 7300
+		}
+			set_global_flag = had_EDG_Bogomili_decision_151_flag
+			custom_tooltip = had_EDG_Bogomili_city_free_tooltip
+	}
+}
+country_event = {#解放尼科博尔
+	id = EDG_flavor_Bogomili.2
+	title = "EDG_flavor_Bogomili.2.t"
+	desc = "EDG_flavor_Bogomili.2.d"
+	Picture = RELIGIOUS_WARS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = "EDG_flavor_Bogomili.2.a"
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		add_country_modifier = {
+			name = "EDG_flavor_Bogomili_free_modifier"
+			duration = 7300
+		}
+	}
+}
+country_event = {#基辅
+	id = EDG_flavor_Bogomili.3
+	title = "EDG_flavor_Bogomili.3.t"
+	desc = "EDG_flavor_Bogomili.3.d"
+	Picture = RELIGIOUS_WARS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = "EDG_flavor_Bogomili.3.a"
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		add_country_modifier = {
+			name = "EDG_flavor_Bogomili_free_modifier"
+			duration = 7300
+		}
+	}
+}
+country_event = {#明斯克
+	id = EDG_flavor_Bogomili.4
+	title = "EDG_flavor_Bogomili.4.t"
+	desc = "EDG_flavor_Bogomili.4.d"
+	Picture = RELIGIOUS_WARS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = "EDG_flavor_Bogomili.4.a"
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		add_country_modifier = {
+			name = "EDG_flavor_Bogomili_free_modifier"
+			duration = 7300
+		}
+	}
+}
+country_event = {#沃里尼亚
+	id = EDG_flavor_Bogomili.5
+	title = "EDG_flavor_Bogomili.5.t"
+	desc = "EDG_flavor_Bogomili.5.d"
+	Picture = RELIGIOUS_WARS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = "EDG_flavor_Bogomili.5.a"
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		add_country_modifier = {
+			name = "EDG_flavor_Bogomili_free_modifier"
+			duration = 7300
+		}
+	}
+}
+country_event = {#罗马尼亚的巴萨拉比亚
+	id = EDG_flavor_Bogomili.6
+	title = "EDG_flavor_Bogomili.6.t"
+	desc = "EDG_flavor_Bogomili.6.d"
+	Picture = RELIGIOUS_WARS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = "EDG_flavor_Bogomili.6.a"
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		add_country_modifier = {
+			name = "EDG_flavor_Bogomili_free_modifier"
+			duration = 7300
+		}
+	}
+}

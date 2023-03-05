@@ -1,0 +1,519 @@
+namespace = EDG_flavorAEL
+normal_or_historical_nations = yes
+country_event = {#里昂-纳博讷防御体系
+  id = EDG_flavorAEL.1
+  title = "EDG_flavorAEL.1.t"
+  desc = "EDG_flavorAEL.1.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  trigger = {
+  }
+  
+  option = {
+    name = "EDG_flavorAEL.1.a"
+    ai_chance = {
+      factor = 10
+    }
+	203 = {
+		add_province_modifier = {
+		  name = EDG_AEL_mission_2_1_defense_system_modifier
+		  duration = -1
+		}
+	}
+	2753 = {
+		add_province_modifier = {
+		  name = EDG_AEL_mission_2_1_defense_system_modifier
+		  duration = -1
+		}
+	}
+  }
+  
+  option = {
+    name = "EDG_flavorAEL.1.b"
+    ai_chance = {
+      factor = 1
+    }
+	add_mil_power = 50
+  }
+}
+country_event = {#艾克斯公议会
+  id = EDG_flavorAEL.2
+  title = "EDG_flavorAEL.2.t"
+  desc = "EDG_flavorAEL.2.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  trigger = {
+  }
+  
+  option = {
+    name = "EDG_flavorAEL.2.a"
+    ai_chance = {
+      factor = 10
+    }
+	add_reform_desire = 0.025
+	set_global_flag = EDG_AEL_mission_Aix_parliament_flag
+    custom_tooltip = EDG_AEL_mission_Aix_parliament_tt
+	add_prestige = 10
+	add_adm_power = 25
+	add_dip_power = 25
+	add_mil_power = 25
+	add_country_modifier = {
+		name = "EDG_catharism_decision_Aix_modifier"
+		duration = -1
+	}
+  }
+}
+country_event = {#武装整合清洁派
+  id = EDG_flavorAEL.3
+  title = "EDG_flavorAEL.3.t"
+  desc = "EDG_flavorAEL.3.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  trigger = {
+  }
+  
+  option = {
+    name = "EDG_flavorAEL.3.a"
+    ai_chance = {
+      factor = 10
+    }
+	add_army_tradition = 15
+	create_general = { tradition = 75 add_fire = 2 culture = ROOT }
+	add_country_modifier = {
+		name = "EDG_army_enthusiasm_9_modifier"
+		duration = 9125
+	}
+  }
+  
+  option = {
+    name = "EDG_flavorAEL.3.b"
+    ai_chance = {
+      factor = 1
+    }
+	add_mil_power = 50
+	define_advisor = {
+		type = army_reformer
+		skill = 2
+		cost_multiplier = 0.25
+		culture = ROOT
+		religion = ROOT
+	}
+	add_country_modifier = {
+		name = "EDG_army_enthusiasm_5_modifier"
+		duration = 9125
+	}
+  }
+}
+country_event = {#清洁派联盟
+  id = EDG_flavorAEL.4
+  title = "EDG_flavorAEL.4.t"
+  desc = "EDG_flavorAEL.4.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  major = yes
+  trigger = {
+  }
+  
+  option = {
+    name = "EDG_flavorAEL.4.a"
+    ai_chance = {
+      factor = 10
+    }
+	add_reform_desire = 0.025
+	set_global_flag = EDG_AEL_mission__alliance_flag
+    custom_tooltip = EDG_AEL_mission__alliance_tt
+	add_country_modifier = {
+		name = "EDG_Religious_piety_2_modifier"
+		duration = 9125
+	}
+  }
+}
+country_event = {#阿维尼翁传教中心
+  id = EDG_flavorAEL.5
+  title = "EDG_flavorAEL.5.t"
+  desc = "EDG_flavorAEL.5.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  major = yes
+  trigger = {
+  }
+  
+  option = {
+    name = "EDG_flavorAEL.5.a"
+    ai_chance = {
+      factor = 10
+    }
+	add_reform_desire = 0.025
+	202 = {
+		add_reform_center = EDG_catharism
+		custom_tooltip = EDG_add_reform_center_EDG_catharism_tooltip
+	}
+	add_country_modifier = {
+		name = "EDG_Religious_piety_3_modifier"
+		duration = 9125
+	}
+  }
+}
+country_event = {#福音降于米兰主座教堂
+  id = EDG_flavorAEL.6
+  title = "EDG_flavorAEL.6.t"
+  desc = "EDG_flavorAEL.6.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  trigger = {
+	104 = {
+		religion = EDG_catharism
+		owner = { religion = EDG_catharism }
+	}
+  }
+  option = {
+    name = "EDG_flavorAEL.6.a"
+    ai_chance = {
+      factor = 10
+    }
+	add_prestige = 10
+	104 = {
+		add_reform_center = EDG_catharism
+		custom_tooltip = EDG_add_reform_center_EDG_catharism_tooltip
+		set_great_project_tier_3 = {
+			type = duomo_milano
+		}
+		add_province_modifier = {
+		  name = EDG_City_develop_2_modifier
+		  duration = -1
+		}
+	}
+  }
+}
+country_event = {#热那亚办公厅
+  id = EDG_flavorAEL.7
+  title = "EDG_flavorAEL.7.t"
+  desc = "EDG_flavorAEL.7.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  trigger = {
+  }
+  option = {
+    name = "EDG_flavorAEL.7.a"
+    ai_chance = {
+      factor = 10
+    }
+	add_dip_power = 50
+	add_mercantilism = 2
+	101 = {
+		add_permanent_province_modifier = {
+		  name = EDG_City_Trade_modifier
+		  duration = -1
+		}
+	}
+  }
+  option = {
+    name = "EDG_flavorAEL.7.b"
+    ai_chance = {
+      factor = 10
+    }
+	add_years_of_income = 1.5
+  }
+}
+country_event = {#王权对教廷的扶持
+  id = EDG_flavorAEL.8
+  title = "EDG_flavorAEL.8.t"
+  desc = "EDG_flavorAEL.8.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  trigger = {
+  }
+  option = {
+    name = "EDG_flavorAEL.8.a"
+    ai_chance = {
+      factor = 10
+    }
+	add_reform_desire = 0.025
+	add_prestige = 10
+	201 = {
+		add_reform_center = EDG_catharism
+		custom_tooltip = EDG_add_reform_center_EDG_catharism_tooltip
+	}
+	
+  }
+  option = {
+    name = "EDG_flavorAEL.8.b"
+    ai_chance = {
+      factor = 0
+    }
+	add_adm_power = 50
+	add_dip_power = 50
+	add_mil_power = 50
+  }
+}
+country_event = {#改宗清洁派？
+  id = EDG_flavorAEL.9
+  title = "EDG_flavorAEL.9.t"
+  desc = "EDG_flavorAEL.9.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  trigger = {
+  }
+  option = {
+    name = "EDG_flavorAEL.9.a"
+    ai_chance = {
+      factor = 10
+      modifier = {
+        factor = 1.25
+        has_opinion = {
+			who = FROM
+			value = 125
+		}
+      }
+      modifier = {
+        factor = 1.5
+        has_opinion = {
+			who = FROM
+			value = 150
+		}
+      }
+      modifier = {
+        factor = 10
+        has_opinion = {
+			who = FROM
+			value = 175
+		}
+      }
+    }
+	add_reform_desire = 0.005
+	change_religion = EDG_catharism
+	add_adm_power = 25
+	add_dip_power = 25
+	add_mil_power = 25
+	add_prestige = -25
+  }
+  option = {
+    name = "EDG_flavorAEL.9.b"
+    ai_chance = {
+      factor = 5
+      modifier = {
+        factor = 100
+		NOT = {
+			has_opinion = {
+				who = FROM
+				value = 50
+			}
+		}
+      }
+      modifier = {
+        factor = 0
+		has_global_flag = EDG_AEL_mission_ALL_choice_catharism_flag
+      }
+    }
+	add_prestige = 5
+  }
+}
+country_event = {#清洁派狂潮
+  id = EDG_flavorAEL.10
+  title = "EDG_flavorAEL.10.t"
+  desc = "EDG_flavorAEL.10.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  major = yes
+  trigger = {
+  }
+  option = {
+    name = "EDG_flavorAEL.10.a"
+    ai_chance = {
+      factor = 10
+    }
+	add_reform_desire = 0.05
+	add_prestige = 10
+			custom_tooltip = EDG_ARL_special_Mission_spread_religion_event_tt
+	every_country = {
+		limit = {
+			NOT = { tag = PAP }
+			is_part_of_hre = yes
+			is_emperor = no
+			NOT = { religion = EDG_catharism }
+		}
+		country_event = { id = EDG_flavorAEL.9 }
+	}
+  }
+}
+country_event = {#解散教廷
+  id = EDG_flavorAEL.11
+  title = "EDG_flavorAEL.11.t"
+  desc = "EDG_flavorAEL.11.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  major = yes
+  trigger = {
+  }
+  option = {
+    name = "EDG_flavorAEL.11.a"
+    ai_chance = {
+      factor = 10
+    }
+	add_prestige = 25
+	set_papacy_active = no
+  }
+}
+country_event = {#加冕法兰西国王
+  id = EDG_flavorAEL.12
+  title = "EDG_flavorAEL.12.t"
+  desc = "EDG_flavorAEL.12.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  major = yes
+  trigger = {
+  }
+  option = {
+    name = "EDG_flavorAEL.12.a"
+    ai_chance = {
+      factor = 10
+    }
+	white_peace = FRA
+	inherit = FRA
+	FRA = {
+		every_subject = {
+			AEL = {
+				create_subject = {
+					subject_type = EDG_French_vassal
+					subject = PREW
+				}
+			}
+		}
+	}
+	france_region = {
+		limit = {
+			NOT = { is_core = ROOT } 
+			NOT = { is_claim = ROOT } 
+		}
+		add_permanent_claim = ROOT
+	}
+  }
+  option = {
+    name = "EDG_flavorAEL.12.a"
+    ai_chance = {
+      factor = 10
+    }
+	add_mil_power = 100
+	france_region = {
+		limit = {
+			NOT = { is_core = ROOT } 
+			NOT = { is_claim = ROOT } 
+		}
+		add_permanent_claim = ROOT
+	}
+  }
+}
+country_event = {#影响法兰克尼亚
+  id = EDG_flavorAEL.13
+  title = "EDG_flavorAEL.13.t"
+  desc = "EDG_flavorAEL.13.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  major = yes
+  trigger = {
+  }
+  option = {
+    name = "EDG_flavorAEL.13.a"
+    ai_chance = {
+      factor = 10
+    }
+	if = {
+		limit = { NOT = { religion = EDG_catharism } }
+		change_religion = EDG_catharism
+	}
+	FROM = { create_union = ROOT add_historical_friend = ROOT }
+	add_historical_friend = FROM
+  }
+  option = {
+    name = "EDG_flavorAEL.13.b"
+    ai_chance = {
+      factor = 10
+    }
+	add_adm_power = 25
+	
+  }
+}
+country_event = {#邀请委员长加入清洁派联盟
+  id = EDG_flavorAEL.14
+  title = "EDG_flavorAEL.14.t"
+  desc = "EDG_flavorAEL.14.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  major = yes
+  trigger = {
+  }
+  option = {
+    name = "EDG_flavorAEL.14.a"
+    ai_chance = {
+      factor = 10
+    }
+	if = {
+		limit = { NOT = { religion = EDG_catharism } }
+		change_religion = EDG_catharism
+	}
+	FROM = {
+		create_subject = {
+			subject_type = EDG_catharism_vassal
+			subject = ROOT
+		}
+		add_historical_friend = ROOT
+	}
+	add_historical_friend = FROM
+  }
+  option = {
+    name = "EDG_flavorAEL.14.b"
+    ai_chance = {
+      factor = 1
+    }
+	add_adm_power = 25
+  }
+}
+country_event = {#邀请加泰罗尼亚加入清洁派联盟
+  id = EDG_flavorAEL.15
+  title = "EDG_flavorAEL.15.t"
+  desc = "EDG_flavorAEL.15.d"
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  major = yes
+  trigger = {
+  }
+  option = {
+    name = "EDG_flavorAEL.15.a"
+    ai_chance = {
+      factor = 10
+    }
+	if = {
+		limit = { NOT = { religion = EDG_catharism } }
+		change_religion = EDG_catharism
+	}
+	FROM = {
+		create_subject = {
+			subject_type = EDG_catharism_vassal
+			subject = ROOT
+		}
+		add_historical_friend = ROOT
+	}
+	add_historical_friend = FROM
+  }
+  option = {
+    name = "EDG_flavorAEL.15.b"
+    ai_chance = {
+      factor = 1
+    }
+	add_adm_power = 25
+  }
+}

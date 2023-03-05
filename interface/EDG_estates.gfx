@@ -1,0 +1,7 @@
+spriteTypes = {	
+	spriteType = {
+		name = "EDG_privilege_CAS_Caledonia_privilege"
+		texturefile = "gfx//interface//privileges//privilege_cawa_peacekeeper.dds"
+		loadType = "INGAME"
+	}
+}

@@ -1,0 +1,24 @@
+namespace = EDG_flavorPAP
+normal_or_historical_nations = yes
+country_event = {
+  id = EDG_flavorPAP.1
+  title = "EDG_flavorPAP.1.t"
+  desc = "EDG_flavorPAP.1.d"
+  picture = RELIGIOUS_TURMOIL_eventPicture
+  fire_only_once = yes
+  major = yes
+  trigger = {
+	tag = PAP
+	is_year = 1445
+  }
+  
+  option = {
+    name = "EDG_flavorPAP.1.a"
+    ai_chance = {
+      factor = 10
+    }
+	custom_tooltip = EDG_PAP_restore_the_authority_of_the_Catholic_tooltip
+	set_global_flag = EDG_PAP_restore_the_authority_of_the_Catholic_flag
+	add_reform_desire = 0.2
+  }
+}

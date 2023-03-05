@@ -1,0 +1,11 @@
+
+EDG_modifier_SCO_raise = {
+	discipline = 0.10
+	land_morale = 0.20
+	land_forcelimit_modifier = 0.50
+}
+EDG_modifier_BTA_raise = {
+	colonists = 1
+	global_colonial_growth = 20
+	colonist_placement_chance = 0.10
+}

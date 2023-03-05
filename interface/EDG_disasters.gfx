@@ -1,0 +1,44 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_EDG_VOL_government_war"
+		texturefile = "gfx//interface//disasters//war_of_the_roses.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_EDG_IRE_government_war"
+		texturefile = "gfx//interface//disasters//war_of_the_roses.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_EDG_DLH_civil_war"
+		texturefile = "gfx//interface//disasters//dark_age_of_cambodia.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_EDG_TUR_decline"
+		texturefile = "gfx//interface//disasters//dark_age_of_cambodia.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_EDG_FYM_civil_war"
+		texturefile = "gfx//interface//disasters//dark_age_of_cambodia.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_EDG_PER_disaster_throne_war"
+		texturefile = "gfx//interface//disasters//counts_feud.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_EDG_PER_disaster_Shah_insane"
+		texturefile = "gfx//interface//disasters//siamese_revolution.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

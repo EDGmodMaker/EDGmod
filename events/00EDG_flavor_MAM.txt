@@ -1,0 +1,163 @@
+namespace = EDG_flavorMAM
+normal_or_historical_nations = yes
+country_event = {
+  id = EDG_flavorMAM.0
+  title = "EDG_flavorMAM.0.t"
+  desc = "EDG_flavorMAM.0.d"
+  picture = CIVIL_WAR_eventPicture
+  is_triggered_only = yes
+  major = yes
+  trigger = { 
+  }
+  
+  option = {
+    name = "EDG_flavorMAM.0.a"
+    ai_chance = {
+      factor = 100
+    }
+    change_tag = ABS
+	restore_country_name = yes
+	remove_non_electors_emperors_from_empire_effect = yes
+	swap_non_generic_missions = yes
+	if = {
+		limit = { has_custom_ideas = no }
+		country_event = { id = ideagroups.1 } #Swap Ideas
+	}
+	add_government_reform = feudal_theocracy
+    add_stability = 1
+	set_government_rank = 3
+    define_ruler = {
+      change_dip = 3
+      change_adm = 3
+      change_mil = 3
+      max_random_adm = 6
+      max_random_dip = 6
+      max_random_mil = 6
+	  dynasty = "?–Ôb¯e"
+      claim = 100
+      culture = Root
+    }
+  }
+  option = {
+    name = "EDG_flavorMAM.0.b"
+    ai_chance = {
+      factor = 2
+    }
+	kill_ruler = yes
+    add_stability = -1
+  }
+}
+
+country_event = {
+  id = EDG_flavorMAM.1
+  title = "EDG_flavorMAM.1.t"
+  desc = "EDG_flavorMAM.1.d"
+  picture = CIVIL_WAR_eventPicture
+  major = yes
+  trigger = {
+	tag = MAM
+	NOT = { has_country_flag = EDG_EGY_REFORM_OVER_flag }
+	NOT = { has_country_flag = EDG_EGY_REFORM_BEGIN_flag }
+  }
+  
+  option = {
+    name = "EDG_flavorMAM.1.a"
+    ai_chance = {
+      factor = 100
+    }
+    custom_tooltip = EDG_flavorMAM_1.tooltip
+	set_country_flag = EDG_EGY_REFORM_BEGIN_flag
+  }
+}
+
+
+
+country_event = {
+  id = EDG_flavorMAM.3
+  title = "EDG_flavorMAM.3.t"
+  desc = "EDG_flavorMAM.3.d"
+  picture = CIVIL_WAR_eventPicture
+  fire_only_once = yes
+  trigger = {
+	owns = 361
+	ai = yes
+	OR = {
+		tag = CIO
+		tag = ALX
+		tag = MAM
+	}
+	OR = {
+	  TUR = {
+		controls = 361
+		war_score_against = {
+			who = ROOT
+			value = 80
+		}
+	  }
+	  RUM = {
+		controls = 361
+		war_score_against = {
+			who = ROOT
+			value = 80
+		}
+	  }
+	}
+	NOT = { has_global_flag = EDG_MAM_DIE_BY_TUR_flag }
+  }
+  
+  option = {
+    name = "EDG_flavorMAM.3.a"
+    ai_chance = {
+      factor = 100
+    }
+	if = {
+	  limit = { TUR = { controls = 361 } }
+		custom_tooltip = EDG_MAM_DIE_BY_TUR.tooltip
+		TUR = { country_event = { id = EDG_flavorMAM.4 } }
+	}
+	else_if = {
+	  limit = { RUM = { controls = 361 } }
+		custom_tooltip = EDG_MAM_DIE_BY_RUM.tooltip
+		RUM = { country_event = { id = EDG_flavorMAM.4 } }
+	}
+	hidden_effect = {
+		set_global_flag = EDG_MAM_DIE_BY_TUR_flag
+	}
+  }
+}
+
+
+country_event = {
+  id = EDG_flavorMAM.4
+  title = "EDG_flavorMAM.4.t"
+  desc = "EDG_flavorMAM.4.d"
+  picture = HORDE_ON_HORSEBACK_eventPicture
+  is_triggered_only = yes
+  fire_only_once = yes
+  major = yes
+  trigger = { 
+  }
+  
+  option = {
+    name = "EDG_flavorMAM.4.a"
+    ai_chance = {
+      factor = 100
+    }
+	custom_tooltip = EDG_MAM_DIE_BY_US.tooltip
+	hidden_effect = {
+		white_peace = FROM
+		inherit = FROM
+		near_east_superregion = {
+			limit = { previous_owner = FROM } 
+			set_local_autonomy = 95
+		}
+	}
+  }
+  option = {
+    name = "EDG_flavorMAM.4.b"
+    ai_chance = {
+      factor = 0
+    }
+	add_adm_power = 100
+  }
+}

@@ -1,0 +1,363 @@
+namespace = EDG_flavorSHY
+normal_or_historical_nations = yes
+country_event = {#昔班尼
+  id = EDG_flavorSHY.1
+  title = "EDG_flavorSHY.1.t"
+  desc = "EDG_flavorSHY.1.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  major = yes
+  trigger = {
+	OR = {
+		tag = SHY
+		AND = {
+			tag = BUK
+			NOT = { exists = SHY }
+		}
+	}
+	is_year = 1468
+	NOT = { is_year = 1500 }
+	is_great_power = yes
+  }
+  mean_time_to_happen = {
+    days = 1
+  }
+  
+  option = {
+    name = "EDG_flavorSHY.1.a"
+    ai_chance = {
+      factor = 100
+    }
+	define_heir = {
+	  name = "FzU貫稸 f韘<S"
+	  dynasty = ROOT
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 6
+		age = 17
+		
+	}
+	define_heir_to_general = {
+		type = general
+		fire = 4
+		shock = 6
+		manuever = 4
+		siege = 3
+		death_date = 1500.11.24
+	}
+  }
+  
+  option = {
+    name = "EDG_flavorSHY.1.b"
+    ai_chance = {
+      factor = 10
+    }
+	add_prestige = -5
+  }
+}
+
+
+country_event = {#封建主义
+  id = EDG_flavorSHY.2
+  title = "EDG_flavorSHY.2.t"
+  desc = "EDG_flavorSHY.2.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  trigger = {
+	OR = {
+		tag = SHY
+		AND = {
+			tag = BUK
+			NOT = { exists = SHY }
+		}
+	}
+	adm = 5
+	NOT = { has_institution = feudalism }
+  }
+  mean_time_to_happen = {
+    days = 1
+  }
+  
+  option = {
+    name = "EDG_flavorSHY.2.a"
+    ai_chance = {
+      factor = 100
+    }
+	add_adm_power = -100
+	capital_scope = {
+		add_base_tax = 1
+		add_base_production = 1
+		add_base_manpower = 1
+		area = {
+			limit = { owned_by = ROOT }
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+		}
+	}
+  }
+  
+  option = {
+    name = "EDG_flavorSHY.2.b"
+    ai_chance = {
+      factor = 1
+    }
+	add_prestige = -5
+  }
+}
+country_event = {#阔阔察儿的支持
+  id = EDG_flavorSHY.3
+  title = "EDG_flavorSHY.3.t"
+  desc = "EDG_flavorSHY.3.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  trigger = {
+	OR = {
+		tag = SHY
+		AND = {
+			tag = BUK
+			NOT = { exists = SHY }
+		}
+	}
+	prestige = 0
+	is_at_war = no
+	adm = 5
+	NOT = { is_year = 1500 }
+  }
+  mean_time_to_happen = {
+    days = 400
+  }
+  
+  option = {
+    name = "EDG_flavorSHY.3.a"
+    ai_chance = {
+      factor = 100
+    }
+	add_adm_power = 25
+	add_treasury = 374.27
+  }
+  
+  option = {
+    name = "EDG_flavorSHY.3.b"
+    ai_chance = {
+      factor = 1
+    }
+	add_prestige = 10
+  }
+}
+country_event = {#建设锡尔河
+  id = EDG_flavorSHY.4
+  title = "EDG_flavorSHY.4.t"
+  desc = "EDG_flavorSHY.4.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  trigger = {
+	OR = {
+		tag = SHY
+		AND = {
+			tag = BUK
+			NOT = { exists = SHY }
+		}
+	}
+	is_at_war = no
+	adm = 5
+  }
+  mean_time_to_happen = {
+    days = 125
+  }
+  
+  option = {
+    name = "EDG_flavorSHY.4.a"
+    ai_chance = {
+      factor = 100
+    }
+	add_adm_power = 25
+	476 = {
+		area = {
+			limit = { owned_by = ROOT }
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+		}
+	}
+	440 = {
+		area = {
+			limit = { owned_by = ROOT }
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+		}
+	}
+	456 = {
+		area = {
+			limit = { owned_by = ROOT }
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_institution_embracement = {
+				which = feudalism
+				value = 100
+			}
+		}
+	}
+  }
+  
+  option = {
+    name = "EDG_flavorSHY.4.b"
+    ai_chance = {
+      factor = 1
+    }
+	add_years_of_income = 0.5
+  }
+}
+country_event = {#宣称呼罗珊
+  id = EDG_flavorSHY.5
+  title = "EDG_flavorSHY.5.t"
+  desc = "EDG_flavorSHY.5.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  trigger = {
+	OR = {
+		tag = SHY
+		AND = {
+			tag = BUK
+			NOT = { exists = SHY }
+		}
+	}
+	is_at_war = no
+	NOT = { is_year = 1500 }
+	total_development = 210
+	442 = {
+        owned_by = TRS
+    }
+	TRS = {
+		is_subject = no
+	}
+	exists = TRS
+  }
+  mean_time_to_happen = {
+    days = 1
+  }
+  
+  option = {
+    name = "EDG_flavorSHY.5.a"
+    ai_chance = {
+      factor = 100
+    }
+	khorasan_region = {
+		limit = {
+			NOT = { is_claim = ROOT	}
+			NOT = { is_permanent_claim = ROOT	}
+			NOT = { is_core = ROOT	}
+		}
+		add_claim = ROOT
+	}
+	add_manpower = 20
+	capital_scope = {
+	  infantry = SHY
+	  infantry = SHY
+	  infantry = SHY
+	  infantry = SHY
+	  cavalry = SHY
+	  cavalry = SHY
+	  cavalry = SHY
+	  cavalry = SHY
+	}
+	declare_war_with_cb = {
+	  who = TRS
+	  casus_belli = cb_tribal_feud
+	}
+	
+	
+  }
+  
+  option = {
+    name = "EDG_flavorSHY.5.b"
+    ai_chance = {
+      factor = 0
+    }
+	add_prestige = -10
+  }
+}
+country_event = {#月季别汗国的分裂
+  id = EDG_flavorSHY.6
+  title = "EDG_flavorSHY.6.t"
+  desc = "EDG_flavorSHY.6.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  major = yes
+  trigger = {
+	tag = SHY
+	government = tribal
+	is_year = 1460
+	NOT = { mil = 5 }
+	total_development = 150
+  }
+  
+  immediate = {
+    hidden_effect = {
+      SHY = {
+        every_owned_province = {
+          set_province_flag = EDG_SHY_break_province
+        }
+      }
+    }
+  }
+  mean_time_to_happen = {
+    days = 1
+  }
+  
+  option = {
+    name = "EDG_flavorSHY.6.a"
+    ai_chance = {
+      factor = 100
+    }
+    custom_tooltip = EDG_SHY_break_tt
+    hidden_effect = {
+      every_province = {
+        limit = {
+          has_province_flag = EDG_SHY_break_province
+		  AND = {
+			NOT = { is_capital_of = ROOT }
+		  }
+        }
+		
+        if = {
+          limit = {
+            any_core_country = {
+              exists = no
+            }
+          }
+          random_core_country = {
+            limit = {
+              NOT = {
+                tag = SHY
+              }
+              exists = no
+            }
+            SHY = {
+				release = PREV
+				PREV = {
+					change_government = tribal
+					add_government_reform = steppe_horde
+				}
+            }
+          }
+        }
+      }
+    }
+	
+	
+	
+  }
+}

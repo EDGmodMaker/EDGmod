@@ -1,0 +1,150 @@
+EDG_FYM_civil_war = {
+	ended_by_country_breaking_to_rebels = no
+	potential = {
+		NOT = { has_country_flag = EDG_FYM_civil_war_flag }
+		tag = FYM
+		is_free_or_tributary_trigger = yes
+		uses_doom = no
+		normal_or_historical_nations = yes
+		is_revolutionary = no
+	}
+	
+	
+	can_start = {
+		NOT = { religious_unity = 0.55 }
+		has_any_disaster = no
+		OR = {
+			NOT = { adm = 5 }
+			NOT = { dip = 5 }
+			NOT = { mil = 5 }
+			OR = {
+				NOT = { stability = 0 }
+				num_of_loans = 50
+				inflation = 10
+				war_exhaustion = 10
+				NOT = { prestige = 0 }
+			}
+		}
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			religious_unity = 0.55
+		}
+	}
+	
+	
+	progress = {
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { dip = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { mil = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 5 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { dip = 5 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { mil = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { prestige = 0 }
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 5
+		} 
+		modifier = {
+			factor = 0.75
+			num_of_loans = 10
+			NOT = { num_of_loans = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 25
+		}
+		modifier = {
+			factor = 3
+			capital_scope = { controlled_by = REB }
+		}
+		modifier = {
+			factor = 10
+			is_bankrupt = yes
+		}
+	}
+	
+	can_end = {
+		OR = {
+			religious_unity = 0.75
+			custom_trigger_tooltip = {
+				tooltip = disaster_active_for_20_years_tooltip
+				had_country_flag = {
+					flag = EDG_FYM_civil_war_flag
+					days = 7300
+				}
+			}
+			AND = {
+				stability = 2
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+				NOT = { num_of_rebel_armies = 1 }
+				NOT = { num_of_loans = 5 }
+				NOT = { corruption = 5 }
+			}
+		}
+	}
+	
+
+	modifier = {
+		global_unrest = 20
+		stability_cost_modifier = 0.75
+	}	
+	
+	
+	on_monthly = {
+		events = {
+			flavor_lxa.1
+			flavor_lxa.2
+			flavor_lxa.3
+		}
+		random_events = { 
+			1000 = 0
+			100 = civil_war.2
+			100 = civil_war.3
+			100 = civil_war.5
+			100 = civil_war.6
+			100 = civil_war.7
+			100 = civil_war.8
+			100 = civil_war.9
+			100 = civil_war.10
+			100 = civil_war.11
+			100 = civil_war.12
+			100 = civil_war.13
+			100 = EDG_generic_civil_war.1
+			100 = EDG_generic_civil_war.2
+			100 = EDG_FYM_civil_war.3
+			100 = EDG_FYM_civil_war.4
+			100 = EDG_FYM_civil_war.5
+			100 = EDG_FYM_civil_war.6
+			50 = EDG_FYM_civil_war.7
+		}
+	}
+	
+	
+	on_start = EDG_FYM_civil_war.1 #General Estates / Storming of the Bastille
+	on_end = EDG_FYM_civil_war.2 #Long live the Republic/Monarchy
+	
+}

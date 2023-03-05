@@ -1,0 +1,26 @@
+owner = WUY
+controller = WUY
+add_core = WUY
+culture = wu
+religion = confucianism
+capital = "™ŸÉl"
+trade_goods = iron
+hre = no
+base_tax = 5
+base_production = 5
+base_manpower = 4
+is_city = yes
+fort_15th = yes
+discovered_by = chinese
+discovered_by = nomad_group
+1595.1.1 = {
+  discovered_by = SPA
+}
+1645.6.14 = {
+  owner = QNG
+  controller = QNG
+  add_core = QNG
+}
+1683.1.1 = {
+  remove_core = MNG
+}

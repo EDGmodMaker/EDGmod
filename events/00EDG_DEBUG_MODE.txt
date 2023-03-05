@@ -1,0 +1,98 @@
+namespace = EDG_flavorDEBUG_MODE
+normal_or_historical_nations = yes
+country_event = {
+  id = EDG_flavorDEBUG_MODE.1
+  title = "EDG_flavorDEBUG_MODE.1.t"
+  desc = "EDG_flavorDEBUG_MODE.1.d"
+  picture = COURT_eventPicture
+  fire_only_once = yes
+  trigger = {
+    ai = no
+    NOT = {
+      has_global_flag = EDG_DEBUG_MODE_beimeizhou_tuzhu_flag
+    }
+  }
+  immediate = {
+    set_global_flag = EDG_DEBUG_MODE_beimeizhou_tuzhu_flag
+  }
+  
+  option = {
+    name = "EDG_flavorDEBUG_MODE.1.a"
+    ai_chance = {
+      factor = 20
+    }
+    custom_tooltip = EDG_flavorDEBUG_MODE.1.a.tt
+	
+	north_america_superregion = {
+		limit = {
+			NOT = { is_core = ROOT }
+			NOT = { is_permanent_claim = ROOT }
+		}
+		decolonize = yes
+	}
+	brazil_region = {
+		limit = {
+			NOT = { is_core = ROOT }
+			NOT = { is_permanent_claim = ROOT }
+		}
+		decolonize = yes
+	}
+	australia_region = {
+		limit = {
+			NOT = { is_core = ROOT }
+			NOT = { is_permanent_claim = ROOT }
+		}
+		decolonize = yes
+	}
+	andes_superregion = {
+		limit = {
+			owner = { culture_group = andean_group }
+		}
+		add_core = CSU cede_province = CSU
+	}
+	kongo_region = {
+		limit = {
+			owner = { culture_group = kongo_group }
+		}
+		add_core = KON cede_province = KON
+	}
+	central_africa_region = {
+		limit = {
+			owner = { culture_group = kongo_group }
+		}
+		add_core = KON cede_province = KON
+	}
+	mexico_region = {
+		limit = {
+			owner = { technology_group = mesoamerican }
+		}
+		add_core = AZT cede_province = AZT
+	}
+	east_africa_region = {
+		limit = {
+			owner = { technology_group = east_african }
+		}
+		add_core = ZAN cede_province = ZAN
+	}
+	central_africa_region = {
+		limit = {
+			owner = { culture_group = great_lakes_group }
+		}
+		add_core = BNY cede_province = BNY
+	}
+	niger_region = {
+		limit = {
+			owner = { culture_group = west_african }
+		}
+		add_core = MAL cede_province = MAL
+	}
+  }
+  option = {
+    name = "EDG_flavorDEBUG_MODE.1.b"
+    ai_chance = {
+      factor = 5
+    }
+    custom_tooltip = EDG_flavorDEBUG_MODE.2.a.tt
+  }
+}
+

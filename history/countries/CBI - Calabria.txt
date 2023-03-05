@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = EDG_Norman_Monarchy
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = neapolitan
+capital = 123
+
+1399.1.1 = {
+  monarch = {
+    name = "tåg·V II"
+    dynasty = "·V ‰R9ƒ"
+	birth_date = 1410.7.14
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+1444.1.1 = {
+  heir = {
+    name = "ågt"#
+    dynasty = "·V ‰R9ƒ"
+    birth_date = 1441.7.14
+    claim = 90
+    adm = 0
+    dip = 4
+    mil = 5
+  }
+}

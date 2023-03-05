@@ -1,0 +1,59 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = yemeni_culture
+add_accepted_culture = al_misr_arabic
+religion = shiite
+technology_group = muslim
+capital = 359
+add_army_professionalism = 0.1
+religious_school = zaidi_school
+
+1342.1.30 = {
+  monarch = {
+    name = "≥uâS I"  # Aedh XIV
+    dynasty = "(Ñ»Tæè"  # mac Eªöhain
+    birth_date = 1320.12.6
+    adm = 6
+    dip = 6
+    mil = 6
+  }
+}
+1391.1.30 = {
+  monarch = {
+    name = "FzUÿû∑V I"  # Aedh XIV
+    dynasty = "(Ñ»Tæè"  # mac Eªöhain
+    birth_date = 1362.12.6
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+1429.1.30 = {
+  monarch = {
+    name = "(Ñ’lS I"  # Aedh XIV
+    dynasty = "(Ñ»Tæè"  # mac Eªöhain
+    birth_date = 1399.12.6
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+	add_piety = -1.0
+	clear_scripted_personalities = yes
+	add_ruler_personality = cruel_personality
+	add_ruler_personality = tolerant_personality
+}
+1441.1.30 = {
+ heir = {
+    name = "»TÀz∑V"  # Aedh XIV
+    dynasty = "(Ñ»Tæè"  # mac Eªöhain
+    birth_date = 1430.12.6
+    death_date = 1460.2.28
+    adm = 1
+    dip = 0
+    mil = 1
+  }
+}
+1444.10.1 = {
+  set_estate_privilege = estate_nobles_land_rights
+  set_estate_privilege = estate_church_land_rights
+}

@@ -1,0 +1,37 @@
+
+EDG_Euchites_reforms = {
+	trigger = {
+		religion = EDG_Euchites
+	}	
+
+	can_buy_idea = {
+		is_at_war = no
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		stability = 1
+		authority = 100
+		num_of_cities = 10
+	}
+	
+	EDG_Euchites_reforms_1 = {#肉欲感知
+		manpower_in_true_faith_provinces = 0.2
+	}
+	EDG_Euchites_reforms_2 = {#祷告至上
+		tolerance_own = 2
+	}
+	EDG_Euchites_reforms_3 = {#祷告会狂欢
+		global_missionary_strength = 0.02
+	}
+	EDG_Euchites_reforms_4 = {#扩大修道院
+		missionaries = 1
+	}
+	EDG_Euchites_reforms_5 = {#对抗异端
+		discipline = 0.05
+	}	
+	EDG_Euchites_reforms_6 = {#回应改革呼声
+		core_creation = -0.1
+	}	
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

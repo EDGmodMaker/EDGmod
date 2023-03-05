@@ -1,0 +1,58 @@
+#Shah Rokhs Empire
+
+#Ulugh Begh
+vassal = {
+	first = HSN
+	second = BTL
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+vassal = {
+	first = TIM
+	second = TRS
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+vassal = {
+	first = TIM
+	second = AFG
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+#Babur bin Baysonqor
+vassal = {
+	first = TIM
+	second = KHO
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+vassal = {
+	first = TIM
+	second = SIS
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+vassal = {
+	first = TIM
+	second = KRM
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+vassal = {
+	first = TIM
+	second = ISF
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+vassal = {
+	first = TIM
+	second = FRS
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+
+
+
+
+
+

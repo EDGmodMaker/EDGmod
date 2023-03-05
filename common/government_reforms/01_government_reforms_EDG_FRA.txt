@@ -1,0 +1,221 @@
+EDG_French_Standing_Royal_Army_Reform = {#常备王军
+	icon = "crown_colony_government"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = french
+	}
+	trigger = {
+		culture_group = french
+		
+	}
+	modifiers = {
+		yearly_army_professionalism = 0.0025
+		drill_decay_modifier = -0.25
+		drill_gain_modifier = 0.25
+		discipline = 0.025
+	}
+	ai = {
+		factor = 5
+		modifier = {
+			factor = 0.1
+			NOT = { mil = 3 }
+		}
+	}
+}
+EDG_French_High_Court_Reform = {#法兰西高等法院
+	icon = "judge"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = french
+	}
+	trigger = {
+		culture_group = french
+		
+	}
+	modifiers = {
+		stability_cost_modifier = -0.1
+		global_autonomy = -0.05
+		expand_administration_cost = -0.15
+		autonomy_change_time = -0.15
+		reform_progress_growth = 0.15
+	}
+	ai = {
+		factor = 5
+		modifier = {
+			factor = 0.1
+			NOT = { adm = 3 }
+		}
+	}
+}
+EDG_Villekotley_Decree = {#维勒科特莱法令
+	icon = "pope"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = french
+	}
+	trigger = {
+		culture_group = french
+		
+	}
+	modifiers = {
+		same_culture_advisor_cost = -0.25
+		governing_capacity = 100
+		yearly_absolutism = 0.1
+		max_absolutism = 10
+	}
+	ai = {
+		factor = 5
+		modifier = {
+			factor = 0.1
+			NOT = { adm = 3 }
+		}
+	}
+}
+EDG_pontifical_Legate = {#教廷使节
+	icon = "papacy"
+	allow_normal_conversion = yes
+	potential = {
+		religion = catholic
+		NOT = { tag = PAP }
+	}
+	trigger = {
+		religion = catholic
+	}
+	modifiers = {
+		papal_influence = 1
+		papal_influence_from_cardinals = 0.25
+	}
+	ai = {
+		factor = 3
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			total_development = 75
+		}
+	}
+}
+EDG_Bologna_religious_agreement = {#《波伦亚宗教协议》
+	icon = "paper_with_seal"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = french
+		religion = catholic
+	}
+	trigger = {
+		culture_group = french
+		religion = catholic
+	}
+	modifiers = {
+		church_loyalty_modifier = 0.1
+		tolerance_own = 1
+		religious_unity = 0.25
+	}
+	ai = {
+		factor = 3
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			total_development = 75
+		}
+	}
+}
+EDG_Nante_edict = {#《南特敕令》
+	icon = "paper_with_seal_3"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = french
+		religion = catholic
+	}
+	trigger = {
+		culture_group = french
+		religion = catholic
+	}
+	modifiers = {
+		tolerance_of_heretics_capacity = 2
+		tolerance_heretic = 2
+		religious_unity = 0.25
+	}
+	ai = {
+		factor = 3
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			total_development = 75
+		}
+	}
+}
+EDG_Little_Poller_pardon = {#《小波勒赦令》
+	icon = "paper_with_seal_3"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = french
+	}
+	trigger = {
+		culture_group = french
+	}
+	modifiers = {
+		global_tax_modifier = 0.2
+		global_unrest = 1
+		burghers_loyalty_modifier = 0.1
+	}
+	ai = {
+		factor = 3
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 3 }
+		}
+	}
+}
+EDG_France_conference = {#国务会议
+	icon = "dutch_republic"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = french
+	}
+	trigger = {
+		culture_group = french
+	}
+	modifiers = {
+		country_admin_power = 1
+		monthly_reform_progress_modifier = 0.25
+	}
+	ai = {
+		factor = 3
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 3 }
+		}
+	}
+}
+EDG_France_Trade_Commission = {#贸易委员会
+	icon = "dutch_republic"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = french
+	}
+	trigger = {
+		culture_group = french
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.1
+		trade_efficiency = 0.1
+		mercantilism_cost = -0.2
+		inflation_reduction = 0.1
+	}
+	ai = {
+		factor = 3
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 3 }
+		}
+	}
+}

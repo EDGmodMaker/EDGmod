@@ -1,0 +1,4 @@
+EDG_flavor_Bogomili_free_modifier = {
+	land_morale = 0.05
+	army_tradition = 0.5
+}

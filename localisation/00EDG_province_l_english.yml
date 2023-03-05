@@ -1,0 +1,302 @@
+﻿l_english:
+ tooltip_china_city:0 "ÑSUS¦^¾0R20„v-NýVwýN"
+PROV8001:0 "aSnf?–"
+PROV_ADJ8001:0 "aSnf?–"
+PROV8002:0 "®vS³u"
+PROV_ADJ8002:0 "®vS³u"
+PROV8003:0 "Èîh"
+PROV_ADJ8003:0 "Èîh"
+PROV8004:0 "^±ƒ<S(ƒ"
+PROV_ADJ8004:0 "^±ƒ<S(ƒ"
+PROV8005:0 "®vÕn"
+PROV_ADJ8005:0 "®vÕn"
+PROV8006:0 "VÌ‘(„k"
+PROV_ADJ8006:0 "VÌ‘(„k"
+
+#山东
+shandong_area:0 "qSN‰è"
+shandong_area_name:0 "qSN‰è"
+shandong_area_east:0 "qSNNè"
+shandong_area_east_name:0 "qSNNè"
+PROV9002:0 "ßpðS"
+PROV_ADJ9002:0 "ßpðS"
+PROV9003:0 "R—›S"
+PROV_ADJ9003:0 "R—›S"
+PROV9004:0 "4N‚l"
+PROV_ADJ9004:0 "4N‚l"
+PROV9005:0 "·VÞT"
+PROV_ADJ9005:0 "·VÞT"
+#闽北
+fujian_area:0 "yú^-Nè"
+fujian_area_name:0 "yú^-Nè"
+fujian_area_north:0 "yú^Sè"
+fujian_area_north_name:0 "yú^Sè"
+PROV9006:0 "†ƒ0u"
+PROV_ADJ9006:0 "†ƒ0u"
+PROV9007:0 "3oÞT"
+PROV_ADJPROV9007:0 "3oÞT"
+PROV9001:0 "R·V"
+PROV_ADJ9001:0 "R·V"
+#闽南
+fujian_area_south:0 "yú^WSè"
+fujian_area_south_name:0 "yú^WSè"
+PROV_ADJ9007:0 "3oÞT"
+PROV9008:0 "™Ÿ©S"
+PROV_ADJ9008:0 "™Ÿ©S"
+PROV9009:0 "	Nf"
+PROV_ADJ9009:0 "	Nf"
+PROV9010:0 "ú^3–"
+PROV_ADJ9010:0 "ú^3–"
+PROV9011:0 "WS"
+PROV_ADJ9011:0 "WS"
+PROV9012:0 "ÐvÎW"
+PROV_ADJ9012:0 "ÐvÎW"
+PROV9039:0 "ÿRR"
+PROV_ADJ9039:0 "ÿRR"
+
+
+#广东
+guangdong_area_east:0 "^NNè"
+guangdong_area_east_name:0 "^NNè"
+guangdong_area:0 "^N-Nè"
+guangdong_area_name:0 "^N-Nè"
+west_guangdong_area:0 "^N‰è"
+west_guangdong_area_name:0 "^N‰è"
+PROV9013:0 "inml"
+PROV_ADJ9013:0 "inml"
+PROV9014:0 "‘Nnm"
+PROV_ADJ9014:0 "‘Nnm"
+PROV9015:0 "-NqS"
+PROV_ADJ9015:0 "-NqS"
+PROV9016:0 "nÜ"
+PROV_ADJ9016:0 "nÜ"
+PROV9017:0 "³ln"
+PROV_ADJ9017:0 "³ln"
+PROV9018:0 "Ul>S"
+PROV_ADJ9018:0 "Ul>S"
+
+#河北
+    hebei_area_east:0 "³lSNè"
+    hebei_area_east_name:0 "³lSNè"
+    hebei_area:0 "³lS-Nè"
+    hebei_area_name:0 "³lS-Nè"
+    hebei_area_south:0 "³lSWSè"
+    hebei_area_south_name:0 "³lSWSè"
+    hebei_area_west:0 "³lS‰è"
+    hebei_area_west_name:0 "³lS‰è"
+    south_hebei_area:0 "³lSWSr–"
+    south_hebei_area_name:0 "³lSWSr–"
+PROV9019:0 ")Y%m"
+PROV_ADJ9019:0 ")Y%m"
+PROV9020:0 "T<y"
+PROV_ADJ9020:0 "T<y"
+PROV9021:0 "UqS"
+PROV_ADJ9021:0 "UqS"
+PROV9022:0 "Á‰R"
+PROV_ADJ9022:0 "Á‰R"
+PROV9023:0 "ß„ÞT"
+PROV_ADJ9023:0 "ß„ÞT"
+PROV9024:0 "¿mÞT"
+PROV_ADJ9024:0 "¿mÞT"
+PROV9025:0 "nÞT"
+PROV_ADJ9025:0 "nÞT"
+PROV9026:0 "ŽQÞT"
+PROV_ADJ9026:0 "ŽQÞT"
+PROV9027:0 "^s^"
+PROV_ADJ9027:0 "^s^"
+PROV9028:0 "Nf"
+PROV_ADJ9028:0 "Nf"
+PROV9029:0 "ùfÞT"
+PROV_ADJ9029:0 "ùfÞT"
+PROV9030:0 "tQÞT"
+PROV_ADJ9030:0 "tQÞT"
+PROV9031:0 "‘NÞT"
+PROV_ADJ9031:0 "‘NÞT"
+PROV9032:0 "Øš®"
+PROV_ADJ9032:0 "Øš®"
+PROV9033:0 "ÁnÞT"
+PROV_ADJ9033:0 "ÁnÞT"
+PROV9034:0 "—N"
+PROV_ADJ9034:0 "—N"
+PROV9035:0 "™„ÎW"
+PROV_ADJ9035:0 "™„ÎW"
+
+#江西
+    jiangxi_area:0 "ml‰Nè"
+    jiangxi_area_north:0 "ml‰Sè"
+    jiangxi_area_south:0 "ml‰WSè"
+    jiangxi_area:0 "ml‰-Nè"
+    jiangxi_area_name:0 "ml‰Nè"
+    jiangxi_area_north_name:0 "ml‰Sè"
+    jiangxi_area_south_name:0 "ml‰WSè"
+    jiangxi_area_name:0 "ml‰-Nè"
+PROV9036:0 "nAm"
+PROV9037:0 "µfk"
+PROV9038:0 "^t‰R"
+PROV_ADJ9036:0 "nAm"
+PROV_ADJ9037:0 "µfk"
+PROV_ADJ9038:0 "^t‰R"
+
+
+#浙江
+    zhejiang_area_north:0 "YmmlSè"
+    zhejiang_area_south:0 "YmmlWSè"
+    zhejiang_area_west:0 "Ymml‰è"
+    zhejiang_area_north_name:0 "YmmlSè"
+    zhejiang_area_south_name:0 "YmmlWSè"
+    zhejiang_area_west_name:0 "Ymml‰è"
+PROV9040:0 "Rwm"
+PROV9041:0 "™ŸÉl"
+PROV9042:0 "bˆÞT"
+PROV9043:0 "ú^·V"
+PROV9044:0 "óm‰R"
+PROV9045:0 "	VtQ"
+PROV9046:0 "Œgml"
+PROV9047:0 "àe/•"
+PROV9048:0 "œRÞT"
+PROV_ADJ9040:0 "Rwm"
+PROV_ADJ9041:0 "™ŸÉl"
+PROV_ADJ9042:0 "bˆÞT"
+PROV_ADJ9043:0 "ú^·V"
+PROV_ADJ9044:0 "óm‰R"
+PROV_ADJ9045:0 "	VtQ"
+PROV_ADJ9046:0 "Œgml"
+PROV_ADJ9047:0 "àe/•"
+PROV_ADJ9048:0 "œRÞT"
+
+#江苏
+    south_jiangsu_area:0 "mlÏ‚WSè"
+    jiangsu_area_middle:0 "mlÏ‚-Nè"
+    south_jiangsu_area_name:0 "mlÏ‚WSè"
+    jiangsu_area_middle_name:0 "mlÏ‚-Nè"
+
+
+#安徽
+    anhui_area_middle:0 "‰RËV-Nè"
+    south_anhui_area:0 "‰RËVWSè"
+    anhui_area_middle_name:0 "‰RËV-Nè"
+    south_anhui_area_name:0 "‰RËVWSè"
+PROV9049:0 "ŒTÞT"
+PROV9050:0 "Yu‰R"
+PROV9051:0 "`lÞT"
+PROV9052:0 "·V‰R"
+PROV9053:0 "™ŸWS"
+PROV9054:0 "‰RWS"
+PROV9055:0 "à`f"
+PROV_ADJ9049:0 "ŒTÞT"
+PROV_ADJ9050:0 "Yu‰R"
+PROV_ADJ9051:0 "`lÞT"
+PROV_ADJ9052:0 "·V‰R"
+PROV_ADJ9053:0 "™ŸWS"
+PROV_ADJ9054:0 "‰RWS"
+PROV_ADJ9055:0 "à`f"
+
+
+#江西
+    jiangxi_area_north:0 "ml‰Sè"
+    jiangxi_area_south:0 "ml‰WSè"
+    jiangxi_area_middle:0 "ml‰-Nè"
+    jiangxi_area_north_name:0 "ml‰Sè"
+    jiangxi_area_south_name:0 "ml‰WSè"
+    jiangxi_area_middle_name:0 "ml‰-Nè"
+PROV9056:0 "Rý"
+PROV9057:0 "šbÞT"
+PROV9058:0 "ˆÞT"
+PROV9059:0 "^tÞT"
+PROV9060:0 "RÞT"
+PROV9061:0 "kNml"
+PROV9062:0 "³NÞT"
+PROV_ADJ9056:0 "Rý"
+PROV_ADJ9057:0 "šbÞT"
+PROV_ADJ9058:0 "ˆÞT"
+PROV_ADJ9059:0 "^tÞT"
+PROV_ADJ9060:0 "RÞT"
+PROV_ADJ9061:0 "kNml"
+PROV_ADJ9062:0 "³NÞT"
+
+
+#广西
+    guangxi_area_north:0 "^‰Sè"
+    guangxi_area:0 "^‰WSè"
+    guangxi_area_west:0 "^‰‰è"
+    guangxi_area_north_name:0 "^‰Sè"
+    guangxi_area_name:0 "^‰WSè"
+    guangxi_area_west_name:0 "^‰‰è"
+PROV9063:0 "mlÞT"
+PROV9064:0 "Á—g"
+PROV9065:0 "TmÞT"
+PROV9066:0 "53–"
+PROV9067:0 "°eS"
+PROV9068:0 "¦”ÞT"
+PROV9069:0 "RV·V"
+PROV9070:0 "G•‰R"
+PROV9071:0 "šRÜ"
+PROV_ADJ9063:0 "mlÞT"
+PROV_ADJ9064:0 "Á—g"
+PROV_ADJ9065:0 "TmÞT"
+PROV_ADJ9066:0 "53–"
+PROV_ADJ9067:0 "°eS"
+PROV_ADJ9068:0 "¦”ÞT"
+PROV_ADJ9069:0 "RV·V"
+PROV_ADJ9070:0 "G•‰R"
+PROV_ADJ9071:0 "šRÜ"
+
+
+#云贵
+yun_gui_north:0 "‘NWSSè"
+yun_gui_north_name:0 "‘NWSSè"
+yun_gui_area:0 "‘N5Sè"
+yun_gui_area_name:0 "‘N5Sè"
+PROV9072:0 "^‰"
+PROV9073:0 "4N‰R"
+PROV9074:0 "òfV—"
+PROV9075:0 "fkšR"
+PROV9076:0 "8lf"
+PROV9077:0 "8lR"
+PROV9078:0 "8lÞT"
+PROV9079:0 "8ltQ"
+PROV9080:0 "Êv3–"
+PROV9081:0 "øl‰"
+PROV9082:0 "PhÎW"
+PROV9083:0 "åuR"
+PROV9084:0 "÷–qS"
+PROV9085:0 "±Ri`"
+PROV9086:0 "8lz˜"
+PROV_ADJ9072:0 "^‰"
+PROV_ADJ9073:0 "4N‰R"
+PROV_ADJ9074:0 "òfV—"
+PROV_ADJ9075:0 "fkšR"
+PROV_ADJ9076:0 "8lf"
+PROV_ADJ9077:0 "8lR"
+PROV_ADJ9078:0 "8lÞT"
+PROV_ADJ9079:0 "8ltQ"
+PROV_ADJ9080:0 "Êv3–"
+PROV_ADJ9081:0 "øl‰"
+PROV_ADJ9082:0 "PhÎW"
+PROV_ADJ9083:0 "åuR"
+PROV_ADJ9084:0 "÷–qS"
+PROV_ADJ9085:0 "±Ri`"
+PROV_ADJ9086:0 "8lz˜"
+
+#湖南
+hunan_area_north:0 "VnWSSè"
+hunan_area_north_name:0 "VnWSSè"
+
+hunan_area:0 "VnWS-Nè"
+hunan_area_name:0 "VnWS-Nè"
+
+hunan_area_south:0 "VnWSWSè"
+hunan_area_south_name:0 "VnWSWSè"
+
+gui_zhou:0 "5ÞT"
+gui_zhou_name:0 "5ÞT"
+
+
+
+
+
+
+
+
+
+

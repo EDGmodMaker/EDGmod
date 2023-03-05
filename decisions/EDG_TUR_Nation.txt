@@ -1,0 +1,374 @@
+country_decisions = {
+
+	EDG_TUR_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_TUR_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { tag = POL }
+			NOT = { tag = RUS }
+			OR = {
+				NOT = { exists = TUR }
+				ai = no
+			}
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = KAR }
+			OR = {
+				TAG = MHM
+				TAG = AYD
+				TAG = ERE
+				TAG = GRM
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 149			# 埃迪尔内
+				province_id = 326			# 安卡拉
+				province_id = 4309			# 士麦那
+				province_id = 317			# 许达文迪加尔
+				province_id = 1846			# 阿马西亚
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = TUR }
+			NOT = { has_reform = states_general_reform }
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			OR = {
+				AND = {
+					is_great_power = yes
+					is_year = 1500
+					total_development = 500
+					OR = {
+						NOT = { exists = MHM }
+						tag = MHM
+					}
+					OR = {
+						NOT = { exists = AYD }
+						tag = AYD
+					}
+					OR = {
+						NOT = { exists = ERE }
+						tag = ERE
+					}
+					OR = {
+						NOT = { exists = MEN }
+						tag = MEN
+					}
+					OR = {
+						NOT = { exists = GRM }
+						tag = GRM
+					}
+					AND = {
+						owns_core_province = 149			# 埃迪尔内
+						owns_core_province = 4309			# 士麦那
+						owns_core_province = 317			# 许达文迪加尔
+					}
+				}
+				AND = {
+					owns_core_province = 149			# 埃迪尔内
+					owns_core_province = 326			# 安卡拉
+					owns_core_province = 4309			# 士麦那
+					owns_core_province = 317			# 许达文迪加尔
+					owns_core_province = 1846			# 阿马西亚
+				}
+			}
+			
+		}
+		effect = {
+			change_tag = TUR
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { is_revolutionary = no }
+				
+					if = {
+						limit = { NOT = { government = monarchy } }
+						change_government_to_monarchy = yes
+					}
+					add_government_reform = ottoman_government
+				
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_government_reform = EDG_ottoman_empire_government
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_TUR_flag
+			add_prestige = 25
+			country_event = {
+				  id = EDG_flavor_TUR.0
+			}
+		}
+		ai_will_do = {
+			factor = 100000
+			modifier = {
+				factor = 0
+				NOT = { 
+						OR = {
+						TAG = MHM
+						TAG = AYD
+						TAG = ERE
+						TAG = GRM
+					} 
+				}
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 149			# 埃迪尔内
+						owns_core_province = 326			# 安卡拉
+						owns_core_province = 4309			# 士麦那
+						owns_core_province = 317			# 许达文迪加尔
+						owns_core_province = 1846			# 阿马西亚
+					}
+				}
+			}
+		}
+		ai_importance = 1000
+	}
+	
+	
+	
+	
+	EDG_TUR_cancel_MAM_egy_reform = {
+		major = yes
+		potential = {
+			OR = {
+				tag = TUR
+				tag = RUM
+				tag = MHM
+			}
+			NOT = { has_country_flag = EDG_TUR_disable_MAM_flag }
+		}
+		allow = {
+			NOT = {	has_reform = EDG_Tax_Inclusive_reform }
+			adm_power = 100
+			egypt_region = {
+				type = all
+				owned_by = ROOT
+				NOT = {
+				  unrest = 1
+				}
+			}
+		}
+		effect = {
+			add_adm_power = -100
+			set_country_flag = EDG_TUR_disable_MAM_flag
+			custom_tooltip = EDG_TUR_disable_MAM_decision.tooltip
+			  random_owned_province = {
+				limit = {
+				  region = anatolia_region
+				}
+				spawn_rebels = {
+					size = 4
+					win = yes
+					unrest = 10
+				  }
+			  }
+			  random_owned_province = {
+				limit = {
+				  region = egypt_region
+				}
+				spawn_rebels = {
+					size = 4
+					win = yes
+					unrest = 10
+				  }
+			  }
+			  random_owned_province = {
+				limit = {
+				  region = egypt_region
+				}
+				spawn_rebels = {
+					size = 5
+					win = yes
+					unrest = 10
+				  }
+			  }
+			  random_owned_province = {
+				limit = {
+				  region = egypt_region
+				}
+				spawn_rebels = {
+					size = 6
+					win = yes
+					unrest = 10
+				  }
+			  }
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 200 }
+			}
+		}
+	}
+	
+	
+	EDG_TUR_competely_reform = {
+		major = yes
+		potential = {
+			OR = {
+				tag = RUM
+				tag = TUR
+			}
+			NOT = { has_country_flag = had_EDG_TUR_competely_reform }
+		}
+		allow = {
+			adm_power = 100
+			has_reform = EDG_Mahmud_reform
+			has_reform = EDG_Tanqimate_reform
+			NOT = { tax_income_percentage = 0.35 }
+			if = {
+				limit = {
+					development_in_provinces = {
+						value = 100
+						region = egypt_region
+					}
+				}
+				has_country_flag = EDG_TUR_disable_MAM_flag
+			}
+		}
+		effect = {
+			add_adm_power = -100
+			remove_country_modifier = "EDG_TUR_decline_after_modifier"
+			set_country_flag = had_EDG_TUR_competely_reform
+			custom_tooltip = EDG_TUR_competely_reform_tooltip
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 200 }
+				NOT = { has_reform = EDG_Mahmud_reform }
+				NOT = { has_reform = EDG_Tanqimate_reform }
+			}
+		}
+	}
+	
+	EDG_TUR_adm_tech_6_Economic_reform = {
+		major = yes
+		potential = {
+			OR = {
+				tag = RUM
+				tag = TUR
+			}
+			NOT = { has_country_modifier = EDG_TUR_adm_tech_6_Economic_reform_modifier }
+			NOT = { has_country_flag = has_EDG_TUR_adm_tech_6_Economic_reform }
+		}
+		allow = {
+			adm_power = 100
+			adm_tech = 6
+		}
+		effect = {
+			add_adm_power = -100
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 1
+				add_base_manpower = 1
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "EDG_City_Tax_bloom"
+						duration = 7300
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "EDG_TUR_adm_tech_6_Economic_reform_modifier"
+				duration = -1
+			}
+			set_country_flag = EDG_TUR_adm_tech_6_Economic_reform
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 200 }
+			}
+		}
+	}
+	
+	EDG_janisary_1_modifier_decision = {
+		major = yes
+		potential = {
+			has_reform = ottoman_government
+		}
+		allow = {
+			mil_power = 50
+			NOT = { has_country_modifier = EDG_janisary_1_modifier }
+		}
+		effect = {
+			add_mil_power = -50
+			add_country_modifier = {
+				name = "EDG_janisary_1_modifier"
+				duration = 3650
+			}
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	EDG_janisary_2_modifier_decision = {
+		major = yes
+		potential = {
+			has_reform = ottoman_government
+		}
+		allow = {
+			mil_power = 50
+			NOT = { has_country_modifier = EDG_janisary_2_modifier }
+		}
+		effect = {
+			add_mil_power = -50
+			add_country_modifier = {
+				name = "EDG_janisary_2_modifier"
+				duration = 3650
+			}
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

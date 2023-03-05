@@ -1,0 +1,8 @@
+
+EDG_modifier_POL_ready_modifier = {
+	core_creation = -0.15
+	land_morale = 0.15
+	global_manpower_modifier = 0.20
+	land_forcelimit_modifier = 0.20
+}
+

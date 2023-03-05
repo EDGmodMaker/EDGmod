@@ -1,0 +1,10 @@
+government = republic
+add_government_reform = EDG_Shangbang_republic
+technology_group = chinese
+religion = confucianism
+add_harmonized_religion = mahayana
+primary_culture = jianghuai
+capital = 684
+government_rank = 1
+historical_friend = SZZ
+historical_friend = LUZ

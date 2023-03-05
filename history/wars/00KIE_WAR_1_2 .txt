@@ -1,0 +1,10 @@
+name = "úW…W¯e…Qb"
+war_goal = {
+  type = take_claim
+  casus_belli = cb_conquest
+  province = 280
+}
+1443.12.1 = {
+  add_attacker = ZAZ
+  add_defender = CHR
+}

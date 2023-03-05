@@ -1,0 +1,1116 @@
+EDG_andalusia_con_1_missions = {
+  slot = 1
+  generic = no
+  ai = yes
+   
+  potential = {
+	OR = {
+      tag = GRA
+      tag = ADU
+      tag = BDH
+      tag = SVL
+      tag = CIE
+	  }
+    NOT = {
+      map_setup = map_setup_random
+    }
+    has_dlc = "Golden Century"
+  }
+  has_country_shield = yes
+  
+  
+  adu_caribbean_cn = {
+    icon = mission_caribbean_cn
+    required_missions = {
+      adu_explore_further
+    }
+    position = 21
+    provinces_to_highlight = {
+      colonial_region = colonial_the_carribean
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 5
+        colonial_region = colonial_the_carribean
+        is_city = yes
+      }
+    }
+    effect = {
+      add_prestige = 25
+      add_country_modifier = {
+        name = "the_unknown_frontier"
+        duration = 7300
+      }
+	  mexico_region = {
+		limit = {
+			NOT = { is_permanent_claim = ROOT	}
+			NOT = { is_core = ROOT	}
+		}
+		add_permanent_claim = ROOT
+	  }
+    }
+  }
+  
+  EDG_adu_1_6 = {
+    icon = mission_mayan_conquest
+    required_missions = {
+      adu_caribbean_cn
+    }
+    position = 22
+    provinces_to_highlight = {
+      colonial_region = colonial_mexico
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 10
+        colonial_region = colonial_mexico
+        is_city = yes
+      }
+    }
+    effect = {
+      add_dip_power = 100
+      add_country_modifier = {
+        name = "EDG_adu_1_6_modifier"
+        duration = 18250
+      }
+    }
+  }
+  EDG_adu_colonial_1_24 = {
+    icon = mission_colonize_california
+    required_missions = {
+      EDG_adu_1_6
+    }
+    position = 24
+    provinces_to_highlight = {
+      colonial_region = colonial_california
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+      
+    }
+    trigger = {
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 10
+        colonial_region = colonial_california
+        is_city = yes
+      }
+    }
+    effect = {
+		add_years_of_income = 0.5
+		add_country_modifier = {
+			name = "EDG_colonize_6_modifier"
+			duration = 18250
+		}
+    }
+  }
+  EDG_adu_colonial_1_26 = {
+    icon = mission_spanish_armada
+    required_missions = {
+      EDG_adu_colonial_1_24
+    }
+    position = 26
+    provinces_to_highlight = {
+      colonial_region = colonial_alaska
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+      
+    }
+    trigger = {
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 10
+        colonial_region = colonial_alaska
+        is_city = yes
+      }
+    }
+    effect = {
+		add_country_modifier = {
+			name = "EDG_colonize_4_modifier"
+			duration = 18250
+		}
+    }
+  }
+  EDG_adu_colonial_1_27 = {
+    icon = mission_claim_hispaniola
+    required_missions = {
+      EDG_adu_colonial_1_26
+    }
+    position = 27
+    provinces_to_highlight = {
+    }
+    trigger = {
+      colonial_governor = 3
+    }
+    effect = {
+		add_dip_power = 50
+		add_mercantilism = 5
+		add_country_modifier = {
+			name = "EDG_colonize_10_modifier_1"
+			duration = -1
+		}
+    }
+  }
+  
+}
+
+EDG_andalusia_con_2_missions = {
+  slot = 2
+  generic = no
+  ai = yes
+   
+  potential = {
+	OR = {
+      tag = GRA
+      tag = ADU
+      tag = BDH
+      tag = SVL
+      tag = CIE
+	  }
+    NOT = {
+      map_setup = map_setup_random
+    }
+    has_dlc = "Golden Century"
+  }
+  has_country_shield = yes
+  
+  adu_explore_further = {
+    icon = mission_look_west
+    required_missions = {
+       
+    }
+    position = 20
+    trigger = {
+      if = {
+        limit = {
+          is_random_new_world = no
+        }
+        custom_trigger_tooltip = {
+          tooltip = miss_discover_caribbean
+          colonial_the_carribean = {
+            has_discovered = ROOT
+          }
+        }
+      }
+      custom_trigger_tooltip = {
+        tooltip = miss_discover_west_africa
+        west_africa_coast_area = {
+          has_discovered = ROOT
+        }
+      }
+    }
+    effect = {
+      define_conquistador = {
+        shock = 5
+        fire = 5
+        manuever = 6
+        siege = 1
+      }
+		add_country_modifier = {
+			name = "EDG_modifier_ADU_raise"
+			duration = 18250
+		}
+    }
+  }
+  adu_brazilian_cn = {
+    icon = mission_colonise_brazil
+    required_missions = {
+      adu_explore_further
+    }
+    position = 21
+    provinces_to_highlight = {
+      colonial_region = colonial_brazil
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 10
+        colonial_region = colonial_brazil
+        is_city = yes
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = "adu_native_concord"
+        duration = 18250
+      }
+		custom_tooltip = EDG_adu_brazilian_cn_tooltip
+		if = {
+			limit = {
+			  2935 = {
+				owned_by = ROOT
+			  }
+			}
+			2935 = {
+				create_or_add_center_of_trade_level = 2
+			}
+		}
+    }
+  }
+  EDG_adu_colonial_2_22 = {
+    icon = mission_portuguese_burma
+    required_missions = {
+      adu_brazilian_cn
+    }
+    position = 22
+    provinces_to_highlight = {
+      colonial_region = colonial_la_plata
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+      
+    }
+    trigger = {
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 10
+        colonial_region = colonial_la_plata
+        is_city = yes
+      }
+    }
+    effect = {
+
+		add_country_modifier = {
+			name = "EDG_colonize_7_modifier"
+			duration = 18250
+		}
+		custom_tooltip = EDG_adu_colonial_2_22_tooltip
+		if = {
+			limit = {
+			  778 = {
+				owned_by = ROOT
+			  }
+			}
+			778 = {
+				add_center_of_trade_level = 2
+			}
+		}
+    }
+  }
+  EDG_adu_colonial_2_23 = {
+    icon = mission_portuguese_ceylon
+    required_missions = {
+      EDG_adu_colonial_2_22
+    }
+    position = 23
+    provinces_to_highlight = {
+      colonial_region = colonial_peru
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+      
+    }
+    trigger = {
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 10
+        colonial_region = colonial_peru
+        is_city = yes
+      }
+    }
+    effect = {
+		add_years_of_income = 1.2
+		define_advisor = {
+			type = master_of_mint
+			skill = 3
+			culture = ROOT
+			religion = ROOT
+		}
+
+		add_country_modifier = {
+			name = "EDG_colonize_9_modifier"
+			duration = 18250
+		}
+    }
+  }
+  EDG_adu_colonial_2_24 = {
+    icon = mission_colonize_florida
+    required_missions = {
+      EDG_adu_colonial_2_23
+    }
+    position = 24
+    provinces_to_highlight = {
+      colonial_region = colonial_louisiana
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+      
+    }
+    trigger = {
+		
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 10
+        colonial_region = colonial_louisiana
+        is_city = yes
+      }
+    }
+    effect = {
+		define_advisor = {
+			type = logistics_specialist
+			skill = 3
+			culture = ROOT
+			religion = ROOT
+		}
+
+		custom_tooltip = EDG_adu_colonial_2_25_tooltip
+		if = {
+			limit = {
+			  893 = {
+				owned_by = ROOT
+			  }
+			}
+			893 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 5475
+					power = 50
+					key = EDG_KEY_Trade_expansion
+				}
+			}
+		}
+		
+		add_country_modifier = {
+			name = "EDG_colonize_8_modifier"
+			duration = 18250
+		}
+    }
+  }
+  EDG_adu_colonial_2_25 = {
+    icon = mission_rb_grow_the_channel
+    required_missions = {
+      EDG_adu_colonial_2_24
+    }
+    position = 25
+    provinces_to_highlight = {
+      colonial_region = colonial_canada
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+      
+    }
+    trigger = {
+		
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 10
+        colonial_region = colonial_canada
+        is_city = yes
+      }
+    }
+    effect = {
+		define_advisor = {
+			type = trader
+			skill = 3
+			culture = ROOT
+			religion = ROOT
+		}
+		add_country_modifier = {
+			name = EDG_colonize_2_modifier
+			duration = 9125 #25 years
+		}
+    }
+  }
+  EDG_adu_colonial_2_27 = {
+    icon = mission_combat_barbary_piracy
+    required_missions = {
+      EDG_adu_colonial_2_25
+      EDG_adu_colonial_1_26
+    }
+    position = 27
+    provinces_to_highlight = { 
+    }
+    trigger = {
+		colony = 8
+    }
+    effect = {
+		add_country_modifier = {
+			name = "EDG_colonize_11_modifier"
+			duration = 18250
+		}
+    }
+  }
+
+}
+
+EDG_andalusia_con_3_missions = {
+  slot = 3
+  generic = no
+  ai = yes
+   
+  potential = {
+	OR = {
+      tag = GRA
+      tag = ADU
+      tag = BDH
+      tag = SVL
+      tag = CIE
+	  }
+    NOT = {
+      map_setup = map_setup_random
+    }
+    has_dlc = "Golden Century"
+  }
+  has_country_shield = yes
+  
+
+  
+  adu_buy_africa = {
+    icon = mission_african_trade_post
+    required_missions = {
+      adu_explore_further
+    }
+    position = 21
+    provinces_to_highlight = {
+      OR = {
+        region = guinea_region
+      }
+      NOT = {
+        owned_by = ROOT
+      }
+    }
+    trigger = {
+      if = {
+        limit = {
+          OR = {
+            has_dlc = "Wealth of Nations"
+            has_dlc = "Dharma"
+          }
+        }
+        guinea_region = {
+          owned_by = ROOT
+          is_owned_by_trade_company = yes
+        }
+      }
+      else = {
+        guinea_region = {
+          owned_by = ROOT
+        }
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = "adu_trade_company_founded"
+        duration = 7300
+      }
+      define_advisor = {
+        type = naval_reformer
+        skill = 4
+        culture = ROOT
+        religion = ROOT
+        cost_multiplier = 0.25
+      }
+    }
+  }
+
+  adu_monopolize_africa = {
+    icon = mission_trade_in_gold_coast
+    required_missions = { adu_buy_africa }
+    position = 22
+    provinces_to_highlight = {
+      province_id = 1466
+      NOT = {
+        trade_share = {
+          country = ROOT
+          share = 90
+        }
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      1466 = {
+        trade_share = {
+          country = ROOT
+          share = 90
+        }
+      }
+    }
+    effect = {
+		add_dip_power = 50
+		
+		add_country_modifier = {
+			name = EDG_colonize_1_modifier
+			duration = 9125 #25 years
+		}
+		if = {
+			limit = {
+			  223 = {
+				owned_by = ROOT
+			  }
+			}
+			223 = {
+			  center_of_trade = 1
+			}
+		}
+		else = {
+			add_dip_power = 200
+		}
+    }
+  }
+  
+  EDG_adu_colonial_3_23 = {
+    icon = mission_west_african_ports
+    required_missions = {
+      adu_monopolize_africa
+    }
+    position = 23
+    provinces_to_highlight = { 
+    }
+    trigger = {
+		full_idea_group = exploration_ideas
+		full_idea_group = expansion_ideas
+    }
+    effect = {
+		add_country_modifier = {
+			name = "EDG_colonize_5_modifier"
+			duration = 18250
+		}
+
+    }
+  }
+  EDG_adu_colonial_3_25 = {
+    icon = mission_launch_a_flagship
+    required_missions = {
+      EDG_adu_colonial_3_23
+    }
+    position = 25
+    provinces_to_highlight = { 
+		province_id = 1177
+    }
+    trigger = {
+	  1177 = {
+		owned_by = ROOT
+		is_strongest_trade_power = ROOT
+	  }
+	  
+    }
+    effect = {
+		add_years_of_income = 0.5
+		custom_tooltip = EDG_adu_colonial_3_23_tooltip
+		if = {
+			limit = {
+			  1177 = {
+				owned_by = ROOT
+			  }
+			}
+			1177 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 5475
+					power = 50
+					key = EDG_KEY_Trade_expansion
+				}
+			}
+		}
+		
+    }
+  }
+  EDG_adu_colonial_3_26 = {
+    icon = mission_african_gold
+    required_missions = {
+      EDG_adu_colonial_3_25
+	  EDG_adu_colonial_4_25
+    }
+    position = 26
+    provinces_to_highlight = { 
+    }
+    trigger = {
+		num_of_strong_trade_companies = 3
+		OR = {
+			monthly_income = 500
+			trade_income_percentage = 0.40
+		}
+			home_trade_node = {
+				highest_value_trade_node = yes
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+    }
+    effect = {
+		add_mercantilism = 5
+		add_inflation = 5
+		capital_scope = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 36500
+				power = 50
+				key = EDG_KEY_Trade_expansion
+			}
+		}
+		add_country_modifier = {
+			name = "EDG_trade_upgrade_6_modifier"
+			duration = 18250
+		}
+    }
+  }
+  EDG_adu_colonial_3_28 = {
+    icon = mission_establish_mint_towns
+    required_missions = {
+      EDG_adu_colonial_2_27
+      EDG_adu_colonial_3_26
+	  EDG_adu_colonial_4_27
+    }
+    position = 28
+    provinces_to_highlight = { 
+		
+    }
+    trigger = {
+			home_trade_node = {
+				highest_value_trade_node = yes
+				trade_share = {
+					country = ROOT
+					share = 90
+				}
+			}
+		is_hegemon = yes
+    }
+    effect = {
+		add_mercantilism = 5
+		add_inflation = -5
+		add_years_of_income = 2.0
+		add_country_modifier = {
+			name = "EDG_produce_upgrade_1_modifier"
+			duration = 18250
+		}
+			hidden_effect = {
+				home_trade_node_effect_scope = {
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+						}
+						save_event_target_as = reward_province
+					}
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+							is_capital = yes
+						}
+						save_event_target_as = reward_province
+					}
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+							development = CAPITAL
+							is_capital = no
+						}
+						save_event_target_as = reward_province
+					}
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+							development = CAPITAL
+							is_capital = no
+							development = 20
+						}
+						save_event_target_as = reward_province
+					}
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+							development = CAPITAL
+							is_capital = no
+							development = 25
+						}
+						save_event_target_as = reward_province
+					}
+					random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+							development = CAPITAL
+							is_capital = no
+							development = 30
+						}
+						save_event_target_as = reward_province
+					}
+				}
+			}
+			if = {
+				limit = { has_saved_event_target = reward_province }
+				event_target:reward_province = {
+					add_province_modifier = {
+						name = "dominant_trade_hub"
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = dominant_home_node_reward_tooltip
+			}
+    }
+  }
+  
+}
+
+
+EDG_andalusia_con_4_missions = {
+  slot = 4
+  generic = no
+  ai = yes
+   
+  potential = {
+	OR = {
+      tag = GRA
+      tag = ADU
+      tag = BDH
+      tag = SVL
+      tag = CIE
+	  }
+    NOT = {
+      map_setup = map_setup_random
+    }
+    has_dlc = "Golden Century"
+  }
+  has_country_shield = yes
+  
+  EDG_adu_colonial_4_20 = {
+    icon = mission_arabian_sea_trade
+    required_missions = { 
+    }
+    position = 20
+    provinces_to_highlight = { 
+    }
+    trigger = {
+		has_institution = new_world_i
+    }
+    effect = {
+		add_country_modifier = {
+			name = "EDG_colonize_3_modifier"
+			duration = 9125
+		}
+
+    }
+  }
+  EDG_adu_colonial_4_21 = {
+    icon = mission_rb_monopolize_the_channel
+    required_missions = { 
+		EDG_adu_colonial_4_20
+    }
+    position = 21
+    provinces_to_highlight = { 
+    }
+    trigger = {
+		has_institution = printing_press
+    }
+    effect = {
+		add_country_modifier = {
+			name = "EDG_produce_upgrade_4_modifier"
+			duration = 9125
+		}
+
+    }
+  }
+  EDG_adu_colonial_4_22 = {
+    icon = mission_rb_scottish_north_sea_trade
+    required_missions = { 
+		EDG_adu_colonial_4_21
+    }
+    position = 22
+    provinces_to_highlight = { 
+    }
+    trigger = {
+		has_institution = global_trade
+    }
+    effect = {
+		add_country_modifier = {
+			name = "EDG_produce_upgrade_6_modifier"
+			duration = 9125
+		}
+
+    }
+  }
+  EDG_adu_colonial_4_23 = {
+    icon = mission_indian_trade_company
+    required_missions = {
+       
+    }
+    position = 23
+    provinces_to_highlight = {
+      region = coromandel_region
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+      
+    }
+    trigger = {
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 1
+        region = coromandel_region
+      }
+    }
+    effect = {
+		coromandel_region = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+    }
+  }
+  EDG_adu_colonial_4_24 = {
+    icon = mission_conquer_burma
+    required_missions = {
+       EDG_adu_colonial_4_23
+    }
+    position = 24
+    provinces_to_highlight = {
+      region = coromandel_region
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+      
+    }
+    trigger = {
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 10
+        region = coromandel_region
+      }
+    }
+    effect = {
+		deccan_region = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+		add_country_modifier = {
+			name = "EDG_colonize_13_modifier"
+			duration = 9125
+		}
+    }
+  }
+  EDG_adu_colonial_4_25 = {
+    icon = mission_conquer_assam
+    required_missions = {
+       EDG_adu_colonial_4_24
+    }
+    position = 25
+    provinces_to_highlight = {
+      region = coromandel_region
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      2026 = {
+		is_strongest_trade_power = ROOT
+	  }
+    }
+    effect = {
+		add_mercantilism = 5
+		add_years_of_income = 0.5
+    }
+  }
+  EDG_adu_colonial_4_27 = {
+    icon = mission_convert_bengal
+    required_missions = {
+       EDG_adu_colonial_4_25 
+    }
+    position = 27
+    provinces_to_highlight = { 
+    }
+    trigger = {
+		is_in_deficit = no
+		is_bankrupt = no
+		trader = 3
+			home_trade_node = {
+				highest_value_trade_node = yes
+				is_strongest_trade_power = ROOT
+			}
+    }
+    effect = {
+		add_dip_power = 100
+		add_country_modifier = {
+			name = "EDG_trade_upgrade_4_modifier"
+			duration = 9125
+		}
+    }
+  }
+}
+
+
+EDG_andalusia_con_5_missions = {
+  slot = 5
+  generic = no
+  ai = yes
+   
+  potential = {
+	OR = {
+      tag = GRA
+      tag = ADU
+      tag = BDH
+      tag = SVL
+      tag = CIE
+	  }
+    NOT = {
+      map_setup = map_setup_random
+    }
+    has_dlc = "Golden Century"
+  }
+  has_country_shield = yes
+  
+  EDG_adu_colonial_5_21 = {
+    icon = mission_rb_a_mighty_fleet
+    required_missions = {
+       EDG_adu_colonial_4_20
+    }
+    position = 21
+    provinces_to_highlight = {
+	}
+    trigger = {
+		OR = {
+			trader = 3
+			colonial_governor = 3
+		}
+		colony = 3
+    }
+    effect = {
+		add_dip_power = 25
+		add_country_modifier = {
+			name = "EDG_colonize_4_modifier"
+			duration = 9125
+		}
+    }
+  }
+  EDG_adu_colonial_5_22 = {
+    icon = mission_rb_colonise_spice_islands
+    required_missions = {
+       EDG_adu_colonial_5_21
+    }
+    position = 22
+    provinces_to_highlight = {
+	}
+    trigger = {
+		economist = 3
+		colony = 5
+		innovativeness = 25
+    }
+    effect = {
+		add_dip_power = 50
+		add_country_modifier = {
+			name = "EDG_colonize_12_modifier"
+			duration = 9125
+		}
+    }
+  }
+  EDG_adu_colonial_5_23 = {
+    icon = mission_conquer_orissa_mug
+    required_missions = {
+       EDG_adu_colonial_5_22
+    }
+    position = 23
+    provinces_to_highlight = {
+	}
+    trigger = {
+		inquisitor = 3
+		religious_unity = 0.75
+    }
+    effect = {
+		add_dip_power = 50
+		add_country_modifier = {
+			name = "EDG_colonize_5_modifier"
+			duration = 18250
+		}
+    }
+  }
+  EDG_adu_colonial_5_24 = {
+    icon = mission_embassy_to_the_west
+    required_missions = {
+		EDG_adu_colonial_5_23
+    }
+    position = 24
+    provinces_to_highlight = {
+	}
+    trigger = {
+		had_active_policy = {
+			policy = colonial_expansions
+			days = 3650
+		}
+    }
+    effect = {
+		add_dip_power = 50
+		add_country_modifier = {
+			name = "EDG_colonize_5_modifier"
+			duration = -1
+		}
+    }
+  }
+  EDG_adu_colonial_5_26 = {
+    icon = mission_abu_saids_dream
+    required_missions = { 
+       EDG_adu_colonial_4_24
+    }
+    position = 25
+    provinces_to_highlight = {
+      region = deccan_region
+      NOT = {
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      has_discovered = ROOT
+      
+    }
+    trigger = {
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 20
+        region = deccan_region
+      }
+    }
+    effect = {
+		india_superregion = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+    }
+  }
+  EDG_adu_colonial_5_27 = {
+    icon = mission_conquer_arakan
+    required_missions = {
+       EDG_adu_colonial_5_26
+    }
+    position = 27
+    provinces_to_highlight = {
+      province_id = 561
+    }
+    trigger = {
+      561 = { is_strongest_trade_power = yes }
+    }
+    effect = {
+		add_mercantilism = 5
+		add_dip_power = 100
+		add_country_modifier = {
+			name = "EDG_trade_upgrade_5_modifier"
+			duration = 9125
+		}
+			561 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 9125
+					power = 50
+					key = EDG_KEY_Trade_expansion
+				}
+			}
+    }
+  }
+  
+}

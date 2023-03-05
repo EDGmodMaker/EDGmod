@@ -1,0 +1,27 @@
+bookmark =
+{
+	name = "EDG_BOOKMARK_1"
+	desc = "EDG_BOOKMARK_1_DESC"
+	date = 1444.11.11
+	
+	
+	
+	country = MHM
+	country = BUL
+	country = VOL
+	country = ZAZ
+	country = BDH
+	country = AKK
+	country = ARL
+	country = KAR
+	country = GSR
+	country = CAS
+	
+	easy_country = MHM
+	easy_country = BUL
+	easy_country = VOL
+	easy_country = ZAZ
+	easy_country = BDH
+	easy_country = AKK
+	easy_country = ARL
+}

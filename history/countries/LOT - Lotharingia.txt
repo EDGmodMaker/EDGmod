@@ -1,0 +1,41 @@
+government = monarchy
+add_government_reform = EDG_LOT_feudal_system
+government_rank = 2
+technology_group = western
+primary_culture = burgundian
+add_accepted_culture = hessian
+religion = catholic
+capital = 1878
+
+1433.1.22 = {
+  monarch = {
+    name = "ÔçÙu^∑V VII"  # 
+    dynasty = "†Rmóg"  # de Valois
+    birth_date = 1390.2.22
+    adm = 2
+    dip = 2
+    mil = 5
+  }
+  queen = {
+    name = "õs)RöN yråÖéÉ"  # Marie
+    dynasty = "ØQ ó®NØevñ¨Ç"  # d'Anjou
+    birth_date = 1415.10.14
+    female = yes
+    adm = 4
+    dip = 1
+    mil = 0
+  }
+}
+1443.7.3 = {
+  heir = {
+    name = "çS≥u€ûyr"  # Louis
+    dynasty = "†Rmóg"  # de Valois
+    birth_date = 1443.7.3
+    death_date = 1505.10.27
+	female = yes
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}

@@ -1,0 +1,10 @@
+name = "löFzÅúKQÖQb"
+war_goal = {
+  type = superiority_punitive
+  casus_belli = cb_core
+  provice = 361
+}
+1443.12.1 = {
+  add_attacker = ALX
+  add_defender = CIO
+}

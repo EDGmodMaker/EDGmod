@@ -1,0 +1,59 @@
+
+EDG_gsr_mission_emp_ser_protectors_of_christendom_modifier = {
+	fire_damage = 0.05
+	fire_damage_received = -0.05
+	shock_damage = 0.05
+	shock_damage_received = -0.05
+}
+EDG_gsr_mission_emp_ser_protectors_of_christendom_modifier_2 = {
+	stability_cost_modifier = -0.15
+	global_tax_modifier = 0.15
+}
+EDG_emp_ser_retake_macedonia_modifier = {
+	discipline = 0.05
+	global_manpower_modifier = 0.15
+}
+EDG_emp_ser_pacify_albanian_lands_modifier = {
+	land_morale = 0.15
+	army_tradition = 1
+}
+EDG_emp_ser_expand_adriatic_presence_modifier = {
+	ae_impact = -0.1
+	shock_damage_received = -0.10
+}
+EDG_emp_ser_suppress_bosnian_heresy_modifier = {
+	global_missionary_strength = 0.02
+}
+EDG_emp_ser_secure_the_sava_modifier = {
+	global_tax_modifier = 0.10
+	global_own_trade_power = 0.2 
+}
+EDG_emp_ser_4_1_modifier = {
+	merc_maintenance_modifier = -0.50
+	mercenary_discipline = 0.075
+}
+
+
+
+EDG_SER_Mission_2_1_modifier = {
+	discipline = 0.05
+	land_morale = 0.1
+}
+EDG_SER_Mission_4_2_modifier = {
+	land_morale = 0.1
+	army_tradition = 1
+}
+EDG_SER_Mission_4_3_modifier = {
+	global_manpower_modifier = 0.15
+	prestige_from_land = 0.5
+}
+EDG_emp_ser_guardians_of_st_sava_modifier = {
+	tolerance_own = 1.5
+	manpower_in_true_faith_provinces = 0.15
+}
+EDG_emp_ser_1_5_modifier = {
+	administrative_efficiency = 0.025
+}
+EDG_emp_ser_emperor_and_autocrat_modifier = {
+	administrative_efficiency = 0.025
+}

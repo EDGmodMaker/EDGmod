@@ -1,0 +1,67 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 1879
+fixed_capital = 1879
+1361.1.1 = {
+  monarch = {
+    name = "Ôçf II"  # Pierre II
+    dynasty = "aSiO"  # de Valois
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+1404.1.1 = {
+  monarch = {
+    name = "éN<h I"  # Jean I
+    dynasty = "aSiO"  # de Valois
+    birth_date = 1381.12.6
+    adm = 0
+    dip = 1
+    mil = 2
+  }
+}
+1434.1.1 = {
+  monarch = {
+    name = "Ôçf III"  # Jean II
+    dynasty = "aSiO"  # de Valois
+    birth_date = 1411.12.6
+    adm = 2
+    mil = 2
+    dip = 0
+  }
+}
+1442.1.1 = {
+  heir = {
+    name = "“RÖQ"  # RenÈ
+    dynasty = "aSiO"  # de Valois
+    birth_date = 1441.12.6
+    adm = 3
+    mil = 2
+    dip = 1
+  }
+}
+1492.1.1 = {
+  monarch = {
+    name = "Âgt IV"  # Charles IV
+    dynasty = "aSiO"  # de Valois
+    adm = 1
+    mil = 2
+    dip = 1
+  }
+}
+1515.1.2 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}
+1589.8.3 = {
+  set_legacy_government = administrative_monarchy
+}
+1661.3.9 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}

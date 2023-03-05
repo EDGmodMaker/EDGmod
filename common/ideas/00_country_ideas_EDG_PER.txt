@@ -1,0 +1,259 @@
+
+AKK_ideas = {
+  start = {
+    cavalry_power = 0.15
+    land_morale = 0.1
+  }
+  bonus = {
+    land_maintenance_modifier = -0.05
+  }
+  trigger = {
+    tag = AKK
+	NOT = {
+		has_country_flag = EDG_AKK_idea_change_flag
+	}
+  }
+  free = yes
+  akk_white_sheep = {
+    leader_land_shock = 1
+  }
+  akk_unite_the_federation = {
+    yearly_tribal_allegiance = 1
+    cavalry_cost = -0.1
+  }
+  akk_turko_iranian_bureaucracy = {
+    core_creation = -0.1
+  }
+  akk_apanages = {
+    global_manpower_modifier = 0.15
+  }
+  akk_expansive_diplomacy = {
+    diplomats = 1
+  }
+  akk_religious_pragmatism = {
+    stability_cost_modifier = -0.1
+  }
+  akk_qanun_nama_ye_hasan = {
+    state_maintenance_modifier = -0.1
+  }
+}
+
+
+EDG_AKK_ideas = {
+  start = {
+    cavalry_power = 0.25
+    land_morale = 0.2
+  }
+  bonus = {
+    land_maintenance_modifier = -0.15
+  }
+  trigger = {
+	tag = PER
+	has_country_flag = EDG_AKK_idea_change_flag
+  }
+  free = yes
+  EDG_akk_white_sheep = {
+    leader_land_shock = 1
+	leader_land_manuever = 1
+  }
+  EDG_akk_unite_the_federation = {
+    yearly_tribal_allegiance = 2
+    cavalry_cost = -0.2
+  }
+  EDG_akk_turko_iranian_bureaucracy = {
+    core_creation = -0.2
+  }
+  EDG_akk_apanages = {
+    global_manpower_modifier = 0.20
+  }
+  EDG_akk_expansive_diplomacy = {
+    diplomats = 1
+  }
+  EDG_akk_religious_pragmatism = {
+    stability_cost_modifier = -0.15
+  }
+  EDG_akk_qanun_nama_ye_hasan = {
+    state_maintenance_modifier = -0.15
+  }
+}
+
+PER_ideas = {
+  start = {
+	core_creation = -0.20
+    cavalry_power = 0.15
+  }
+  bonus = {
+    fire_damage_received = -0.1
+  }
+  trigger = {
+    tag = PER
+  }
+  free = yes
+  increased_crown_lands = {
+    global_tax_modifier = 0.15
+  }
+  the_qizilbash = {
+    global_manpower_modifier = 0.15
+    manpower_recovery_speed = 0.15
+  }
+  persian_rug_production = {
+    global_trade_goods_size_modifier = 0.2
+  }
+  the_ghulams = {
+    discipline = 0.025
+    land_morale = 0.10
+  }
+  EDG_PER_6 = {
+    governing_capacity_modifier = 0.10
+  }
+  EDG_PER_7 = {
+    administrative_efficiency = 0.05
+  }
+  improved_silk_road = {
+    caravan_power = 0.33
+	trade_steering = 0.33
+  }
+}
+
+MGR_ideas = {
+  start = {
+    advisor_cost = -0.10
+	global_tax_modifier = 0.10
+  }
+  bonus = {
+    global_missionary_strength = 0.03
+  }
+  trigger = {
+    tag = MGR
+  }
+  free = yes
+  EDG_MGR_1 = {
+    infantry_power = 0.1
+  }
+  EDG_MGR_2 = {
+    idea_cost = -0.1
+  }
+  EDG_MGR_3 = {
+	shock_damage = 0.1
+  }
+  EDG_MGR_4 = {
+    global_unrest = -1
+  }
+  EDG_MGR_5 = {
+    monthly_piety = 0.01
+  }
+  EDG_MGR_6 = {
+    missionary_maintenance_cost = -0.25
+  }
+  EDG_MGR_7 = {
+    enemy_core_creation = 0.2
+  }
+}
+
+BHT_ideas = {
+  start = {
+    religious_unity = 0.25
+	land_morale = 0.1
+  }
+  bonus = {
+    missionaries = 1
+  }
+  trigger = {
+    tag = BHT
+  }
+  free = yes
+  EDG_BHT_1 = {
+    discipline = 0.05
+  }
+  EDG_BHT_2 = {
+    global_spy_defence = 0.20
+  }
+  EDG_BHT_3 = {
+	stability_cost_modifier = -0.15
+  }
+  EDG_BHT_4 = {
+    production_efficiency = 0.10
+  }
+  EDG_BHT_5 = {
+    free_adm_policy = 1
+  }
+  EDG_BHT_6 = {
+    global_unrest = -1
+  }
+  EDG_BHT_7 = {
+    global_trade_goods_size_modifier = 0.1
+  }
+}
+
+BSR_ideas = {
+  start = {
+    cavalry_power = 0.15
+	ae_impact = -0.1
+  }
+  bonus = {
+    cavalry_fire = 0.5
+  }
+  trigger = {
+    tag = BSR
+  }
+  free = yes
+  EDG_BSR_1 = {
+    cavalry_cost = -0.15
+  }
+  EDG_BSR_2 = {
+    army_tradition = 1
+  }
+  EDG_BSR_3 = {
+	global_tax_modifier = 0.10
+	adm_tech_cost_modifier = -0.05
+  }
+  EDG_BSR_4 = {
+   core_creation = -0.15
+  }
+  EDG_BSR_5 = {
+    prestige = 0.5
+	legitimacy = 0.5
+  }
+  EDG_BSR_6 = {
+    caravan_power = 0.33
+  }
+  EDG_BSR_7 = {
+    free_mil_policy = 1
+  }
+}
+ARL_ideas = {
+  start = {
+    global_manpower_modifier = 0.2
+    discipline = 0.05
+  }
+  bonus = {
+    prestige = 1
+  }
+  trigger = {
+    tag = ARL
+    religion = shiite
+  }
+  free = yes
+  arl_safavid_order = {
+    land_morale = 0.1
+    monthly_piety = -0.001
+  }
+  arl_qizilbash = {
+    cavalry_power = 0.15
+  }
+  arl_shiite_leadership = {
+    tolerance_own = 2
+  }
+  arl_conversion_of_the_masses = {
+    global_heretic_missionary_strength = 0.02
+  }
+  arl_religious_war = {
+    spy_offence = 0.2
+  }
+  arl_amili_mujtahids = {
+    stability_cost_modifier = -0.1
+  }
+  arl_shahs_of_iran = {
+    legitimacy = 1
+  }
+}

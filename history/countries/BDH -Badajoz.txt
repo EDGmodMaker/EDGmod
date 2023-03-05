@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = EDG_Denomination
+primary_culture = andalucian
+religion = sunni
+add_accepted_culture = portugese
+technology_group = muslim
+capital = 218
+government_rank = 2
+religious_school = maliki_school
+
+
+
+1442.1.1 = {
+  leader = {
+    name = "fjSÉb1k ,g HYS¯e"
+    type = general
+    fire = 2
+    shock = 3
+    manuever = 1
+    siege = 2
+    death_date = 1453.5.29
+  }
+}
+1444.1.1 = {
+  monarch = {
+    name = "?–jSÉbjg k!"
+    dynasty = "?–9ğl‰"
+	birth_date = 1390.1.1
+    death_date = 1453.5.29
+    adm = 5
+    dip = 4
+    mil = 6
+	
+  leader = {
+    name = "?–jSÉbjg k!"
+    type = general
+    fire = 3
+    shock = 4
+    manuever = 2
+    siege = 1
+    death_date = 1453.5.29
+  }
+  }
+}
+
+1444.1.1 = {
+  heir = {
+    name = "?–Ì‘"
+    dynasty = "?–9ğl‰"
+    birth_date = 1444.1.1
+    death_date = 1453.5.29
+    claim = 45
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}

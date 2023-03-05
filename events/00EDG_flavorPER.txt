@@ -1,0 +1,221 @@
+namespace = EDG_flavor_PER
+normal_or_historical_nations = yes
+country_event = {#接管德里
+  id = EDG_flavor_PER.0
+  title = "EDG_flavor_PER.0.t"
+  desc = "EDG_flavor_PER.0.d"
+  picture = OVEREXTENSION_eventPicture
+  is_triggered_only = yes
+  major = yes
+  
+  trigger = {
+    tag = PER
+  }
+  option = {
+    name = "EDG_flavor_PER.0.a"
+    ai_chance = {
+      factor = 16
+    }
+	
+	custom_tooltip = EDG_flavorPER_0.tooltip
+	hidden_effect = {
+		india_superregion = {
+			limit = { 
+				is_core = DLH
+			}
+			add_core = ROOT
+		}
+	}
+  }
+  option = {
+    name = "EDG_flavor_PER.0.b"
+    ai_chance = {
+      factor = 16
+    }
+	add_adm_power = 25
+  }
+}
+country_event = {#古拉姆
+  id = EDG_flavor_PER.1
+  title = "EDG_flavor_PER.1.t"
+  desc = "EDG_flavor_PER.1.d"
+  picture = OVEREXTENSION_eventPicture
+  is_triggered_only = yes
+  
+  trigger = {
+    tag = PER
+  }
+  option = {
+    name = "EDG_flavor_PER.1.a"
+    ai_chance = {
+      factor = 16
+    }
+	add_government_reform = EDG_ghulam_reform
+  }
+  option = {
+    name = "EDG_flavor_PER.1.b"
+    ai_chance = {
+      factor = 16
+    }
+	add_adm_power = 25
+	add_stability_or_adm_power = yes
+  }
+}
+country_event = {#印度野心
+  id = EDG_flavor_PER.2
+  title = "EDG_flavor_PER.2.t"
+  desc = "EDG_flavor_PER.2.d"
+  picture = OVEREXTENSION_eventPicture
+  is_triggered_only = yes
+  
+  trigger = {
+    tag = PER
+  }
+  option = {
+    name = "EDG_flavor_PER.2.a"
+    ai_chance = {
+      factor = 16
+    }
+	add_country_modifier = {
+		name = EDG_Persia_empire_Mission_Indian_ambition_modifier
+		duration = 7300
+	}
+  }
+  option = {
+    name = "EDG_flavor_PER.2.b"
+    ai_chance = {
+      factor = 16
+    }
+	add_stability_or_adm_power = yes
+  }
+}
+
+
+
+country_event = {#波斯手工业
+  id = EDG_flavor_PER.4
+  title = "EDG_flavor_PER.4.t"
+  desc = "EDG_flavor_PER.4.d"
+  picture = FARMING_eventPicture
+  fire_only_once = yes
+  major = yes
+  trigger = {
+	OR = {
+		tag = PER
+		AND = {	
+			NOT = { exists = PER }
+			tag = ARL
+		}
+	}
+    is_year = 1560
+  }
+  option = {
+    name = "EDG_flavor_PER.4.a"
+    ai_chance = {
+      factor = 16
+    }
+	change_price = {
+		trade_goods = silk
+		key = EDG_flavor_PER_4_silk_price
+		value = 0.25
+		duration = 36500
+	}
+
+  }
+}
+
+country_event = {
+  id = EDG_flavor_PER.101
+  title = "EDG_flavor_PER.101.t"
+  desc = "EDG_flavor_PER.101.dd"
+  picture = PER_EVENT_PICTURE_1
+  is_triggered_only = yes
+  
+  trigger = {
+	has_government_attribute = EDG_Persia_empire_capital_reform_ability
+  }
+  option = {#不迁都
+    name = "EDG_flavor_PER.101.z"
+	trigger = {
+	}
+    ai_chance = {
+      factor = 0
+    }
+	add_prestige = -15
+  }
+  option = {#大不里士
+    name = "EDG_flavor_PER.101.a"
+	trigger = {
+		NOT = { 416 = { is_capital_of = ROOT } }
+		owns_core_province = 416
+	}
+    ai_chance = {
+      factor = 10
+    }
+	416 = { move_capital_effect = yes }
+	add_ruler_modifier = {
+		name = EDG_Persia_empire_capital_modifier_1
+		duration = -1
+	}
+  }
+  option = {#伊斯法罕
+    name = "EDG_flavor_PER.101.b"
+	trigger = {
+		NOT = { 429 = { is_capital_of = ROOT } }
+		owns_core_province = 429
+	}
+    ai_chance = {
+      factor = 10
+    }
+	429 = { move_capital_effect = yes }
+	add_ruler_modifier = {
+		name = EDG_Persia_empire_capital_modifier_2
+		duration = -1
+	}
+  }
+  option = {#德黑兰
+    name = "EDG_flavor_PER.101.c"
+	trigger = {
+		NOT = { 428 = { is_capital_of = ROOT } }
+		owns_core_province = 428
+	}
+    ai_chance = {
+      factor = 10
+    }
+	428 = { move_capital_effect = yes }
+	add_ruler_modifier = {
+		name = EDG_Persia_empire_capital_modifier_3
+		duration = -1
+	}
+  }
+  option = {#巴格达
+    name = "EDG_flavor_PER.101.d"
+	trigger = {
+		NOT = { 410 = { is_capital_of = ROOT } }
+		owns_core_province = 410
+	}
+    ai_chance = {
+      factor = 10
+    }
+	410 = { move_capital_effect = yes }
+	add_ruler_modifier = {
+		name = EDG_Persia_empire_capital_modifier_4
+		duration = -1
+	}
+  }
+  option = {#撒马尔罕
+    name = "EDG_flavor_PER.101.e"
+	trigger = {
+		NOT = { 454 = { is_capital_of = ROOT } }
+		owns_core_province = 454
+	}
+    ai_chance = {
+      factor = 10
+    }
+	454 = { move_capital_effect = yes }
+	add_ruler_modifier = {
+		name = EDG_Persia_empire_capital_modifier_5
+		duration = -1
+	}
+  }
+}

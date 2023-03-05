@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = czech
+religion = catholic
+elector = yes
+capital = 266
+technology_group = western
+add_accepted_culture = sorbian
+add_army_professionalism = 0.1
+change_estate_land_share = {
+  estate = estate_burghers
+  share = -5
+}
+1387.3.31 = {
+  monarch = {
+    name = "‰	T¯e™„·V I"  # Sigismund I
+    dynasty = "¯Q bSîh!X"  # von Luxemburg
+    birth_date = 1368.2.14
+    adm = 5
+    dip = 4
+    mil = 0
+  }
+}
+

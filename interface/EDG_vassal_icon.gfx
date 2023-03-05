@@ -1,0 +1,47 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_icon_EDG_French_vassal"
+		texturefile = "gfx//interface//icon_EDG_French_vassal.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_icon_EDG_French_vassal_am"
+		texturefile = "gfx//interface//icon_EDG_French_vassal_am.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_icon_EDG_French_vassal_lead"
+		texturefile = "gfx//interface//icon_EDG_French_vassal_lead.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_icon_EDG_Chinese_vassal"
+		texturefile = "gfx//interface//icon_EDG_Chinese_vassal.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_icon_EDG_Chinese_vassal_am"
+		texturefile = "gfx//interface//icon_EDG_Chinese_vassal_am.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_icon_EDG_Chinese_vassal_lead"
+		texturefile = "gfx//interface//icon_EDG_Chinese_vassal_lead.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_icon_EDG_catharism_vassal"
+		texturefile = "gfx//interface//GFX_icon_EDG_catharism_vassal.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_icon_EDG_catharism_vassal_am"
+		texturefile = "gfx//interface//GFX_icon_EDG_catharism_vassal_am.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_icon_EDG_catharism_vassal_lead"
+		texturefile = "gfx//interface//GFX_icon_EDG_catharism_vassal_lead.dds"
+		loadType = "INGAME"
+	}
+}

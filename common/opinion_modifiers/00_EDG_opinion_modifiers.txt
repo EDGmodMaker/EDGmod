@@ -1,0 +1,4 @@
+EDG_DLH_stupid_opinion = {
+	opinion = -150
+	yearly_decay = 10
+}

@@ -1,0 +1,199 @@
+EDG_ZAZ_special_mission_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = ZAZ
+			AND = {
+				tag = UKR 
+				was_tag = ZAZ
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	EDG_ZAZ_special_mission_1_4 = {
+		icon = mission_recruit_streltsy
+		position = 1
+		required_missions = {  }
+		trigger = {
+			is_at_war = no
+			total_development = 100
+		}
+		effect = {
+			add_mil_power = 100
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
+			}
+			add_country_modifier = {
+				name = "EDG_ZAZ_special_mission_1_4_modifier"
+				duration = 18250
+			}
+		}
+	}
+	EDG_ZAZ_special_mission_1_5 = {
+		icon = mission_cathedral_cities
+		position = 2
+		required_missions = { EDG_ZAZ_special_mission_1_4 }
+		trigger = {
+		  stability = 1
+		  has_reform = cossacks_reform
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			add_country_modifier = {
+				name = "EDG_ZAZ_special_mission_1_5_modifier"
+				duration = -1
+			}
+			
+		}
+	}
+	
+	 
+	EDG_ZAZ_special_mission_2_5 = {
+		icon = mission_state_manufactories
+		position = 3
+		required_missions = { EDG_ZAZ_special_mission_1_5 }
+		trigger = {
+			army_size = 30
+		}
+		effect = {
+			add_mil_power = 100
+			
+			define_advisor = {
+				type = army_reformer
+				skill = 3
+				cost_multiplier = 0.25
+				culture = ROOT
+			}
+			add_country_modifier = {
+				name = "EDG_ZAZ_special_mission_2_5_modifier"
+				duration = -1
+			}
+		}
+	}	
+	
+	EDG_ZAZ_special_mission_3_5 = {
+		icon = mission_autocratic_rule
+		position = 4
+		required_missions = { EDG_ZAZ_special_mission_2_5 }
+		trigger = {
+			has_mil_advisor_3 = yes
+			mil_tech = 10
+			mil_power = 100
+			OR = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+			}
+		}
+		effect = {
+			add_mil_power = -100
+			
+			add_country_modifier = {
+				name = "EDG_ZAZ_special_mission_3_5_modifier"
+				duration = -1
+			}
+			add_mil_power = 100
+			change_technology_group = eastern
+			change_unit_type = eastern
+		}
+	}	
+	
+}
+
+ 
+EDG_ZAZ_special_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = ZAZ
+			AND = {
+				tag = UKR 
+				was_tag = ZAZ
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	EDG_ZAZ_special_mission_5_3 = {
+		icon = mission_conquer_romania
+		position = 3
+		required_missions = {  }
+		trigger = {
+			OR = {
+				has_adm_advisor_1 = yes
+				has_adm_advisor_2 = yes
+				has_adm_advisor_3 = yes
+			}
+		}
+		effect = {
+			add_reformprogress = 50
+			add_country_modifier = {
+				name = "EDG_ZAZ_special_mission_5_3_modifier"
+				duration = -1
+			}
+		}
+	}	
+	EDG_ZAZ_special_mission_5_4 = {
+		icon = mission_establish_the_prikazy
+		position = 4
+		required_missions = { EDG_ZAZ_special_mission_5_3 }
+		trigger = {
+			crimea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			  }	
+			ural_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			  }	
+		}
+		effect = {
+			add_country_modifier = {
+				name = "EDG_ZAZ_special_mission_5_4_modifier"
+				duration = -1
+			}
+		}
+	}	
+	EDG_ZAZ_special_mission_5_5 = {
+		icon = mission_land_of_churches
+		position = 5
+		required_missions = { EDG_ZAZ_special_mission_5_4 }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 20
+				region = crimea_region
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 20
+				region = ural_region
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "EDG_ZAZ_special_mission_5_5_modifier"
+				duration = -1
+			}
+			custom_tooltip = add_5_crown_land_share
+			hidden_effect = {
+				change_estate_land_share = {
+					estate = all
+					share = -10
+				}
+			}
+		}
+	}	
+	
+}

@@ -1,0 +1,182 @@
+namespace = EDG_flavor_KRA
+normal_or_historical_nations = yes
+country_event = {
+  id = EDG_flavor_KRA.event_1
+  title = "EDG_flavor_KRA.event_1.t"
+  desc = "EDG_flavor_KRA.event_1.d"
+  picture = DIPLOMACY_eventPicture
+  major = yes
+  fire_only_once = yes
+  trigger = {
+    NOT = {
+      exists = POL
+    }
+    OR = {
+      AND = {
+        tag = KRA
+        NOT = {
+          war_with = MAZ
+        }
+        is_subject = no
+        MAZ = {
+          exists = yes
+          ai = yes
+          was_player = no
+          is_subject = no
+          is_neighbor_of = ROOT
+          NOT = {
+            is_in_war = {
+              attacker_leader = MAZ
+            }
+          }
+          NOT = {
+            is_in_war = {
+              defender_leader = MAZ
+            }
+          }
+          NOT = {
+            is_in_war = {
+              casus_belli = cb_independence_war
+            }
+          }
+        }
+      }
+      AND = {
+        tag = MAZ
+        NOT = {
+          war_with = KRA
+        }
+        is_subject = no
+        ai = no
+        KRA = {
+          exists = yes
+          ai = yes
+          was_player = no
+          is_subject = no
+          is_neighbor_of = ROOT
+          NOT = {
+            is_in_war = {
+              attacker_leader = KRA
+            }
+          }
+          NOT = {
+            is_in_war = {
+              defender_leader = KRA
+            }
+          }
+          NOT = {
+            is_in_war = {
+              casus_belli = cb_independence_war
+            }
+          }
+        }
+      }
+    }
+    NOT = {
+      is_year = 1530
+    }
+    is_subject = no
+  }
+  mean_time_to_happen = {
+    days = 15
+  }
+  option = {
+    name = "EDG_flavor_KRA.event_1.a"
+    ai_chance = {
+      factor = 5
+    }
+	set_government_rank = 2
+    define_ruler = {
+      change_dip = 2
+      change_adm = 2
+      change_mil = 2
+      max_random_adm = 4
+      max_random_dip = 4
+      max_random_mil = 4
+	  dynasty = "®všN¯eyr"
+      claim = 100
+      culture = polish
+    }
+    if = {
+      limit = {
+        tag = KRA
+      }
+		inherit = MAZ
+    }
+    if = {
+      limit = {
+        tag = MAZ
+      }
+		inherit = KRA
+    }
+    random_owned_province = {
+      limit = {
+        is_capital = no
+      }
+      spawn_rebels = {
+        type = noble_rebels
+        size = 1
+      }
+    }
+    random_owned_province = {
+      limit = {
+        is_capital = no
+      }
+      spawn_rebels = {
+        type = noble_rebels
+        size = 1
+      }
+    }
+  }
+  option = {
+    name = "EDG_flavor_KRA.event_1.b"
+    ai_chance = {
+      factor = 10
+    }
+    define_ruler = {
+      change_dip = 3
+      change_adm = 3
+      change_mil = 3
+      max_random_adm = 6
+      max_random_dip = 6
+      max_random_mil = 6
+      claim = 100
+      culture = polish
+    }
+    add_stability_or_adm_power = yes
+    if = {
+      limit = {
+        tag = KRA
+      }
+      MAZ = {
+        add_opinion = {
+          who = ROOT
+          modifier = spa_declined_iberian_wedding
+        }
+      }
+    }
+    if = {
+      limit = {
+        tag = MAZ
+      }
+      KRA = {
+        add_opinion = {
+          who = ROOT
+          modifier = spa_declined_iberian_wedding
+        }
+      }
+    }
+    if = {
+      limit = {
+        has_regency = no
+        has_consort = no
+        has_government_attribute = queen
+      }
+      define_consort = {
+        ADM = 2
+        MIL = 2
+        DIP = 2
+      }
+    }
+  }
+}

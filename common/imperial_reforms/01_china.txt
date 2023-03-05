@@ -1,0 +1,224 @@
+establish_gaituguiliu_decision = {
+	empire = celestial_empire
+	emperor = {
+		meritocracy = 0.5
+		diplomatic_annexation_cost = -0.15
+	}
+}
+
+seaban_decision = {
+	empire = celestial_empire
+	emperor = {
+		diplomats = 1
+		trade_efficiency = 0.15
+	}
+	required_reform = establish_gaituguiliu_decision
+}
+
+reform_land_tax_decision = {
+	empire = celestial_empire
+	emperor = {
+		global_autonomy = -0.05
+		vassal_forcelimit_bonus = 0.25
+	}
+	required_reform = seaban_decision
+}
+
+military_governors_decision = {
+	empire = celestial_empire
+	emperor = {
+		core_creation = -0.1
+		 
+	}
+	on_effect = {
+		set_country_flag = military_governors_decision_flag
+	}
+	required_reform = reform_land_tax_decision
+}
+
+centralizing_top_government_decision = {
+	empire = celestial_empire
+	emperor = {
+		monarch_admin_power = 1
+		administrative_efficiency = 0.015
+		 
+	}
+	on_effect = {
+		set_country_flag = centralizing_top_government_decision_flag
+	}
+	required_reform = military_governors_decision
+}
+
+vassalize_tributaries_decision = {
+	empire = celestial_empire
+	emperor = {
+		imperial_mandate = 0.05
+		liberty_desire_from_subject_development = -0.15
+	} 
+	on_effect = {
+		custom_tooltip = vassalize_tributaries_decision_tt
+		set_global_flag = eoc_vassalize_tributaries
+		set_country_flag = vassalize_tributaries_decision_flag
+	}
+	off_effect = {
+		custom_tooltip = vassalize_tributaries_decision_ct
+		clr_global_flag = eoc_vassalize_tributaries
+	}
+	required_reform = centralizing_top_government_decision
+}
+
+EDG_china_empire_reform_1_decision = {#一条鞭法
+	empire = celestial_empire
+	emperor = {
+		global_tax_modifier = 0.05
+		global_trade_goods_size_modifier = 0.05
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_1_decision_flag
+	}
+	required_reform = vassalize_tributaries_decision
+}
+
+EDG_china_empire_reform_2_decision = {#废除匠籍
+	empire = celestial_empire
+	emperor = {
+		build_cost = -0.05
+		great_project_upgrade_cost = -0.1
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_2_decision_flag
+	}
+	required_reform = EDG_china_empire_reform_1_decision
+}
+
+EDG_china_empire_reform_3_decision = {#废除矿监
+	empire = celestial_empire
+	emperor = {
+		production_efficiency = 0.05
+		gold_depletion_chance_modifier = -0.1
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_3_decision_flag
+	}
+	required_reform = EDG_china_empire_reform_2_decision
+}
+
+EDG_china_empire_reform_4_decision = {#宝钞提举
+	empire = celestial_empire
+	emperor = {
+		inflation_reduction = 0.1
+		interest = -0.5
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_4_decision_flag
+	}
+	required_reform = EDG_china_empire_reform_3_decision
+}
+
+EDG_china_empire_reform_5_decision = {#新翰林院
+	empire = celestial_empire
+	emperor = {
+		embracement_cost = -0.10
+		global_institution_spread = 0.10
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_5_decision_flag
+	}
+	required_reform = EDG_china_empire_reform_4_decision
+}
+
+EDG_china_empire_reform_6_decision = {#整饬吏治
+	empire = celestial_empire
+	emperor = {
+		yearly_corruption = -0.02
+		state_governing_cost = -0.05
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_6_decision_flag
+	}
+	required_reform = EDG_china_empire_reform_5_decision
+}
+
+EDG_china_empire_reform_7_decision = {#改宣慰司
+	empire = celestial_empire
+	emperor = {
+		promote_culture_cost = -0.25
+		culture_conversion_cost = -0.15
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_7_decision_flag
+	}
+	required_reform = EDG_china_empire_reform_6_decision
+}
+
+EDG_china_empire_reform_8_decision = {#行考成法
+	empire = celestial_empire
+	emperor = {
+		stability_cost_modifier = -0.10
+		autonomy_change_time = -0.25
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_8_decision_flag
+	}
+	required_reform = EDG_china_empire_reform_7_decision
+}
+
+EDG_china_empire_reform_9_decision = {#撤都督府
+	empire = celestial_empire
+	emperor = {
+		free_mil_policy = 1
+		possible_mil_policy = 1
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_9_decision_flag
+	}
+	required_reform = EDG_china_empire_reform_8_decision
+}
+
+EDG_china_empire_reform_10_decision = {#扩市舶司
+	empire = celestial_empire
+	emperor = {
+		free_dip_policy = 1
+		possible_dip_policy = 1
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_10_decision_flag
+	}
+	required_reform = EDG_china_empire_reform_9_decision
+}
+
+EDG_china_empire_reform_11_decision = {#立军机处
+	empire = celestial_empire
+	emperor = {
+		free_adm_policy = 1
+		possible_adm_policy = 1
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_11_decision_flag
+	}
+	required_reform = EDG_china_empire_reform_10_decision
+}
+
+EDG_china_empire_reform_12_decision = {#民族主义
+	empire = celestial_empire
+	emperor = {
+		allow_free_estate_privilege_revocation = yes
+		all_estate_loyalty_equilibrium = 0.05
+		 
+	} 
+	on_effect = {
+		set_country_flag = EDG_china_empire_reform_12_decision_flag
+	}
+	required_reform = EDG_china_empire_reform_11_decision
+}

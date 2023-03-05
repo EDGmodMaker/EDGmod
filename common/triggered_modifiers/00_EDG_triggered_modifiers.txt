@@ -1,0 +1,171 @@
+had_EDG_Bogomili_city_free_151_modifier = {#151 君堡
+	potential = {
+		religion = EDG_Bogomili
+	}
+	trigger = {
+		has_global_flag = had_EDG_Bogomili_decision_151_flag
+		151 = {
+			owner = { religion = EDG_Bogomili }
+			religion = EDG_Bogomili
+		}
+	}
+	global_heretic_missionary_strength = 0.02
+}
+had_EDG_Bogomili_city_free_150_modifier = {#150 保加利亚的尼科博尔
+	potential = {
+		religion = EDG_Bogomili
+	}
+	trigger = {
+		has_global_flag = had_EDG_Bogomili_decision_150_flag
+		150 = {
+			owner = { religion = EDG_Bogomili }
+			religion = EDG_Bogomili
+		}
+	}
+	land_morale = 0.05
+	shock_damage = 0.05
+}
+had_EDG_Bogomili_city_free_280_modifier = {#280 基辅
+	potential = {
+		religion = EDG_Bogomili
+	}
+	trigger = {
+		has_global_flag = had_EDG_Bogomili_decision_280_flag
+		280 = {
+			owner = { religion = EDG_Bogomili }
+			religion = EDG_Bogomili
+		}
+	}
+	global_manpower_modifier = 0.1
+}
+had_EDG_Bogomili_city_free_276_modifier = {#276 明斯克
+	potential = {
+		religion = EDG_Bogomili
+	}
+	trigger = {
+		has_global_flag = had_EDG_Bogomili_decision_276_flag
+		276 = {
+			owner = { religion = EDG_Bogomili }
+			religion = EDG_Bogomili
+		}
+	}
+	monthly_splendor = 1
+}
+had_EDG_Bogomili_city_free_279_modifier = {#279 沃里尼亚
+	potential = {
+		religion = EDG_Bogomili
+	}
+	trigger = {
+		has_global_flag = had_EDG_Bogomili_decision_279_flag
+		279 = {
+			owner = { religion = EDG_Bogomili }
+			religion = EDG_Bogomili
+		}
+	}
+	discipline = 0.025
+	army_tradition_decay = -0.01
+}
+had_EDG_Bogomili_city_free_1756_modifier = {#1756 罗马尼亚的巴萨拉比亚
+	potential = {
+		religion = EDG_Bogomili
+	}
+	trigger = {
+		has_global_flag = had_EDG_Bogomili_decision_1756_flag
+		1756 = {
+			owner = { religion = EDG_Bogomili }
+			religion = EDG_Bogomili
+		}
+	}
+	stability_cost_modifier = -0.1
+	prestige_decay = -0.01
+}
+
+EDG_PAP_restore_the_authority_of_the_Catholic_modifier = {
+	potential = {
+		has_global_flag = EDG_PAP_restore_the_authority_of_the_Catholic_flag
+		current_age = age_of_discovery
+		religion = catholic
+	}
+	trigger = {
+		current_age = age_of_discovery
+	}
+	global_heretic_missionary_strength = 0.01
+}
+
+EDG_sanjaks_reform_ability_modifier = {
+	potential = {
+		has_government_attribute = EDG_sanjaks_reform_ability
+	}
+
+	trigger = {
+		recruitmaster = 1
+	}
+	general_cost = -0.1
+}
+
+EDG_ADU_vassalizeIFZ_country_modifier = {
+	potential = {
+		has_country_modifier = EDG_ADU_vassalizeIFZ_country_modifier
+	}
+
+	trigger = {
+		overlord_of = IFZ
+	}
+	diplomats = 1
+	diplomatic_reputation = 1
+	diplomatic_upkeep = 1
+	
+}
+
+EDG_india_country_modifier = {
+	potential = {
+		capital_scope = {
+			superregion = india_superregion
+		}
+	}
+
+	trigger = {
+		num_of_cities = 10
+		capital_scope = {
+			superregion = india_superregion
+		}
+		NOT = { mil = 5 }
+		NOT = {government_rank = 3 }
+	}
+	land_forcelimit_modifier = -0.33
+	global_manpower_modifier = -0.33
+	harsh_treatment_cost = -0.25
+}
+
+
+
+EDG_India_religion_conflict_modifier = {
+	potential = {
+		capital_scope = {
+			superregion = india_superregion
+		}
+	}
+
+	trigger = {
+		has_global_flag = EDG_India_religion_conflict_flag
+		capital_scope = {
+			superregion = india_superregion
+		}
+		NOT = {
+			AND = {
+				government_rank = 3
+				religion = hinduism
+			}
+		}
+				dominant_religion = hinduism
+		NOT = { full_idea_group = humanist_ideas }
+		NOT = {
+			has_country_modifier = EDG_MUG_strong_time_modifier
+		}
+	}
+	tolerance_of_heathens_capacity = -1
+	tolerance_heathen = -1
+	land_morale = -0.10
+	min_autonomy = 25
+	harsh_treatment_cost = -0.25
+}

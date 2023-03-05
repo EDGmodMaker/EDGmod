@@ -1,0 +1,531 @@
+EDG_Lollards_4 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+	}
+
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+EDG_Lollards_5 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = EDG_Waldenses
+					any_neighbor_province = {
+						religion = EDG_Waldenses
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = EDG_Waldenses
+			}
+			has_global_flag = EDG_Waldenses_story_flag
+			has_unlocked_cult = EDG_Lollards_5
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			any_neighbor_country = {
+				tech_difference = 2
+			}
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_6 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = EDG_Bogomili
+					any_neighbor_province = {
+						religion = EDG_Bogomili
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = EDG_Bogomili
+			}
+			has_global_flag = EDG_Bogomili_story_flag
+			has_unlocked_cult = EDG_Lollards_6
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_7 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = EDG_Celtic_Church
+					any_neighbor_province = {
+						religion = EDG_Celtic_Church
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = EDG_Celtic_Church
+			}
+			has_global_flag = EDG_Celtic_Church_story_flag
+			has_unlocked_cult = EDG_Lollards_7
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_8 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = EDG_Krstjani
+					any_neighbor_province = {
+						religion = EDG_Krstjani
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = EDG_Krstjani
+			}
+			has_global_flag = EDG_Krstjani_story_flag
+			has_unlocked_cult = EDG_Lollards_8
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_9 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = EDG_Nestorianism
+					any_neighbor_province = {
+						religion = EDG_Nestorianism
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = EDG_Nestorianism
+			}
+			has_global_flag = EDG_Nestorianism_story_flag
+			has_unlocked_cult = EDG_Lollards_9
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_10 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = EDG_Waldenses
+					any_neighbor_province = {
+						religion = EDG_Waldenses
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = EDG_Waldenses
+			}
+			has_global_flag = EDG_Waldenses_story_flag
+			has_unlocked_cult = EDG_Lollards_10
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_11 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = catholic
+					any_neighbor_province = {
+						religion = catholic
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = catholic
+			}
+			has_global_flag = catholic_story_flag
+			has_unlocked_cult = EDG_Lollards_11
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_13 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = EDG_Mozarabic
+					any_neighbor_province = {
+						religion = EDG_Mozarabic
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = EDG_Mozarabic
+			}
+			has_global_flag = EDG_Mozarabic_story_flag
+			has_unlocked_cult = EDG_Lollards_13
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_14 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = EDG_catharism
+					any_neighbor_province = {
+						religion = EDG_catharism
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = EDG_catharism
+			}
+			has_global_flag = EDG_catharism_story_flag
+			has_unlocked_cult = EDG_Lollards_14
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_15 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = anglican
+					any_neighbor_province = {
+						religion = anglican
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = anglican
+			}
+			has_global_flag = anglican_story_flag
+			has_unlocked_cult = EDG_Lollards_15
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_16 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = hussite
+					any_neighbor_province = {
+						religion = hussite
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = hussite
+			}
+			has_global_flag = hussite_story_flag
+			has_unlocked_cult = EDG_Lollards_16
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_17 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = protestant
+					any_neighbor_province = {
+						religion = protestant
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = protestant
+			}
+			has_global_flag = protestant_story_flag
+			has_unlocked_cult = EDG_Lollards_17
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_18 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = reformed
+					any_neighbor_province = {
+						religion = reformed
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = reformed
+			}
+			has_global_flag = reformed_story_flag
+			has_unlocked_cult = EDG_Lollards_18
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_19 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = orthodox
+					any_neighbor_province = {
+						religion = orthodox
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = orthodox
+			}
+			has_global_flag = orthodox_story_flag
+			has_unlocked_cult = EDG_Lollards_19
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+
+EDG_Lollards_20 = {
+	cost = 100
+	modifier = {
+		technology_cost = -0.05
+	}
+	
+	allow = {
+		religion = EDG_Lollards
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion = coptic
+					any_neighbor_province = {
+						religion = coptic
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion = coptic
+			}
+			has_global_flag = coptic_story_flag
+			has_unlocked_cult = EDG_Lollards_19
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}

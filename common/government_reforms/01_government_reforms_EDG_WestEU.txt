@@ -1,0 +1,348 @@
+EDG_EU_plutocratic_reform = {
+	icon = "asian_scripture"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		merchants = 1
+		nobles_influence_modifier = -0.05
+		burghers_influence_modifier = 0.05
+		vaisyas_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	ai = {
+		factor = 0.15
+	}
+}
+
+
+EDG_Sun_King_reform{
+	icon = "english_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		religion = catholic
+		OR = {
+			tag = FRA
+			was_tag = FRA
+		}
+	}
+	trigger = {
+		religion = catholic
+		OR = {
+			tag = FRA
+			was_tag = FRA
+		}
+	}
+	modifiers = {
+		max_absolutism = 20
+    	governing_capacity = 150
+		ae_impact = -0.1
+		province_warscore_cost = -0.1
+		global_unrest = -1
+		monarch_admin_power = 2
+
+	}
+
+	ai = {
+		factor = 100
+	}
+}
+
+EDG_Austrian_Empire_govenment_reform{
+	icon = "russian_principality"
+	allow_normal_conversion = yes
+	potential = {
+		religion = catholic
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+	}
+	trigger = {
+		religion = catholic
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+	}
+	modifiers = {
+		diplomatic_upkeep = 2
+		imperial_authority = 0.1
+		governing_capacity_modifier = 0.20
+		papal_influence = 2
+		
+	}
+	ai = {
+		factor = 100
+	}
+}
+
+EDG_Austrian_constitutional_govenment_reform{
+	icon = "english_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		religion = catholic
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+	}
+	trigger = {
+		religion = catholic
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+	}
+	modifiers = {
+		diplomatic_upkeep = 2
+		global_unrest = -1
+		
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+	ai = {
+		factor = 3
+	}
+}
+
+
+EDG_grand_duchy_reform = {
+	icon = "peasants"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			has_reform = EDG_grand_duchy_reform
+			have_had_reform = EDG_grand_duchy_reform
+		}
+	}
+	trigger = {
+	}
+	trigger = {
+		OR = {
+			has_reform = EDG_grand_duchy_reform
+			have_had_reform = EDG_grand_duchy_reform
+		}
+	}
+	fixed_rank = 1
+	modifiers = {
+		vassal_income = 0.2
+		governing_capacity = 100
+		nobles_influence_modifier = 0.05
+	}
+
+	ai = {
+		factor = 1 #generic
+	}
+}
+
+EDG_French_feudal_system = {
+	icon = "EDG_French_feudal_system"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			tag = FRA
+			has_reform = EDG_French_feudal_system
+			have_had_reform = EDG_French_feudal_system
+		}
+	}
+	trigger = {
+		OR = {
+			tag = FRA
+			has_reform = EDG_French_feudal_system
+			have_had_reform = EDG_French_feudal_system
+		}
+	}
+	modifiers = {
+		legitimacy = 1
+		diplomatic_reputation = 1
+		vassal_income = 0.25
+		diplomatic_annexation_cost = -0.25
+		vassal_forcelimit_bonus = 0.5
+		nobles_influence_modifier = 0.05
+		governing_capacity_modifier = -0.33
+		min_autonomy = 15
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	ai = {
+		factor = 1 #generic
+	}
+}
+
+EDG_French_hierarchical_monarchy = {
+	icon = "EDG_French_feudal_system"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			tag = FRA
+			has_reform = EDG_French_hierarchical_monarchy
+			have_had_reform = EDG_French_hierarchical_monarchy
+		}
+	}
+	trigger = {
+		OR = {
+			tag = FRA
+			has_reform = EDG_French_hierarchical_monarchy
+			have_had_reform = EDG_French_hierarchical_monarchy
+		}
+	}
+	modifiers = {
+		legitimacy = 1
+		global_manpower_modifier = 0.10
+		global_autonomy = -0.05
+		governing_capacity_modifier = 0.15
+		nobles_influence_modifier = 0.05
+	}
+
+	ai = {
+		factor = 100 #generic
+	}
+}
+
+EDG_LOT_feudal_system = {
+	icon = "crown"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			tag = LOT
+			has_reform = EDG_LOT_feudal_system
+			have_had_reform = EDG_LOT_feudal_system
+		}
+	}
+	trigger = {
+		OR = {
+			tag = LOT
+			has_reform = EDG_LOT_feudal_system
+			have_had_reform = EDG_LOT_feudal_system
+		}
+	}
+	claim_states = yes
+	custom_attributes = {
+		subject_tax_modifier_25 = yes
+		kalmar_union_succession = yes
+	}
+	modifiers = {
+		min_autonomy = 15
+		num_accepted_cultures = 2
+		vassal_income = 0.33
+		vassal_forcelimit_bonus = 1
+		nobles_influence_modifier = 0.05
+	}
+
+	ai = {
+		factor = 1 #generic
+	}
+}
+
+
+
+EDG_Catharism_Court = {
+	icon = "papacy"
+	allow_normal_conversion = yes
+	potential = {
+			religion = EDG_catharism
+		AND = {
+			OR = {
+				has_reform = EDG_Catharism_Court
+				have_had_reform = EDG_Catharism_Court
+			}
+		}
+	}
+	trigger = {
+			religion = EDG_catharism
+		AND = {
+			OR = {
+				has_reform = EDG_Catharism_Court
+				have_had_reform = EDG_Catharism_Court
+			}
+		}
+	}
+	nation_designer_trigger = {
+		OR = {
+			religion = EDG_catharism
+		}
+	}
+	legacy_equivalent = feudal_theocracy_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+	modifiers = {
+		missionaries = 1
+		global_missionary_strength = 0.01
+		tolerance_own = 2
+		legitimacy = 1
+		global_autonomy = -0.05
+		brahmins_hindu_loyalty_modifier = 0.05
+		church_loyalty_modifier = 0.05
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			feudal_theocracy_mechanic
+		}
+	}
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = yes
+	}
+}
+
+
+EDG_Theocratic_Republic_reform = {
+	icon = "monastic_elections_reform"
+	allow_normal_conversion = yes
+	duration = 4
+	legacy_equivalent = feudalism_reform
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		OR = {
+			religion = EDG_catharism
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			has_reform = EDG_Theocratic_Republic_reform
+			have_had_reform = EDG_Theocratic_Republic_reform
+		}
+	}
+	trigger = {
+		OR = {
+			religion = EDG_catharism
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			has_reform = EDG_Theocratic_Republic_reform
+			have_had_reform = EDG_Theocratic_Republic_reform
+		}
+	}
+	modifiers = {
+		global_tax_modifier = 0.10
+		missionaries = 1
+		global_missionary_strength = 0.01
+	}
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	ai = {
+		factor = 2.5 #generic
+	}
+}
+
+

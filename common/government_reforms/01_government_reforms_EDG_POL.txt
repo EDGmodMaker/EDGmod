@@ -1,0 +1,75 @@
+
+EDG_Sigismund_congres = {
+	icon = "english_monarchy"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	legacy_equivalent = feudal_monarchy
+	potential = {
+		OR = {
+			tag = HUN
+			has_reform = EDG_Sigismund_congres
+			have_had_reform = EDG_Sigismund_congres
+		}
+	}
+	trigger = {
+		OR = {
+			tag = HUN
+			has_reform = EDG_Sigismund_congres
+			have_had_reform = EDG_Sigismund_congres
+		}
+	}
+	modifiers = {
+		vassal_income = 0.33
+		global_tax_modifier = 0.10
+		global_unrest = 1
+		nobles_influence_modifier = 0.05
+	}
+
+	ai = {
+		factor = 100 #generic
+	}
+}
+
+EDG_Thum_Purification_Committee = {
+	icon = "religious_permanent_revolution_reform"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	potential = {
+		religion = hussite
+		OR = {
+			tag = LER
+			has_reform = EDG_Thum_Purification_Committee
+			have_had_reform = EDG_Thum_Purification_Committee
+		}
+	}
+	trigger = {
+		religion = hussite
+		OR = {
+			tag = LER
+			has_reform = EDG_Thum_Purification_Committee
+			have_had_reform = EDG_Thum_Purification_Committee
+		}
+	}
+	modifiers = {
+		cb_on_religious_enemies = yes
+		tolerance_own = 2
+		nobles_influence_modifier = 0.05
+	}
+
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+	duration = 4
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+		enables_divine_idea_group = yes
+	}
+
+	ai = {
+		factor = 2.5 #generic
+	}
+}
+

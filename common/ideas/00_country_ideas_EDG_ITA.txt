@@ -1,0 +1,189 @@
+
+SIC_ideas = {
+  start = {
+    development_cost = -0.1
+    global_manpower_modifier = 0.2
+  }
+  bonus = {
+    artillery_fire = 1
+  }
+  trigger = {
+    OR = {
+      tag = SIC
+    }
+  }
+  free = yes
+  EDG_SIC_1 = {
+    land_morale = 0.1
+  }
+  EDG_SIC_2 = {discipline = 0.05
+  }
+  sic_noble_admirals = {
+    navy_tradition = 1
+  }
+  sic_greater_sicily = {
+    core_creation = -0.1
+  }
+  sic_trade_fleet = {
+    global_ship_trade_power = 0.2
+  }
+  sic_grand_navy = {
+    naval_morale = 0.15
+  }
+  sic_sicilian_silk = {
+    global_trade_goods_size_modifier = 0.1
+  }
+}
+
+EDG_TTS_ideas = {
+  start = {
+    global_manpower_modifier = 0.20
+	land_morale = 0.1
+  }
+  bonus = {
+    governing_capacity_modifier = 0.2
+  }
+  trigger = {
+	OR = {
+		tag = TTS
+	}
+  }
+  free = yes
+  sic_university_of_catania = {
+    technology_cost = -0.05
+	relation_with_same_culture_group = 25
+  }
+  EDG_TTS_2 = {
+	global_heretic_missionary_strength = 0.03
+  }
+  EDG_TTS_3 = {
+	core_creation = -0.2
+  }
+  EDG_TTS_4 = {
+    ae_impact = -0.1
+	land_forcelimit_modifier = 0.25
+  }
+  EDG_TTS_5 = {
+	global_trade_goods_size = 0.25
+  }
+  EDG_TTS_6 = {
+	development_cost = -0.1
+    build_cost = -0.10
+  }
+  sic_constitions_of_melfi = {
+    country_admin_power = 1
+  }
+}
+
+
+
+APU_ideas = {
+  start = {
+    monarch_admin_power = 1
+	same_culture_advisor_cost = -0.15
+  }
+  bonus = {
+    leader_land_fire = 1
+  }
+  trigger = {
+    tag = APU
+  }
+  free = yes
+  EDG_APU_1 = {
+    ae_impact = -0.1
+  }
+  EDG_APU_2 = {
+    development_cost = -0.1
+  }
+  EDG_APU_3 = {
+	legitimacy = 1
+  }
+  EDG_APU_4 = {
+    tolerance_heretic = 2 
+  }
+  EDG_APU_5 = {
+    global_unrest = -0.5
+	production_efficiency = 0.05
+  }
+  EDG_APU_6 = {
+    global_autonomy = -0.050
+  }
+  EDG_APU_7 = {
+    global_trade_goods_size_modifier = 0.1
+  }
+}
+
+CBI_ideas = {
+  start = {
+    production_efficiency = 0.1
+	improve_relation_modifier = 0.3
+  }
+  bonus = {
+    fort_maintenance_modifier = -0.2
+  }
+  trigger = {
+    tag = CBI
+  }
+  free = yes
+  EDG_CBI_1 = {
+    idea_cost = -0.1
+  }
+  EDG_CBI_2 = {
+    diplomatic_reputation = 1
+  }
+  EDG_CBI_3 = {
+	global_tax_modifier = 0.10
+  }
+  EDG_CBI_4 = {
+    discipline = 0.05
+  }
+  EDG_CBI_5 = {
+    development_cost = -0.1
+  }
+  EDG_CBI_6 = {
+    defensiveness = 0.10
+  }
+  EDG_CBI_7 = {
+    global_trade_goods_size_modifier = 0.20
+  }
+}
+
+PUA_ideas = {
+  start = {
+    discipline = 0.05
+	core_creation = -0.10
+  }
+  bonus = {
+    merchants = 1
+  }
+  trigger = {
+	OR = {
+		tag = PUA
+		tag = BEV
+	}
+  }
+  free = yes
+  EDG_PUA_1 = {
+    prestige = 0.5
+	legitimacy = 0.5
+  }
+  EDG_PUA_2 = {
+    ae_impact = -0.05
+    global_unrest = -0.5
+  }
+  EDG_PUA_3 = {
+	stability_cost_modifier = -0.15
+  }
+  EDG_PUA_4 = {
+    infantry_power = 0.10
+  }
+  EDG_PUA_5 = {
+    development_cost = -0.1
+  }
+  EDG_PUA_6 = {
+    papal_influence = 1
+  }
+  EDG_PUA_7 = {
+   global_trade_goods_size_modifier = 0.1
+  }
+}

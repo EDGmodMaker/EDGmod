@@ -1,0 +1,63 @@
+namespace = EDG_flavorLIA
+normal_or_historical_nations = yes
+country_event = {
+  id = EDG_flavorLIA.1
+  title = "EDG_flavorLIA.1.t"
+  desc = "EDG_flavorLIA.1.d"
+  picture = CIVIL_WAR_eventPicture
+  fire_only_once = yes
+  major = yes
+  trigger = {
+	tag = LIA
+	is_year = 1445
+	NOT = {is_year = 1446}
+  }
+  immediate = {
+    hidden_effect = {
+	kill_ruler = yes
+    }
+  }
+  option = {
+    name = "EDG_flavorLIA.1.a"
+    ai_chance = {
+      factor = 8
+    }
+	define_ruler = {
+		adm = 6
+		dip = 5
+		mil = 6
+		age = 16
+		dynasty = "lQYR"
+		name = "n"
+		claim = 60
+		culture = chihan
+	}
+	change_primary_culture = chihan
+	add_country_modifier = { 
+		name = EDG_flavorLIA_1_a_modifier
+		duration = 3650  
+	}
+  }
+  
+
+  option = {
+    name = "EDG_flavorLIA.1.b"
+    ai_chance = {
+      factor = 2
+    }
+	define_ruler = {
+		adm = 3
+		dip = 2
+		mil = 4
+		age = 16
+		dynasty = "iR?QÍS≤e"
+		name = "ùzñS"
+		claim = 60
+		culture = altaic_new
+	}
+	add_country_modifier = {
+		name = EDG_flavorLIA_1_b_modifier
+		duration = 3650  
+	}
+  }
+}

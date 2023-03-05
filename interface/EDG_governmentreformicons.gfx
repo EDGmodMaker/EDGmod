@@ -1,0 +1,170 @@
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_EDG_Bulgaria_tsardom_government_convert"
+		texturefile = "gfx//interface//government_reform_icons//EDG_Bulgaria_tsardom_government_convert.dds"
+	}
+	spriteType = {
+		name = "government_reform_EDG_ottoman_empire_government"
+		texturefile = "gfx//interface//government_reform_icons//EDG_ottoman_empire_government.dds"
+	}
+	spriteType = {
+		name = "government_reform_EDG_Serbia_kingdom_government"
+		texturefile = "gfx//interface//government_reform_icons//EDG_Serbia_kingdom_government.dds"
+	}
+	spriteType = {
+		name = "government_reform_EDG_French_feudal_system"
+		texturefile = "gfx//interface//government_reform_icons//EDG_French_feudal_system.dds"
+	}
+	spriteType = {
+		name = "government_reform_EDG_Duma_reform"
+		texturefile = "gfx//interface//government_reform_icons//EDG_Duma_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_EDG_tsardom_government"
+		texturefile = "gfx//interface//government_reform_icons//EDG_tsardom_government.dds"
+	}
+	spriteType = {
+		name = "government_reform_EDG_Sofia_Court_reform"
+		texturefile = "gfx//interface//government_reform_icons//EDG_Sofia_Court_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_EDG_Czar_special_control_reform"
+		texturefile = "gfx//interface//government_reform_icons//EDG_Czar_special_control_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_EDG_zemsky_sobor"
+		texturefile = "gfx//interface//government_reform_icons//EDG_zemsky_sobor.dds"
+	}
+	spriteType = {
+		name = "government_reform_TUR_MHM_1"
+		texturefile = "gfx//interface//government_reform_icons//TUR_MHM_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_TUR_MHM_2"
+		texturefile = "gfx//interface//government_reform_icons//TUR_MHM_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_TUR_MHM_3"
+		texturefile = "gfx//interface//government_reform_icons//TUR_MHM_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_EDG_RUM_empire_government"
+		texturefile = "gfx//interface//government_reform_icons//EDG_RUM_empire_government.dds"
+	}
+	spriteType = {
+		name = "government_reform_HUN_1"
+		texturefile = "gfx//interface//government_reform_icons//HUN_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_HUN_2"
+		texturefile = "gfx//interface//government_reform_icons//HUN_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_HUN_3"
+		texturefile = "gfx//interface//government_reform_icons//HUN_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_HUN_4"
+		texturefile = "gfx//interface//government_reform_icons//HUN_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_FRA_1"
+		texturefile = "gfx//interface//government_reform_icons//FRA_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_FRA_2"
+		texturefile = "gfx//interface//government_reform_icons//FRA_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_FRA_3"
+		texturefile = "gfx//interface//government_reform_icons//FRA_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_FRA_4"
+		texturefile = "gfx//interface//government_reform_icons//FRA_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_EGY_1"
+		texturefile = "gfx//interface//government_reform_icons//EGY_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_RUS_0"
+		texturefile = "gfx//interface//government_reform_icons//RUS_0.dds"
+	}
+	spriteType = {
+		name = "government_reform_RUS_1"
+		texturefile = "gfx//interface//government_reform_icons//RUS_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_PER_1"
+		texturefile = "gfx//interface//government_reform_icons//PER_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_PER_2"
+		texturefile = "gfx//interface//government_reform_icons//PER_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_PER_3"
+		texturefile = "gfx//interface//government_reform_icons//PER_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_PER_4"
+		texturefile = "gfx//interface//government_reform_icons//PER_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_PER_5"
+		texturefile = "gfx//interface//government_reform_icons//PER_5.dds"
+	}
+	spriteType = {
+		name = "government_reform_EDG_nobles"
+		texturefile = "gfx//interface//government_reform_icons//EDG_nobles.dds"
+	}
+	spriteType = {
+		name = "government_reform_NOV_0"
+		texturefile = "gfx//interface//government_reform_icons//NOV_0.dds"
+	}
+	spriteType = {
+		name = "government_reform_NOV_1"
+		texturefile = "gfx//interface//government_reform_icons//NOV_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_EFY_1"
+		texturefile = "gfx//interface//government_reform_icons//EFY_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_EFY_2"
+		texturefile = "gfx//interface//government_reform_icons//EFY_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_EFY_3"
+		texturefile = "gfx//interface//government_reform_icons//EFY_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_EFY_4"
+		texturefile = "gfx//interface//government_reform_icons//EFY_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_EFY_5"
+		texturefile = "gfx//interface//government_reform_icons//EFY_5.dds"
+	}
+	spriteType = {
+		name = "government_reform_EFY_6"
+		texturefile = "gfx//interface//government_reform_icons//EFY_6.dds"
+	}
+	spriteType = {
+		name = "government_reform_EFY_7"
+		texturefile = "gfx//interface//government_reform_icons//EFY_7.dds"
+	}
+	spriteType = {
+		name = "government_reform_EFY_8"
+		texturefile = "gfx//interface//government_reform_icons//EFY_8.dds"
+	}
+	spriteType = {
+		name = "government_reform_EFY_9"
+		texturefile = "gfx//interface//government_reform_icons//EFY_9.dds"
+	}
+	spriteType = {
+		name = "government_reform_EFY_10"
+		texturefile = "gfx//interface//government_reform_icons//EFY_10.dds"
+	}
+}
