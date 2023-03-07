@@ -4,6 +4,11 @@ PIR = "countries/Pirates.txt"
 NAT = "countries/Natives.txt"
 EDG = "countries/EDGG.txt"
 
+#日本
+XTJ = "countries/XinTianjia.txt"
+ZSJ = "countries/ZuiShangJia.txt"
+JCJ = "countries/JieChengJia.txt"
+
 #罗斯
 AHK	= "countries/Arkhangelsk.txt"
 TOV	= "countries/Turov.txt"

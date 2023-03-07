@@ -32,25 +32,25 @@ historical_units = {
   reformed_asian_cavalry
 }
 monarch_names = {
-  "ée‘N #0" = 1  # Soun #0
-  "l²u #0" = 50  # Ujitsuna #0
-  "l·^ #0" = 50  # Ujiyasu #0
-  "l?e #0" = 50  # Ujimasa #0
-  "lôv #0" = 50  # Ujinao #0
-  "l‰ #0" = 50  # Ujiteru #0
-  "l¦ #0" = 50  # Ujikuni #0
-  "l†– #0" = 50  # Ujitaka #0
-  "lÄ‰ #0" = 50  # Ujinori #0
-  "làV #0" = 50  # Ujitada #0
-  "lÀy #0" = 50  # Ujihide #0
-  "lIQ #0" = 50  # Ujimitsu #0
-  "l?b #0" = 50  # Ujifusa #0
-  "löe #0" = 50  # Ujitoki #0
-  "l!k #0" = 50  # Ujitsugu #0
-  "lÛv #0" = 50  # Ujimori #0
-  "QÍ‘ #0" = 20  # Tsunashige #0
-  "lÍ‘ #0" = 50  # Ujishige #0
-  "lÜw #0" = 50  # Ujikatsu #0
+  "ØšCQ #0" = 1  # Soun #0
+  "Øš^ #0" = 50  # Ujitsuna #0
+  "—RØš #0" = 50  # Ujiyasu #0
+  "Øšfk #0" = 50  # Ujimasa #0
+  "·VØš #0" = 50  # Ujinao #0
+  "lØš #0" = 50  # Ujiteru #0
+  "Øš?e #0" = 50  # Ujikuni #0
+  "öeØš #0" = 50  # Ujitaka #0
+  "ØšAu #0" = 50  # Ujinori #0
+  "ØšàV #0" = 50  # Ujitada #0
+  "ØšÀy #0" = 50  # Ujihide #0
+  "IQØš #0" = 50  # Ujimitsu #0
+  "Øš?b #0" = 50  # Ujifusa #0
+  "Øšöe #0" = 50  # Ujitoki #0
+  "Øš!k #0" = 50  # Ujitsugu #0
+  "ØšÛv #0" = 50  # Ujimori #0
+  "ØšÍ‘ #0" = 20  # Tsunashige #0
+  "ØšIN #0" = 50  # Ujishige #0
+  "ØšÜw #0" = 50  # Ujikatsu #0
   "cw #0" = -5  # Toku #0
   "CS #0" = -5  # Sen #0
   "às #0" = -5  # Tama #0
@@ -69,7 +69,7 @@ leader_names = {
   "?–Ï‚"  # Aso
   "•—Rbè"  # Chosokabe
   "O¾"  # Date
-  "‡‰˜H"  # Hachisuka
+  "‡‰˜:"  # Hachisuka
   "`uqS"  # Hatakeyama
   "Sag"  # Hojo
   "ÆuİT"  # Hosokawa
@@ -187,7 +187,7 @@ leader_names = {
   "S0uŸS"  # Otawara
   "‡Rı«R"  # Utsunomiya
   "SqS"  # Oyama
-  "³‚H"  # Haga
+  "³‚:"  # Haga
   "POÎ‘"  # Sano
   "•¼l"  # Naganuma
   "ˆQ,g"  # Okamoto
@@ -196,7 +196,7 @@ leader_names = {
   "ml7b"  # Edo
   "*Y?e"  # Daijo
   "›S"  # Kashima
-  "YH7Œ"  # Tagaya
+  "Y:7Œ"  # Tagaya
   "Çu0u"  # Oda
   ".rô•"  # Kasama
   "wÁX"  # Makabe
@@ -223,7 +223,7 @@ leader_names = {
   "ŸS"  # Hara
   "øvŸS"  # Aihara
   "‰R‰"  # Anzai
-  "'Y‰˜H"  # Osuka
+  "'Y‰˜:"  # Osuka
   "øvlš"  # Soma
   "	To‚"  # Kira
   "b0u"  # Narita
@@ -290,7 +290,7 @@ ship_names = {
   "'YŒT8N"  # Yamato Maru
   "ªuO8N"  # Kii Maru
   "ªuŞT8N"  # Kishu Maru
-  "OH8N"  # Iga Maru
+  "O:8N"  # Iga Maru
   "?–âl"  # Awa Maru
   "^S8N"  # Sanuki Maru
   "WPO8N"  # Tosa Maru
